@@ -4,7 +4,14 @@ const exphbs = require("express-handlebars");
 
 /* Setup templating */
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+var hbs = exphbs.create({
+  defaultLayout: "main",
+  helpers: {
+    json: data => JSON.stringify(data)
+  }
+});
+
+app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
 /* Routing */

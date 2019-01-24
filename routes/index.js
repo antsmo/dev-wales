@@ -10,11 +10,11 @@ router.get("/", (req, res) => res.redirect("/companies"));
 
 router.get("/companies", (req, res) => {
   companiesController.getCompanies(companies => {
+    const locations = getUniqueLocations(companies);
     res.render("companies", {
       active: { companies: true },
       companies,
-      companiesString: JSON.stringify(companies),
-      locations: getUniqueLocations(companies)
+      locations
     });
   });
 });
@@ -25,8 +25,7 @@ router.get("/jobs", (req, res) => {
       jobs = hydrateCompaniesInJobs(companies, jobs);
       res.render("jobs", {
         active: { jobs: true },
-        jobs,
-        jobsString: JSON.stringify(jobs)
+        jobs
       });
     });
   });
