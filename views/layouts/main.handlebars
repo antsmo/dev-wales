@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dev | Companies in Wales</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:700|Open+Sans|Open+Sans:700|Open+Sans:600" rel="stylesheet">
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    main {
+      flex: 1
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    #title {
+      font-family: 'Muli', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="bg-red-dark px-2 py-3">
+    <div class="container mx-auto flex items-center justify-between flex-wrap ">
+      <div class="flex-no-shrink mr-6">
+        <img src="/static/logo.png" width="242" height="56" />
+      </div>
+      <div class="block md:hidden">
+        <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-red-lightest border-red-lighter hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div id="nav-items" class="w-full flex-grow hidden md:block md:flex md:items-center md:w-auto">
+        <div class="text-sm md:flex-grow">
+          <a href="/companies" class="block mt-4 no-underline md:inline-block md:mt-0 hover:text-white mr-4 {{#if active.companies}}text-white{{else}}text-red-lighter{{/if}}">
+            Companies
+          </a>
+          <a href="/jobs" class="block mt-4 no-underline md:inline-block md:mt-0 hover:text-white mr-4 {{#if active.jobs}}text-white{{else}}text-red-lighter{{/if}}">
+            Jobs
+          </a>
+          <a href="/about" class="block mt-4 no-underline md:inline-block md:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-red-lighter{{/if}}">
+            About
+          </a>
+        </div>
+        {{!-- <div>
+          <a href="https://twitter.com/myguysi" target="_blank" class="inline-block text-sm px-4 py-2 leading-none no-underline border rounded text-white border-white hover:border-transparent hover:text-red hover:bg-white mt-4 lg:mt-0">Add
+            a company</a>
+        </div> --}}
+      </div>
+    </div>
+  </nav>
+
+  <main class="bg-grey-lightest">
+    {{{ body }}}
+  </main>
+
+  <footer class="py-12 bg-black text-white">
+    <div class="container mx-auto px-2">
+      <div class="w-full flex flex-col sm:flex-row justify-between items-start px-4 sm:px-0">
+        <div class="text-sm md:flex-grow">
+          <a href="/companies" class="block no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.companies}}text-white{{else}}text-grey{{/if}}">
+            Companies
+          </a>
+          <a href="/jobs" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.jobs}}text-white{{else}}text-grey{{/if}}">
+            Jobs
+          </a>
+          <a href="/about" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-grey{{/if}}">
+            About
+          </a>
+        </div>
+        <div>
+          <div class="text-sm flex flex-col sm:flex-row">
+            <a class="flex items-center text-grey hover:text-white no-underline mt-8 sm:mt-0" href="#" target="_blank">
+              <span class="mr-2">Open-sourced on GitHub</span>
+              <img class="opacity-50" src="/static/github.svg" alt="GitHub logo" width="24" height="24" />
+            </a>
+            <a class="flex items-center text-grey hover:text-white no-underline sm:ml-8 mt-4 sm:mt-0" href="https://twitter.com/myguysi" target="_blank">
+              <span class="mr-2">Follow on Twitter</span>
+              <img class="opacity-50" src="/static/twitter.svg" alt="Twitter logo" width="25" height="20" />
+            </a>
+          </div>
+
+          <div class="flex justify-start sm:justify-end mt-8 sm:mt-4">
+            <span class="text-sm text-grey-dark">Built by <a class="text-grey-dark hover:text-white" href="https://myguysi.com" target="_blank">Simon
+                Anthony</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById("nav-toggle");
+    const navItems = document.getElementById("nav-items")
+    navToggle.onclick = function () {
+      navItems.classList.toggle("hidden");
+    }
+  </script>
+</body>
+
+</html>

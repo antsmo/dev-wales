@@ -1,0 +1,92 @@
+<div class="bg-grey-lighter py-16">
+  <div class="container mx-auto px-2">
+    <div class="w-full md:w-3/4 lg:w-1/2">
+      <h1 class="text-black">Jobs for Developers</h1>
+      <p class="mt-4 text-lg leading-normal text-grey-dark">We've collected a list of jobs currently being advertised
+        by companies in our list.</p>
+      <p class="mt-8 text-sm leading-normal text-grey-dark">We can only show jobs that have been listed on a company's
+        website and don't pull them from other job sites or recruiters.</p>
+    </div>
+  </div>
+</div>
+
+<div class="py-8">
+  <div class="container mx-auto px-2 flex flex-col lg:flex-row">
+    <div class="w-full lg:w-1/4 mr-6">
+      <label class="block tracking-wide text-grey-darker text-sm font-bold mb-2" for="grid-last-name">
+        Search
+      </label>
+      <input id="search-input" type="text" name="search" placeholder="Job title..." class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red"
+        onkeyup="updateSearch(this)" autocomplete="off" />
+    </div>
+    <div class="w-full lg:w-3/4">
+      <div id="job-list">
+        {{#each jobs}}
+        <div class="flex flex-row items-center bg-white p-4 sm:p-6 mb-2 rounded shadow">
+          <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain" style="background-image: url({{this.company.logoUrl}})"></div>
+          <div class="w-full flex flex-col">
+            <span class="text-black font-bold mb-2">{{this.title}}</span>
+            <span class="text-grey-darker leading-normal">at {{this.company.name}}</span>
+          </div>
+          <a class="flex-no-shrink text-red" href="{{this.link}}" target="_blank">View details</a>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const jobs = {{{ jobsString }}};
+
+  function updateSearch(input) {
+    const value = input.value;
+    const filteredJobs = jobs.filter(function (job) {
+      const jobTitle = job.title.toLowerCase();
+      const query = value.toLowerCase();
+      return jobTitle.indexOf(query) >= 0;
+    });
+    renderJobs(filteredJobs);
+  }
+
+  function renderJobs(jobs) {
+    const jobList = document.getElementById("job-list");
+    jobList.innerHTML = "";
+    if (jobs.length === 0) {
+      jobList.innerHTML = "No jobs found"
+      return;
+    }
+    jobs.forEach(function (job) {
+      const logo = document.createElement("div");
+      logo.classList = "w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain";
+      logo.style = "background-image: url(" + job.company.logoUrl + ")";
+      
+      const title = document.createElement("span");
+      title.innerHTML = job.title;
+      title.classList = "font-bold mb-2"
+      
+      const company = document.createElement("span");
+      company.innerHTML = job.company.name;
+      company.classList = "text-grey-darker leading-normal";
+      
+      const textContainer = document.createElement("div");
+      textContainer.classList = "w-full flex flex-col";
+      textContainer.appendChild(title);
+      textContainer.appendChild(company);
+      
+      const link = document.createElement("a");
+      link.innerHTML = "View details";
+      link.classList = "flex-no-shrink text-red";
+      link.href = job.link;
+      link.target = "_blank";
+      
+      const card = document.createElement("div");
+      card.classList = "flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow";
+      card.appendChild(logo);
+      card.appendChild(textContainer);
+      card.appendChild(link);
+      
+      jobList.appendChild(card);
+    });
+  }
+</script>

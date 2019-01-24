@@ -1,0 +1,196 @@
+<div class="bg-grey-lighter py-16">
+  <div class="container mx-auto flex justify-between px-2">
+    <div class="w-full md:w-3/4 lg:w-1/2">
+      <h1 class="text-black">A crowdsourced list of tech companies in Wales</h1>
+      <p class="mt-4 text-lg text-grey-dark leading-normal">It would be great if you could help us out by adding any
+        tech companies
+        that you know are based in Wales which haven't been added to the list yet.</p>
+      <p class="mt-6 text-grey-darker leading-normal">So far we've added <span class="font-bold">{{companies.length}}</span>
+        companies from <span class="font-bold">{{locations.length}}</span>
+        locations! 🎉</p>
+    </div>
+    {{!-- <div class="hidden lg:block w-1/3">
+      <div class="bg-white rounded shadow p-8">
+        <h4 class="mb-4">Are we missing someone?</h4>
+        <label class="block tracking-wide text-grey-darker text-sm font-bold mb-2" for="suggest-company">
+          Suggest a company
+        </label>
+        <input id="suggest-company" type="text" name="search" placeholder="Company name..." class="mb-4 appearance-none block w-full bg-grey-lightest text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red"
+          onkeyup="updateSearch(this)" autocomplete="off" />
+        <button class="border border-red hover:bg-red text-red hover:text-white py-2 px-4 rounded">
+          Submit suggestion
+        </button>
+      </div>
+    </div> --}}
+  </div>
+</div>
+
+<div class="py-8">
+  <div class="container mx-auto px-2 flex flex-col lg:flex-row">
+    <div class="w-full lg:w-1/4 mr-6">
+      <label class="block tracking-wide text-grey-darker text-sm font-bold mb-2" for="search">
+        Search
+      </label>
+      <input id="search" type="text" name="search" placeholder="Company name..." class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red"
+        onkeyup="renderCompanies()" autocomplete="off" />
+
+      <div class="hidden lg:block">
+        <label class="block tracking-wide text-grey-darker text-sm font-bold mb-2" for="location">
+          Location
+        </label>
+        <div class="mb-6 relative">
+          <select class="block appearance-none w-full bg-white border border-grey-light text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-red"
+            id="location" onchange="renderCompanies()" autocomplete="off">
+            <option value="">All</option>
+            {{#each locations}}
+            <option value="{{this}}">{{this}}</option>
+            {{/each}}
+          </select>
+          <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+          </div>
+        </div>
+
+        <label class="block tracking-wide text-grey-darker text-sm font-bold mb-2" for="company-type">
+          Company type
+        </label>
+        <div class="mb-6 relative">
+          <select id="company-type" class="block appearance-none w-full bg-white border border-grey-light text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-red"
+            onchange="renderCompanies()" autocomplete="off">
+            <option value="">All</option>
+            <option value="Product or Service">Product or Service</option>
+            <option value="Agency or Consultancy">Agency or Consultancy</option>
+          </select>
+          <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full lg:w-3/4">
+      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">Showing <span id="result-count">{{companies.length}}</span>
+        companies</div>
+      <div id="company-list">
+        {{#each companies}}
+        <div class="flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow">
+          <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain" style="background-image: url({{this.logoUrl}})"></div>
+          <div class="w-full flex flex-col">
+            <span class="text-black font-bold mb-2">{{this.name}}</span>
+            <span class="text-grey-darker leading-normal">{{this.description}}</span>
+            <div class="flex mt-2">
+              {{#if this.websiteUrl}}
+              <a class="mr-4 text-red" href="{{this.websiteUrl}}" target="_blank">Website</a>
+              {{/if}}
+              {{#if this.careersUrl}}
+              <a class="mr-4 text-red" href="{{this.careersUrl}}" target="_blank">Careers</a>
+              {{/if}}
+              {{#if this.emailAddress}}
+              <a class="mr-4 text-red" href="mailto:{{this.emailAddress}}" target="_blank">Contact</a>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const companies = {{{ companiesString }}}
+  console.log(companies);
+
+  function applySearchFilter(companies) {
+    const value = document.getElementById("search").value;
+    const filteredCompanies = companies.filter(function (company) {
+      const companyName = company.name.toLowerCase();
+      const query = value.toLowerCase();
+      return companyName.indexOf(query) >= 0;
+    });
+    return filteredCompanies;
+  }
+
+  function applyFilters(companies) {
+    let filteredCompanies = applySearchFilter(companies);
+    const filters = {
+      location: document.getElementById("location").value,
+      companyType: document.getElementById("company-type").value
+    }
+    filteredCompanies = Object.keys(filters).reduce(function (companies, filter) {
+      const value = filters[filter];
+      if (value === "") return companies;
+      companies = companies.filter(function (company) {
+        return company[filter] === value;
+      });
+      return companies;
+    }, filteredCompanies);
+    return filteredCompanies;
+  }
+
+  function renderCompanies() {
+    const companyList = document.getElementById("company-list");
+    companyList.innerHTML = "";
+    if (companies.length === 0) {
+      companyList.innerHTML = "No companies found"
+      return;
+    }
+    filteredCompanies = applyFilters(companies);
+    const resultCount = document.getElementById("result-count");
+    resultCount.innerHTML = filteredCompanies.length;
+    filteredCompanies.forEach(function (company) {
+      const logo = document.createElement("div");
+      logo.classList = "w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain";
+      logo.style = "background-image: url(" + company.logoUrl + ")";
+
+      const name = document.createElement("span");
+      name.innerHTML = company.name;
+      name.classList = "text-black font-bold mb-2";
+
+      const description = document.createElement("span");
+      description.innerHTML = company.description;
+      description.classList = "text-grey-darker leading-normal";
+
+      const linksContainer = document.createElement("div");
+      linksContainer.classList = "flex mt-2";
+      if (company.websiteUrl) {
+        const website = document.createElement("a");
+        website.innerHTML = "Website";
+        website.classList = "mr-4 text-red";
+        website.href = company.websiteUrl;
+        website.target = "_blank";
+        linksContainer.appendChild(website);
+      }
+      if (company.careersUrl) {
+        const careers = document.createElement("a");
+        careers.innerHTML = "Careers";
+        careers.classList = "mr-4 text-red";
+        careers.href = company.careersUrl;
+        careers.target = "_blank";
+        linksContainer.appendChild(careers);
+      }
+      if (company.emailAddress) {
+        const contact = document.createElement("a");
+        contact.innerHTML = "Contact";
+        contact.classList = "mr-4 text-red";
+        contact.href = company.emailAddress;
+        contact.target = "_blank";
+        linksContainer.appendChild(contact);
+      }
+
+      const textContainer = document.createElement("div");
+      textContainer.classList = "w-full flex flex-col";
+      textContainer.appendChild(name);
+      textContainer.appendChild(description);
+      textContainer.appendChild(linksContainer);
+
+      const card = document.createElement("div");
+      card.classList = "flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow";
+      card.appendChild(logo);
+      card.appendChild(textContainer);
+
+      companyList.appendChild(card);
+    });
+  }
+</script>
