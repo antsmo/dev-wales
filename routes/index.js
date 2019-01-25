@@ -6,7 +6,13 @@ const jobsController = require("../controllers/jobsController");
 
 /* Routes */
 
-router.get("/", (req, res) => res.redirect("/companies"));
+router.get("/", (req, res) => res.redirect("/jobs"));
+
+router.get("/about", (req, res) => {
+  res.render("about", {
+    active: { about: true }
+  });
+});
 
 router.get("/companies", (req, res) => {
   companiesController.getCompanies(companies => {
@@ -28,12 +34,6 @@ router.get("/jobs", (req, res) => {
         jobs
       });
     });
-  });
-});
-
-router.get("/about", (req, res) => {
-  res.render("about", {
-    active: { about: true }
   });
 });
 
