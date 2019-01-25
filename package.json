@@ -8,7 +8,7 @@
     "start": "node server"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "airtable": "^0.5.8",
     "express": "^4.16.4",
