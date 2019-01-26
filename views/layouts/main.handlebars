@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Dev Jobs Wales</title>
+  <title>Dev Wales</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:700|Open+Sans|Open+Sans:700|Open+Sans:600" rel="stylesheet">
   <style>
@@ -36,7 +36,7 @@
   <nav class="bg-red-dark px-4 py-3">
     <div class="container mx-auto flex items-center justify-between flex-wrap ">
       <div class="flex-no-shrink mr-6">
-        <img src="/static/logo.png" width="171" height="56" />
+        <img src="/static/logo-alt.png" width="124" height="56" />
       </div>
       <div class="block md:hidden">
         <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-red-lightest border-red-lighter hover:text-white hover:border-white">
@@ -74,10 +74,10 @@
     <div class="container mx-auto px-4">
       <div class="w-full flex flex-col sm:flex-row justify-between items-start sm:px-0">
         <div class="text-sm md:flex-grow">
-          <a href="/jobs" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.jobs}}text-white{{else}}text-grey{{/if}}">
+          <a href="/jobs" class="block no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.jobs}}text-white{{else}}text-grey{{/if}}">
             Jobs
           </a>
-          <a href="/companies" class="block no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.companies}}text-white{{else}}text-grey{{/if}}">
+          <a href="/companies" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.companies}}text-white{{else}}text-grey{{/if}}">
             Companies
           </a>
           <a href="/about" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-grey{{/if}}">
