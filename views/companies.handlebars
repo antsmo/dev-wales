@@ -100,8 +100,6 @@
 
 <script>
   const companies = {{{ json companies }}}
-  console.log(companies);
-
   function applySearchFilter(companies) {
     const value = document.getElementById("search").value;
     const filteredCompanies = companies.filter(function (company) {

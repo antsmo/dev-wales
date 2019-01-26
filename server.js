@@ -7,7 +7,8 @@ const exphbs = require("express-handlebars");
 var hbs = exphbs.create({
   defaultLayout: "main",
   helpers: {
-    json: data => JSON.stringify(data)
+    json: data => JSON.stringify(data),
+    analyticsId: () => process.env.DEV_WALES_ANALYTICS_ID
   }
 });
 
