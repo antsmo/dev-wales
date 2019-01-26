@@ -6,7 +6,7 @@ const jobsController = require("../controllers/jobsController");
 
 /* Routes */
 
-router.get("/", (req, res) => res.redirect("/jobs"));
+router.get("/", (req, res) => res.redirect("/companies"));
 
 router.get("/about", (req, res) => {
   res.render("about", {
