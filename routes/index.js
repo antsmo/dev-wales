@@ -25,7 +25,7 @@ router.get("/companies", (req, res) => {
   });
 });
 
-router.get("/company/:id", (req, res) => {
+router.get("/companies/:id", (req, res) => {
   const companyId = req.params.id;
   companiesController.getCompanies(companies => {
     jobsController.getJobs(jobs => {
