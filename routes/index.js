@@ -28,9 +28,14 @@ router.get("/companies", (req, res) => {
 router.get("/company/:id", (req, res) => {
   const companyId = req.params.id;
   companiesController.getCompanies(companies => {
-    const company = companies.find(company => company.id === companyId);
-    res.render("company-profile", {
-      company
+    jobsController.getJobs(jobs => {
+      const company = companies.find(company => company.id === companyId);
+      const matchedJobs = jobs.filter(job => job.companyId === company.id);
+      console.log(matchedJobs);
+      res.render("company-profile", {
+        company,
+        matchedJobs
+      });
     });
   });
 });

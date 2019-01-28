@@ -78,6 +78,9 @@
             <div class="w-full flex flex-col">
               <span class="text-black font-bold mb-2">{{this.name}}</span>
               <span class="text-grey-darker leading-normal">{{this.description}}</span>
+              {{#if this.jobIds}}
+              <span class="mt-2 text-red leading-normal">{{this.jobIds.length}} job opening(s)</span>
+              {{/if}}
             </div>
           </div>
         </a>
@@ -89,6 +92,7 @@
 
 <script>
   const companies = {{{ json companies }}}
+
   function applySearchFilter(companies) {
     const value = document.getElementById("search").value;
     const filteredCompanies = companies.filter(function (company) {
