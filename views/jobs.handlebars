@@ -20,6 +20,8 @@
         onkeyup="updateSearch(this)" autocomplete="off" />
     </div>
     <div class="w-full lg:w-3/4">
+      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">Showing <span id="result-count">{{jobs.length}}</span>
+        jobs</div>
       <div id="job-list">
         {{#each jobs}}
         <div class="flex flex-row items-center bg-white p-4 sm:p-6 mb-2 rounded shadow">
@@ -52,6 +54,8 @@
   function renderJobs(jobs) {
     const jobList = document.getElementById("job-list");
     jobList.innerHTML = "";
+    const resultCount = document.getElementById("result-count");
+    resultCount.innerHTML = jobs.length;
     if (jobs.length === 0) {
       jobList.innerHTML = "No jobs found"
       return;
@@ -60,32 +64,32 @@
       const logo = document.createElement("div");
       logo.classList = "w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain";
       logo.style = "background-image: url(" + job.company.logoUrl + ")";
-      
+
       const title = document.createElement("span");
       title.innerHTML = job.title;
       title.classList = "font-bold mb-2"
-      
+
       const company = document.createElement("span");
       company.innerHTML = job.company.name;
       company.classList = "text-grey-darker leading-normal";
-      
+
       const textContainer = document.createElement("div");
       textContainer.classList = "w-full flex flex-col";
       textContainer.appendChild(title);
       textContainer.appendChild(company);
-      
+
       const link = document.createElement("a");
       link.innerHTML = "View details";
       link.classList = "flex-no-shrink text-red";
       link.href = job.link;
       link.target = "_blank";
-      
+
       const card = document.createElement("div");
       card.classList = "flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow";
       card.appendChild(logo);
       card.appendChild(textContainer);
       card.appendChild(link);
-      
+
       jobList.appendChild(card);
     });
   }
