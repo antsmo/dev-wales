@@ -2,7 +2,8 @@
   <div class="container mx-auto flex justify-between px-4">
     <div class="w-full md:w-3/4 lg:w-1/2">
       <h1 class="text-black">The company index for developers in Wales</h1>
-      <p class="mt-4 text-lg text-grey-dark leading-normal">Tired of recruiters being the middle-man? Take back control of your career and find companies that are right for you.</p>
+      <p class="mt-4 text-lg text-grey-dark leading-normal">Tired of recruiters being the middle-man? Take back control
+        of your career and find companies that are right for you.</p>
       <p class="mt-6 text-grey-darker leading-normal">So far we've added <span class="font-bold">{{companies.length}}</span>
         companies from <span class="font-bold">{{locations.length}}</span>
         locations! 🎉</p>
@@ -72,24 +73,15 @@
         companies</div>
       <div id="company-list">
         {{#each companies}}
-        <div class="flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow">
-          <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain" style="background-image: url({{this.logoUrl}})"></div>
-          <div class="w-full flex flex-col">
-            <span class="text-black font-bold mb-2">{{this.name}}</span>
-            <span class="text-grey-darker leading-normal">{{this.description}}</span>
-            <div class="flex mt-2">
-              {{#if this.websiteUrl}}
-              <a class="mr-4 text-red" href="{{this.websiteUrl}}" target="_blank">Website</a>
-              {{/if}}
-              {{#if this.careersUrl}}
-              <a class="mr-4 text-red" href="{{this.careersUrl}}" target="_blank">Careers</a>
-              {{/if}}
-              {{#if this.emailAddress}}
-              <a class="mr-4 text-red" href="mailto:{{this.emailAddress}}" target="_blank">Contact</a>
-              {{/if}}
+        <a href="/company/{{this.id}}" class="no-underline">
+          <div class="flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow">
+            <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain" style="background-image: url({{this.logoUrl}})"></div>
+            <div class="w-full flex flex-col">
+              <span class="text-black font-bold mb-2">{{this.name}}</span>
+              <span class="text-grey-darker leading-normal">{{this.description}}</span>
             </div>
           </div>
-        </div>
+        </a>
         {{/each}}
       </div>
     </div>

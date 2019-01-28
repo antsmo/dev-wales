@@ -25,6 +25,16 @@ router.get("/companies", (req, res) => {
   });
 });
 
+router.get("/company/:id", (req, res) => {
+  const companyId = req.params.id;
+  companiesController.getCompanies(companies => {
+    const company = companies.find(company => company.id === companyId);
+    res.render("company-profile", {
+      company
+    });
+  });
+});
+
 router.get("/jobs", (req, res) => {
   jobsController.getJobs(jobs => {
     companiesController.getCompanies(companies => {
