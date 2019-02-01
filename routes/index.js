@@ -25,13 +25,20 @@ router.get("/companies", (req, res) => {
   });
 });
 
-router.get("/companies/:id", (req, res) => {
-  const companyId = req.params.id;
+router.get("/companies/:slug", (req, res) => {
+  const slug = req.params.slug;
   companiesController.getCompanies(companies => {
+    const company = companies.find(company => {
+      const companySlug = company.slug.replace("-", "");
+      const comparisonSlug = slug.replace("-", "");
+      return companySlug === comparisonSlug;
+    });
+    if (!company) {
+      res.sendStatus(404);
+      return
+    }
     jobsController.getJobs(jobs => {
-      const company = companies.find(company => company.id === companyId);
       const matchedJobs = jobs.filter(job => job.companyId === company.id);
-      console.log(matchedJobs);
       res.render("company-profile", {
         company,
         matchedJobs

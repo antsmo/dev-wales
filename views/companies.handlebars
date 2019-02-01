@@ -72,7 +72,7 @@
         companies</div>
       <div id="company-list">
         {{#each companies}}
-        <a href="/companies/{{this.id}}" class="no-underline">
+        <a href="/companies/{{this.slug}}" class="no-underline">
           <div class="flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow">
             <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain" style="background-image: url({{this.logoUrl}})"></div>
             <div class="w-full flex flex-col">
@@ -123,58 +123,40 @@
   function renderCompanies() {
     const companyList = document.getElementById("company-list");
     companyList.innerHTML = "";
-    if (companies.length === 0) {
+    filteredCompanies = applyFilters(companies);
+
+    if (filteredCompanies.length === 0) {
       companyList.innerHTML = "No companies found"
       return;
     }
-    filteredCompanies = applyFilters(companies);
+
     const resultCount = document.getElementById("result-count");
     resultCount.innerHTML = filteredCompanies.length;
+
     filteredCompanies.forEach(function (company) {
       const logo = document.createElement("div");
       logo.classList = "w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain";
       logo.style = "background-image: url(" + company.logoUrl + ")";
 
+      const textContainer = document.createElement("div");
+      textContainer.classList = "w-full flex flex-col";
+
       const name = document.createElement("span");
       name.innerHTML = company.name;
       name.classList = "text-black font-bold mb-2";
+      textContainer.appendChild(name);
 
       const description = document.createElement("span");
       description.innerHTML = company.description;
       description.classList = "text-grey-darker leading-normal";
-
-      const linksContainer = document.createElement("div");
-      linksContainer.classList = "flex mt-2";
-      if (company.websiteUrl) {
-        const website = document.createElement("a");
-        website.innerHTML = "Website";
-        website.classList = "mr-4 text-red";
-        website.href = company.websiteUrl;
-        website.target = "_blank";
-        linksContainer.appendChild(website);
-      }
-      if (company.careersUrl) {
-        const careers = document.createElement("a");
-        careers.innerHTML = "Careers";
-        careers.classList = "mr-4 text-red";
-        careers.href = company.careersUrl;
-        careers.target = "_blank";
-        linksContainer.appendChild(careers);
-      }
-      if (company.emailAddress) {
-        const contact = document.createElement("a");
-        contact.innerHTML = "Contact";
-        contact.classList = "mr-4 text-red";
-        contact.href = company.emailAddress;
-        contact.target = "_blank";
-        linksContainer.appendChild(contact);
-      }
-
-      const textContainer = document.createElement("div");
-      textContainer.classList = "w-full flex flex-col";
-      textContainer.appendChild(name);
       textContainer.appendChild(description);
-      textContainer.appendChild(linksContainer);
+
+      if (company.jobIds && company.jobIds.length > 0) {
+        const jobOpenings = document.createElement("span");
+        jobOpenings.innerHTML = company.jobIds.length + " job opening(s)";
+        jobOpenings.classList = "mt-2 text-red leading-normal";
+        textContainer.appendChild(jobOpenings);
+      }
 
       const card = document.createElement("div");
       card.classList = "flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow";

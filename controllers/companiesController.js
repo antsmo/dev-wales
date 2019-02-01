@@ -22,6 +22,7 @@ function processCompanyRecord(record) {
     emailAddress: record.get("email"),
     companyType: record.get("company_type"),
     careersUrl: record.get("careers_url"),
+    slug: record.get("slug"),
     logoUrl,
     jobIds: record.get("Jobs")
   };
