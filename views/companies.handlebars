@@ -1,24 +1,15 @@
-<div class="bg-grey-lighter py-16">
+<div class="bg-grey-lighter py-10 md:py-16">
   <div class="container mx-auto flex justify-between px-4">
     <div class="w-full md:w-3/4 lg:w-1/2">
-      <h1 class="text-black">The company index for developers in Wales</h1>
+      <h1 class="text-black">Companies for Developers in Wales</h1>
       <p class="mt-4 text-lg text-grey-dark leading-normal">Tired of recruiters being the middle-man? Take back control
         of your career and find companies that are right for you.</p>
 
-      <p class="mt-8 text-grey-darker leading-normal">So far we've added <span class="font-bold">{{companies.length}}</span>
+      <a href="/companies/add" target="_blank" class="inline-block px-4 py-3 leading-none no-underline rounded bg-red hover:bg-red-dark text-white mt-6">Add your company</a>
+
+      <p class="mt-6 text-grey-darker leading-normal">So far we've added <span class="font-bold">{{companies.length}}</span>
         companies from <span class="font-bold">{{locations.length}}</span>
         locations! 🎉</p>
-
-      {{!-- <label class="block tracking-wide text-grey-darker text-sm font-bold mt-8 mb-2" for="suggest-company">
-        Are we missing a company?
-      </label>
-      <div class="flex flex-col sm:flex-row mb-4">
-        <input id="suggest-company" type="text" name="search" placeholder="Company name..." class="flex-1 appearance-none block w-full bg-grey-lightest text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red"
-          onkeyup="updateSearch(this)" autocomplete="off" />
-        <button class="flex-no-shrink border border-red hover:bg-red text-red hover:text-white sm:ml-2 mt-2 sm:mt-0 py-2 px-4 rounded">
-          Add company
-        </button>
-      </div> --}}
     </div>
   </div>
 </div>

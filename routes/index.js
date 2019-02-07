@@ -8,6 +8,10 @@ const jobsController = require("../controllers/jobsController");
 
 router.get("/", (req, res) => res.redirect("/companies"));
 
+router.get("/companies/add", (req, res) =>
+  res.redirect("https://goo.gl/forms/4VviJZS8j6RArnsF2")
+);
+
 router.get("/about", (req, res) => {
   res.render("about", {
     active: { about: true }
@@ -35,7 +39,7 @@ router.get("/companies/:slug", (req, res) => {
     });
     if (!company) {
       res.sendStatus(404);
-      return
+      return;
     }
     jobsController.getJobs(jobs => {
       const matchedJobs = jobs.filter(job => job.companyId === company.id);
