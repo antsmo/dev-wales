@@ -24,8 +24,11 @@
         <div class="flex flex-row items-center bg-white p-4 sm:p-6 mb-2 rounded shadow">
           <div class="w-full flex flex-col">
             <span class="text-black font-bold mb-2">{{this.name}}</span>
-            <span class="text-grey-darker leading-normal">{{this.bio}}</span>
+            <span class="text-grey-darker leading-normal">{{this.topics}}</span>
           </div>
+          {{#preferredContact this}}
+          <a class="flex-no-shrink text-red" href="{{this.link}}" target="_blank">{{this.label}}</a>
+          {{/preferredContact}}
         </div>
         {{else}}
         <div class="my-4 text-lg leading-normal text-grey-dark">No speakers have been added yet 😩</div>

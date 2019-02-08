@@ -6,7 +6,9 @@ const cache = createCache();
 function processSpeakerRecord(record) {
   return {
     name: record.get("name"),
-    bio: record.get("bio")
+    topics: record.get("topics"),
+    preferredContact: record.get("preferred_contact"),
+    emailAddress: record.get("email_address")
   };
 }
 
@@ -33,6 +35,8 @@ function getSpeakers(callback) {
           console.log(err);
           return callback([]);
         }
+        cache.data = data;
+        cache.lastUpdated = Date.now();
         callback(data);
       }
     );

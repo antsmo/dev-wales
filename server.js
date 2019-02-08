@@ -8,7 +8,23 @@ var hbs = exphbs.create({
   defaultLayout: "main",
   helpers: {
     json: data => JSON.stringify(data),
-    analyticsId: () => process.env.DEV_WALES_ANALYTICS_ID
+    analyticsId: () => process.env.DEV_WALES_ANALYTICS_ID,
+    preferredContact: (data, options) => {
+      let link;
+      let label = "";
+      switch (data.preferredContact) {
+        case "email": {
+          link = "mailto:" + data.emailAddress;
+          label = "Contact via email"
+          break;
+        }
+        default:
+          link = "#";
+          label = "";
+          break;
+      }
+      return options.fn({ link, label });
+    }
   }
 });
 
