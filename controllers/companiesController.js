@@ -38,7 +38,9 @@ function fetchCompanies() {
       })
       .eachPage(
         function page(records, fetchNextPage) {
-          data = records.map(processCompanyRecord);
+          records.forEach(record => {
+            data.push(processCompanyRecord(record));
+          });
           fetchNextPage();
         },
         function done(err) {
@@ -58,11 +60,16 @@ function getCompanies(callback) {
     return callback(cache.data);
   }
   console.log("Refreshing companies cache");
-  fetchCompanies().then(data => {
-    cache.data = data;
-    cache.lastUpdated = Date.now();
-    callback(data);
-  });
+  fetchCompanies()
+    .then(data => {
+      cache.data = data;
+      cache.lastUpdated = Date.now();
+      callback(data);
+    })
+    .catch(error => {
+      console.log("Something went wrong fetching companies");
+      console.log(error);
+    });
 }
 
 module.exports = {

@@ -13,19 +13,18 @@ function fetchJobs() {
       })
       .eachPage(
         function page(records, fetchNextPage) {
-          data = records.map(record => {
-            return {
+          records.forEach(record => {
+            data.push({
               title: record.get("title"),
               link: record.get("link"),
               companyId: record.get("company_id")[0]
-            };
+            });
           });
           fetchNextPage();
         },
         function done(err) {
           if (err) {
-            reject(err);
-            return;
+            return reject(err);
           }
           resolve(data);
         }
@@ -40,11 +39,16 @@ function getJobs(callback) {
     return;
   }
   console.log("Refreshing jobs cache");
-  fetchJobs().then(data => {
-    cache.data = data;
-    cache.lastUpdated = Date.now();
-    callback(data);
-  });
+  fetchJobs()
+    .then(data => {
+      cache.data = data;
+      cache.lastUpdated = Date.now();
+      callback(data);
+    })
+    .catch(error => {
+      console.log("Something went wrong fetching jobs");
+      console.log(error);
+    });
 }
 
 module.exports = {
