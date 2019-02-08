@@ -17,7 +17,7 @@ function getSpeakers(callback) {
   }
   console.log("Refreshing speakers cache");
   let data = [];
-  db("speakers")
+  db("Speakers")
     .select({
       view: "Grid view",
       sort: [{ field: "name", direction: "asc" }]
