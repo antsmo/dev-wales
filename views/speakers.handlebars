@@ -1,0 +1,37 @@
+<div class="bg-grey-lighter py-10 md:py-16">
+  <div class="container mx-auto px-4">
+    <div class="w-full md:w-3/4 lg:w-1/2">
+      <h1 class="text-black">Event Speakers</h1>
+      <p class="mt-4 text-lg leading-normal text-grey-dark">We're building a list of speakers who can give talks at
+        meetups, conferences or other events.</p>
+      <p class="mt-4 text-lg leading-normal text-grey-dark">If you're a speaker then join the list so that event
+        organisers can reach out to you.</p>
+      <a href="/speakers/add" target="_blank"
+        class="inline-block px-4 py-3 leading-none no-underline rounded bg-red hover:bg-red-dark text-white mt-6">Join
+        the list</a>
+    </div>
+  </div>
+</div>
+
+<div class="py-8">
+  <div class="container mx-auto px-4 flex flex-col lg:flex-row">
+    <div class="w-full lg:w-1/2">
+      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">Showing <span
+          id="result-count">{{speakers.length}}</span>
+        speakers</div>
+      <div id="speakers-list">
+        {{#each speakers}}
+        <div class="flex flex-row items-center bg-white p-4 sm:p-6 mb-2 rounded shadow">
+          <div class="w-full flex flex-col">
+            <span class="text-black font-bold mb-2">{{this.name}}</span>
+            <span class="text-grey-darker leading-normal">{{this.bio}}</span>
+          </div>
+        </div>
+        {{else}}
+        <div class="my-4 text-lg leading-normal text-grey-dark">No speakers have been added yet 😩</div>
+        <a href="/speakers/add" class="text-red">Click here to join the list</a>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

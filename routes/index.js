@@ -3,13 +3,16 @@ const router = express.Router();
 
 const companiesController = require("../controllers/companiesController");
 const jobsController = require("../controllers/jobsController");
+const speakersController = require("../controllers/speakersController");
 
 /* Routes */
 
 router.get("/", (req, res) => res.redirect("/companies"));
-
 router.get("/companies/add", (req, res) =>
   res.redirect("https://goo.gl/forms/4VviJZS8j6RArnsF2")
+);
+router.get("/speakers/add", (req, res) =>
+  res.redirect("https://goo.gl/forms/W99i7kPozmW4LLEF2")
 );
 
 router.get("/about", (req, res) => {
@@ -59,6 +62,15 @@ router.get("/jobs", (req, res) => {
         active: { jobs: true },
         jobs
       });
+    });
+  });
+});
+
+router.get("/speakers", (req, res) => {
+  speakersController.getSpeakers(speakers => {
+    res.render("speakers", {
+      active: { speakers: true },
+      speakers
     });
   });
 });
