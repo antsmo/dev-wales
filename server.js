@@ -2,6 +2,16 @@ const express = require("express");
 const app = express();
 const exphbs = require("express-handlebars");
 
+const logsController = require("./controllers/logsController");
+
+app.use(function(req, res, next) {
+  logsController.createLog({
+    route: req.url,
+    ip: req.headers['x-forwarded-for'] || req.connection.remoteAddress
+  });
+  next();
+});
+
 /* Setup templating */
 
 var hbs = exphbs.create({
@@ -15,7 +25,7 @@ var hbs = exphbs.create({
       switch (data.preferredContact) {
         case "email": {
           link = "mailto:" + data.emailAddress;
-          label = "Contact via email"
+          label = "Contact via email";
           break;
         }
         default:
