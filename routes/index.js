@@ -4,24 +4,29 @@ const router = express.Router();
 const companiesController = require("../controllers/companiesController");
 const jobsController = require("../controllers/jobsController");
 const speakersController = require("../controllers/speakersController");
+const logsController = require("../controllers/logsController");
 
 /* Routes */
 
 router.get("/", (req, res) => res.redirect("/companies"));
-router.get("/companies/add", (req, res) =>
-  res.redirect("https://goo.gl/forms/4VviJZS8j6RArnsF2")
-);
-router.get("/speakers/add", (req, res) =>
+router.get("/companies/add", (req, res) => {
+  logsController.logRequest(req);
+  res.redirect("https://goo.gl/forms/4VviJZS8j6RArnsF2");
+});
+router.get("/speakers/add", (req, res) => {
+  logsController.logRequest(req);
   res.redirect("https://goo.gl/forms/W99i7kPozmW4LLEF2")
-);
+});
 
 router.get("/about", (req, res) => {
+  logsController.logRequest(req);
   res.render("about", {
     active: { about: true }
   });
 });
 
 router.get("/companies", (req, res) => {
+  logsController.logRequest(req);
   companiesController.getCompanies(companies => {
     const locations = getUniqueLocations(companies);
     res.render("companies", {
@@ -33,6 +38,7 @@ router.get("/companies", (req, res) => {
 });
 
 router.get("/companies/:slug", (req, res) => {
+  logsController.logRequest(req);
   const slug = req.params.slug;
   companiesController.getCompanies(companies => {
     const company = companies.find(company => {
@@ -55,6 +61,7 @@ router.get("/companies/:slug", (req, res) => {
 });
 
 router.get("/jobs", (req, res) => {
+  logsController.logRequest(req);
   jobsController.getJobs(jobs => {
     companiesController.getCompanies(companies => {
       jobs = hydrateCompaniesInJobs(companies, jobs);
@@ -67,6 +74,7 @@ router.get("/jobs", (req, res) => {
 });
 
 router.get("/speakers", (req, res) => {
+  logsController.logRequest(req);
   speakersController.getSpeakers(speakers => {
     res.render("speakers", {
       active: { speakers: true },

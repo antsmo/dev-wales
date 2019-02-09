@@ -2,16 +2,6 @@ const express = require("express");
 const app = express();
 const exphbs = require("express-handlebars");
 
-const logsController = require("./controllers/logsController");
-
-app.use(function(req, res, next) {
-  logsController.createLog({
-    route: req.url,
-    ip: req.connection.remoteAddress
-  });
-  next();
-});
-
 /* Setup templating */
 
 var hbs = exphbs.create({
