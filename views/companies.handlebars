@@ -5,9 +5,12 @@
       <p class="mt-4 text-lg text-grey-dark leading-normal">Tired of recruiters being the middle-man? Take back control
         of your career and find companies that are right for you.</p>
 
-      <a href="/companies/add" target="_blank" class="inline-block px-4 py-3 leading-none no-underline rounded bg-red hover:bg-red-dark text-white mt-6">Add your company</a>
+      <a href="/companies/add" target="_blank"
+        class="inline-block px-4 py-3 leading-none no-underline rounded bg-red hover:bg-red-dark text-white mt-6">Add
+        your company</a>
 
-      <p class="mt-6 text-grey-darker leading-normal">So far we've added <span class="font-bold">{{companies.length}}</span>
+      <p class="mt-6 text-grey-darker leading-normal">So far we've added <span
+          class="font-bold">{{companies.length}}</span>
         companies from <span class="font-bold">{{locations.length}}</span>
         locations! 🎉</p>
     </div>
@@ -20,7 +23,8 @@
       <label class="block tracking-wide text-grey-darker text-sm font-bold mb-2" for="search">
         Search
       </label>
-      <input id="search" type="text" name="search" placeholder="Company name..." class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red"
+      <input id="search" type="text" name="search" placeholder="Company name..."
+        class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red"
         onkeyup="renderCompanies()" autocomplete="off" />
 
       <div class="hidden lg:block">
@@ -28,7 +32,8 @@
           Location
         </label>
         <div class="mb-6 relative">
-          <select class="block appearance-none w-full bg-white border border-grey-light text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-red"
+          <select
+            class="block appearance-none w-full bg-white border border-grey-light text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-red"
             id="location" onchange="renderCompanies()" autocomplete="off">
             <option value="">All</option>
             {{#each locations}}
@@ -45,7 +50,8 @@
           Company type
         </label>
         <div class="mb-6 relative">
-          <select id="company-type" class="block appearance-none w-full bg-white border border-grey-light text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-red"
+          <select id="company-type"
+            class="block appearance-none w-full bg-white border border-grey-light text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-red"
             onchange="renderCompanies()" autocomplete="off">
             <option value="">All</option>
             <option value="Product or Service">Product or Service</option>
@@ -56,16 +62,19 @@
               <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
           </div>
         </div>
+        <button class="text-red underline cursor-pointer" onclick="clearFilters();">Clear filters</button>
       </div>
     </div>
     <div class="w-full lg:w-3/4">
-      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">Showing <span id="result-count">{{companies.length}}</span>
+      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">Showing <span
+          id="result-count">{{companies.length}}</span>
         companies</div>
       <div id="company-list">
         {{#each companies}}
         <a href="/companies/{{this.slug}}" class="no-underline">
           <div class="flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow">
-            <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain" style="background-image: url({{this.logoUrl}})"></div>
+            <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain"
+              style="background-image: url({{this.logoUrl}})"></div>
             <div class="w-full flex flex-col">
               <span class="text-black font-bold mb-2">{{this.name}}</span>
               <span class="text-grey-darker leading-normal">{{this.description}}</span>
@@ -111,18 +120,28 @@
     return filteredCompanies;
   }
 
+  function clearFilters() {
+    document.getElementById("search").value = "";
+    document.getElementById("location").value = "";
+    document.getElementById("company-type").value = "";
+    renderCompanies();
+  }
+
   function renderCompanies() {
     const companyList = document.getElementById("company-list");
     companyList.innerHTML = "";
     filteredCompanies = applyFilters(companies);
 
-    if (filteredCompanies.length === 0) {
-      companyList.innerHTML = "No companies found"
-      return;
-    }
-
     const resultCount = document.getElementById("result-count");
     resultCount.innerHTML = filteredCompanies.length;
+
+    if (filteredCompanies.length === 0) {
+      const emptyMessage = document.createElement("div");
+      emptyMessage.innerHTML = "Sorry, we couldn't find any matching companies."
+      emptyMessage.classList = "text-grey-dark my-4"
+      companyList.appendChild(emptyMessage);
+      return;
+    }
 
     filteredCompanies.forEach(function (company) {
       const logo = document.createElement("div");
@@ -154,7 +173,12 @@
       card.appendChild(logo);
       card.appendChild(textContainer);
 
-      companyList.appendChild(card);
+      const link = document.createElement("a");
+      link.classList = "no-underline";
+      link.href = "/companies/" + company.slug;
+      link.appendChild(card);
+
+      companyList.appendChild(link);
     });
   }
 </script>

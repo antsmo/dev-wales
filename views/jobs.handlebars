@@ -16,22 +16,27 @@
       <label class="block tracking-wide text-grey-darker text-sm font-bold mb-2" for="grid-last-name">
         Search
       </label>
-      <input id="search-input" type="text" name="search" placeholder="Job title..." class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red"
-        onkeyup="updateSearch(this)" autocomplete="off" />
+      <input id="search" type="text" name="search" placeholder="Job title..."
+        class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red"
+        onkeyup="updateSearch();" autocomplete="off" />
+      <button class="text-red underline cursor-pointer" onclick="clearFilters();">Clear filters</button>
     </div>
-    <div class="w-full lg:w-3/4">
-      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">Showing <span id="result-count">{{jobs.length}}</span>
+    <div class="w-full lg:w-1/2">
+      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">Showing <span
+          id="result-count">{{jobs.length}}</span>
         jobs</div>
       <div id="job-list">
         {{#each jobs}}
-        <div class="flex flex-row items-center bg-white p-4 sm:p-6 mb-2 rounded shadow">
-          <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain" style="background-image: url({{this.company.logoUrl}})"></div>
-          <div class="w-full flex flex-col">
-            <span class="text-black font-bold mb-2">{{this.title}}</span>
-            <span class="text-grey-darker leading-normal">at {{this.company.name}}</span>
+        <a href="{{this.link}}" class="no-underline" target="_blank">
+          <div class="flex flex-row items-center bg-white p-4 sm:p-6 mb-2 rounded shadow">
+            <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain"
+              style="background-image: url({{this.company.logoUrl}})"></div>
+            <div class="w-full flex flex-col">
+              <span class="text-black font-bold mb-2">{{this.title}}</span>
+              <span class="text-grey-darker leading-normal">at {{this.company.name}}</span>
+            </div>
           </div>
-          <a class="flex-no-shrink text-red" href="{{this.link}}" target="_blank">View details</a>
-        </div>
+        </a>
         {{/each}}
       </div>
     </div>
@@ -41,8 +46,8 @@
 <script>
   const jobs = {{{ json jobs }}};
 
-  function updateSearch(input) {
-    const value = input.value;
+  function updateSearch() {
+    const value = document.getElementById("search").value;
     const filteredJobs = jobs.filter(function (job) {
       const jobTitle = job.title.toLowerCase();
       const query = value.toLowerCase();
@@ -51,13 +56,23 @@
     renderJobs(filteredJobs);
   }
 
+  function clearFilters() {
+    document.getElementById("search").value = "";
+    updateSearch();
+  }
+
   function renderJobs(jobs) {
     const jobList = document.getElementById("job-list");
     jobList.innerHTML = "";
+
     const resultCount = document.getElementById("result-count");
     resultCount.innerHTML = jobs.length;
+
     if (jobs.length === 0) {
-      jobList.innerHTML = "No jobs found"
+      const emptyMessage = document.createElement("div");
+      emptyMessage.innerHTML = "Sorry, we couldn't find any matching jobs."
+      emptyMessage.classList = "text-grey-dark my-4"
+      jobList.appendChild(emptyMessage);
       return;
     }
     jobs.forEach(function (job) {
@@ -67,7 +82,7 @@
 
       const title = document.createElement("span");
       title.innerHTML = job.title;
-      title.classList = "font-bold mb-2"
+      title.classList = "text-black font-bold mb-2"
 
       const company = document.createElement("span");
       company.innerHTML = job.company.name;
@@ -78,19 +93,18 @@
       textContainer.appendChild(title);
       textContainer.appendChild(company);
 
-      const link = document.createElement("a");
-      link.innerHTML = "View details";
-      link.classList = "flex-no-shrink text-red";
-      link.href = job.link;
-      link.target = "_blank";
-
       const card = document.createElement("div");
       card.classList = "flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow";
       card.appendChild(logo);
       card.appendChild(textContainer);
-      card.appendChild(link);
 
-      jobList.appendChild(card);
+      const link = document.createElement("a");
+      link.classList = "no-underline";
+      link.href = job.link;
+      link.target = "_blank";
+      link.appendChild(card);
+
+      jobList.appendChild(link);
     });
   }
 </script>
