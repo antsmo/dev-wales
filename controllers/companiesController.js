@@ -1,5 +1,5 @@
 const db = require("../db");
-const { createCache, isCacheValid } = require("../utils/cache");
+const { createCache, isCacheValid } = require("../lib/cache");
 
 const cache = createCache();
 
