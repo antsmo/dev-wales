@@ -33,10 +33,10 @@ app.set("view engine", "handlebars");
 
 /* Routing */
 
-const router = require("./routes/index");
+const appRouter = require("./routes/index");
 
+app.use("/", appRouter);
 app.use("/static", express.static("public"));
-app.use("/", router);
 
 /* Start server */
 
