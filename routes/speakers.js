@@ -1,12 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-const speakersController = require("../controllers/speakersController");
-const logsController = require("../controllers/logsController");
+const speakersApi = require("../lib/api/speakers");
+const logsApi = require("../lib/api/logs");
 
 router.get("/", (req, res) => {
-  logsController.logRequest(req);
-  speakersController.getSpeakers(speakers => {
+  logsApi.logRequest(req);
+  speakersApi.getSpeakers(speakers => {
     res.render("speakers", {
       active: { speakers: true },
       speakers
@@ -15,7 +15,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/add", (req, res) => {
-  logsController.logRequest(req);
+  logsApi.logRequest(req);
   res.redirect("https://goo.gl/forms/W99i7kPozmW4LLEF2");
 });
 

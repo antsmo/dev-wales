@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
 
-const logsController = require("../controllers/logsController");
+const logsApi = require("../lib/api/logs");
 
 router.get("/", (req, res) => {
-  logsController.logRequest(req);
+  logsApi.logRequest(req);
   res.render("about", {
     active: { about: true }
   });

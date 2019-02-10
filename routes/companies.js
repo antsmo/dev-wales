@@ -1,13 +1,13 @@
 const express = require("express");
 const router = express.Router();
 
-const companiesController = require("../controllers/companiesController");
-const jobsController = require("../controllers/jobsController");
-const logsController = require("../controllers/logsController");
+const companiesApi = require("../lib/api/companies");
+const jobsApi = require("../lib/api/jobs");
+const logsApi = require("../lib/api/logs");
 
 router.get("/", (req, res) => {
-  logsController.logRequest(req);
-  companiesController.getCompanies(companies => {
+  logsApi.logRequest(req);
+  companiesApi.getCompanies(companies => {
     const locations = getUniqueLocations(companies);
     res.render("companies", {
       active: { companies: true },
@@ -18,9 +18,9 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:slug", (req, res) => {
-  logsController.logRequest(req);
+  logsApi.logRequest(req);
   const slug = req.params.slug;
-  companiesController.getCompanies(companies => {
+  companiesApi.getCompanies(companies => {
     const company = companies.find(company => {
       const companySlug = company.slug.replace("-", "");
       const comparisonSlug = slug.replace("-", "");
@@ -30,7 +30,7 @@ router.get("/:slug", (req, res) => {
       res.sendStatus(404);
       return;
     }
-    jobsController.getJobs(jobs => {
+    jobsApi.getJobs(jobs => {
       const matchedJobs = jobs.filter(job => job.companyId === company.id);
       res.render("company-profile", {
         company,
@@ -41,7 +41,7 @@ router.get("/:slug", (req, res) => {
 });
 
 router.get("/add", (req, res) => {
-  logsController.logRequest(req);
+  logsApi.logRequest(req);
   res.redirect("https://goo.gl/forms/4VviJZS8j6RArnsF2");
 });
 
