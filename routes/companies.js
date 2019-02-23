@@ -49,12 +49,14 @@ module.exports = router;
 
 /* Utils */
 
-function getUniqueLocations(array) {
-  const locations = array.reduce((locations, item) => {
-    const location = item.location;
-    if (!locations.has(location)) {
-      locations.add(location);
-    }
+function getUniqueLocations(companies) {
+  const locations = companies.reduce((locations, company) => {
+    const locationArr = company.locations;
+    locationArr.forEach(location => {
+      if (!locations.has(location)) {
+        locations.add(location);
+      }
+    });
     return locations;
   }, new Set());
   const sortedLocations = [...locations].sort((a, b) => {
