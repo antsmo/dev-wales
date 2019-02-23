@@ -24,6 +24,20 @@ var hbs = exphbs.create({
           break;
       }
       return options.fn({ link, label });
+    },
+    arrayToListString: data => {
+      if (!data || data.length === 0) return "-";
+      let string = "";
+      data.forEach((item, i) => {
+        if (i === 0) {
+          string += item;
+        } else if (i === data.length - 1) {
+          string += ` & ${item}`;
+        } else {
+          string += `, ${item}`;
+        }
+      });
+      return string;
     }
   }
 });
