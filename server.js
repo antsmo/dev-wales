@@ -32,7 +32,7 @@ var hbs = exphbs.create({
         if (i === 0) {
           string += item;
         } else if (i === data.length - 1) {
-          string += ` & ${item}`;
+          string += ` and ${item}`;
         } else {
           string += `, ${item}`;
         }
