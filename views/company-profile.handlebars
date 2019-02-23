@@ -15,21 +15,21 @@
     <div class="w-full md:w-1/2 lg:w-2/3 flex flex-row flex-wrap">
       <div class="w-full lg:w-1/2">
         <h4 class="mb-2">Location</h4>
-        <span>{{company.location}}<span>
+        <span>{{arrayToListString company.locations}}</span>
 
-            <h4 class="mb-2 mt-12">Website</h4>
-            {{#if company.websiteUrl}}
-            <a href="{{company.websiteUrl}}" class="text-red" target="_blank">{{company.websiteUrl}}</a>
-            {{else}}
-            <span class="text-grey-dark">No website</span>
-            {{/if}}
+        <h4 class="mb-2 mt-12">Website</h4>
+        {{#if company.websiteUrl}}
+        <a href="{{company.websiteUrl}}" class="text-red" target="_blank">{{company.websiteUrl}}</a>
+        {{else}}
+        <span class="text-grey-dark">No website</span>
+        {{/if}}
 
-            <h4 class="mt-12 mb-2">Careers</h4>
-            {{#if company.careersUrl}}
-            <a href="{{company.careersUrl}}" class="text-red" target="_blank">{{company.careersUrl}}</a>
-            {{else}}
-            <span class="text-grey-dark">No careers site</span>
-            {{/if}}
+        <h4 class="mt-12 mb-2">Careers</h4>
+        {{#if company.careersUrl}}
+        <a href="{{company.careersUrl}}" class="text-red" target="_blank">{{company.careersUrl}}</a>
+        {{else}}
+        <span class="text-grey-dark">No careers site</span>
+        {{/if}}
       </div>
 
       <div class="w-full lg:w-1/2">
@@ -67,4 +67,6 @@
   <script>
     const company = {{{ json company }}}
     const matchedJobs = {{{ json matchedJobs }}}
+
+    console.log(company);
   </script>
