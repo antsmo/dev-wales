@@ -93,30 +93,33 @@
 <script>
   const companies = {{{ json companies }}}
 
-  function applySearchFilter(companies) {
-    const value = document.getElementById("search").value;
+  function applySearchFilter(query, companies) {
+    if (query === "") return companies;
     const filteredCompanies = companies.filter(function (company) {
       const companyName = company.name.toLowerCase();
-      const query = value.toLowerCase();
-      return companyName.indexOf(query) >= 0;
+      const value = query.toLowerCase();
+      return companyName.indexOf(value) >= 0;
     });
     return filteredCompanies;
   }
 
+  function applyLocationFilter(location, companies) {
+    if (location === "") return companies;
+    return companies.filter(company => company.locations.includes(location))
+  }
+
+  function applyCompanyTypeFilter(companyType, companies) {
+    if (companyType === "") return companies;
+    return companies.filter(company => company.companyType === companyType);
+  }
+
   function applyFilters(companies) {
-    let filteredCompanies = applySearchFilter(companies);
-    const filters = {
-      location: document.getElementById("location").value,
-      companyType: document.getElementById("company-type").value
-    }
-    filteredCompanies = Object.keys(filters).reduce(function (companies, filter) {
-      const value = filters[filter];
-      if (value === "") return companies;
-      companies = companies.filter(function (company) {
-        return company[filter] === value;
-      });
-      return companies;
-    }, filteredCompanies);
+    const searchQuery = document.getElementById("search").value;
+    const location = document.getElementById("location").value;
+    const companyType = document.getElementById("company-type").value;
+    let filteredCompanies = applySearchFilter(searchQuery, companies);
+    filteredCompanies = applyLocationFilter(location, filteredCompanies);
+    filteredCompanies = applyCompanyTypeFilter(companyType, filteredCompanies);
     return filteredCompanies;
   }
 
