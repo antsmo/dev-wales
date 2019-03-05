@@ -13,6 +13,7 @@
   "dependencies": {
     "airtable": "^0.5.8",
     "express": "^4.16.4",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "moment": "^2.24.0"
   }
 }

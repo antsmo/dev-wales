@@ -32,8 +32,9 @@
             <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain"
               style="background-image: url({{this.company.logoUrl}})"></div>
             <div class="w-full flex flex-col">
-              <span class="text-black font-bold mb-2">{{this.title}}</span>
-              <span class="text-grey-darker leading-normal">at {{this.company.name}}</span>
+              <span class="text-black font-bold mb-1">{{this.title}}</span>
+              <span class="text-grey-darker leading-normal mb-2">at {{this.company.name}}</span>
+              <span class="text-grey-darker leading-normal text-xs">posted {{this.timeSince}}</span>
             </div>
           </div>
         </a>
