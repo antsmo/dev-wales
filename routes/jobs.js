@@ -18,6 +18,14 @@ router.get("/", (req, res) => {
   });
 });
 
+router.get("/add", (req, res) => {
+  // TODO: Write this endpoint
+})
+
+router.post("/add", (req, res) => {
+  // TODO: Write this endpoint
+})
+
 module.exports = router;
 
 /* Utils */
