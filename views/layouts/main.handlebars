@@ -52,7 +52,8 @@
         </a>
       </div>
       <div class="block md:hidden">
-        <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-red-lightest border-red-lighter hover:text-white hover:border-white">
+        <button id="nav-toggle"
+          class="flex items-center px-3 py-2 border rounded text-red-lightest border-red-lighter hover:text-white hover:border-white">
           <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -61,16 +62,22 @@
       </div>
       <div id="nav-items" class="w-full flex-grow hidden md:block md:flex md:items-center md:w-auto">
         <div class="text-sm md:flex-grow">
-          <a href="/companies" class="block mt-4 no-underline md:inline-block md:mt-0 hover:text-white mr-4 {{#if active.companies}}text-white{{else}}text-red-lighter{{/if}}" tabindex="0">
+          <a href="/companies"
+            class="block mt-4 no-underline md:inline-block md:mt-0 hover:text-white mr-4 {{#if active.companies}}text-white{{else}}text-red-lighter{{/if}}"
+            tabindex="0">
             Companies
           </a>
           {{!-- <a href="/jobs" class="block mt-4 no-underline md:inline-block md:mt-0 hover:text-white mr-4 {{#if active.jobs}}text-white{{else}}text-red-lighter{{/if}}" tabindex="0">
             Jobs
           </a> --}}
-          <a href="/speakers" class="block mt-4 no-underline md:inline-block md:mt-0 hover:text-white mr-4 {{#if active.speakers}}text-white{{else}}text-red-lighter{{/if}}" tabindex="0">
+          <a href="/speakers"
+            class="block mt-4 no-underline md:inline-block md:mt-0 hover:text-white mr-4 {{#if active.speakers}}text-white{{else}}text-red-lighter{{/if}}"
+            tabindex="0">
             Speakers
           </a>
-          <a href="/about" class="block mt-4 no-underline md:inline-block md:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-red-lighter{{/if}}" tabindex="0">
+          <a href="/about"
+            class="block mt-4 no-underline md:inline-block md:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-red-lighter{{/if}}"
+            tabindex="0">
             About
           </a>
         </div>
@@ -82,6 +89,13 @@
     </div>
   </nav>
 
+  <div class="bg-red-lightest border-b border-red text-red-dark px-4 py-3" role="alert">
+    <div class="container mx-auto px-4">
+      <p class="text-sm"><strong>Jobs are unavailable</strong> - I've decided to temporarily remove the jobs section while I figure out a more sustainable way to manage
+        them, please accept my apologies.</p>
+    </div>
+  </div>
+
   <main class="bg-grey-lightest">
     {{{ body }}}
   </main>
@@ -90,25 +104,31 @@
     <div class="container mx-auto px-4">
       <div class="w-full flex flex-col sm:flex-row justify-between items-start sm:px-0">
         <div class="text-sm md:flex-grow">
-          <a href="/companies" class="block no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.companies}}text-white{{else}}text-grey{{/if}}">
+          <a href="/companies"
+            class="block no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.companies}}text-white{{else}}text-grey{{/if}}">
             Companies
           </a>
           {{!-- <a href="/jobs" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.jobs}}text-white{{else}}text-grey{{/if}}">
             Jobs
           </a> --}}
-          <a href="/about" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-grey{{/if}}">
+          <a href="/speakers"
+            class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.speakers}}text-white{{else}}text-grey{{/if}}">
+            Speakers
+          </a>
+          <a href="/about"
+            class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-grey{{/if}}">
             About
           </a>
         </div>
         <div>
           <div class="text-sm flex flex-col md:flex-row sm:items-end">
-            <a class="flex items-center text-grey hover:text-white no-underline mt-8 sm:mt-0" href="https://github.com/MyGuySi/dev-wales"
-              target="_blank">
+            <a class="flex items-center text-grey hover:text-white no-underline mt-8 sm:mt-0"
+              href="https://github.com/MyGuySi/dev-wales" target="_blank">
               <span class="mr-2">Open-sourced on GitHub</span>
               <img class="opacity-50" src="/static/github.svg" alt="GitHub logo" width="24" height="24" />
             </a>
-            <a class="flex items-center text-grey hover:text-white no-underline md:ml-8 mt-4 md:mt-0" href="https://twitter.com/myguysi"
-              target="_blank">
+            <a class="flex items-center text-grey hover:text-white no-underline md:ml-8 mt-4 md:mt-0"
+              href="https://twitter.com/myguysi" target="_blank">
               <span class="mr-2">Built by Simon Anthony</span>
               <img class="opacity-50" src="/static/twitter.svg" alt="Twitter logo" width="25" height="20" />
             </a>
