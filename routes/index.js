@@ -14,7 +14,7 @@ router.get("/", (req, res) => res.redirect("/companies"));
 
 router.use("/about", aboutRouter);
 router.use("/companies", companiesRouter);
-router.use("/jobs", jobsRouter);
+// router.use("/jobs", jobsRouter);
 router.use("/speakers", speakersRouter);
 
 module.exports = router;
