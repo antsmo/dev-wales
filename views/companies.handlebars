@@ -5,7 +5,7 @@
       <p class="mt-4 text-lg text-grey-dark leading-normal">Tired of recruiters being the middle-man? Take back control
         of your career and find companies that are right for you.</p>
 
-      <a href="/companies/add" target="_blank"
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBgF-wPRtERRqpKKYH6-7cA-VBJ20okEGtVTlC-T-DtC-UFg/viewform?usp=sf_link" target="_blank"
         class="inline-block px-4 py-3 leading-none no-underline rounded bg-red hover:bg-red-dark text-white mt-6">Add
         your company</a>
 
@@ -78,9 +78,9 @@
             <div class="w-full flex flex-col">
               <span class="text-black font-bold mb-2">{{this.name}}</span>
               <span class="text-grey-darker leading-normal">{{this.description}}</span>
-              {{#if this.jobIds}}
+              {{!-- {{#if this.jobIds}}
               <span class="mt-2 text-red leading-normal">{{this.jobIds.length}} job opening(s)</span>
-              {{/if}}
+              {{/if}} --}}
             </div>
           </div>
         </a>
@@ -164,12 +164,12 @@
       description.classList = "text-grey-darker leading-normal";
       textContainer.appendChild(description);
 
-      if (company.jobIds && company.jobIds.length > 0) {
-        const jobOpenings = document.createElement("span");
-        jobOpenings.innerHTML = company.jobIds.length + " job opening(s)";
-        jobOpenings.classList = "mt-2 text-red leading-normal";
-        textContainer.appendChild(jobOpenings);
-      }
+//      if (company.jobIds && company.jobIds.length > 0) {
+//        const jobOpenings = document.createElement("span");
+//        jobOpenings.innerHTML = company.jobIds.length + " job opening(s)";
+//        jobOpenings.classList = "mt-2 text-red leading-normal";
+//        textContainer.appendChild(jobOpenings);
+//      }
 
       const card = document.createElement("div");
       card.classList = "flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow";
