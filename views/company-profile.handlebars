@@ -21,14 +21,14 @@
         {{#if company.websiteUrl}}
         <a href="{{company.websiteUrl}}" class="text-red leading-normal" target="_blank">{{company.websiteUrl}}</a>
         {{else}}
-        <span class="text-grey-dark leading-normal">No website</span>
+        <span class="text-grey-dark leading-normal">-</span>
         {{/if}}
 
         <h4 class="mt-12 mb-2">Careers</h4>
         {{#if company.careersUrl}}
         <a href="{{company.careersUrl}}" class="text-red leading-normal" target="_blank">{{company.careersUrl}}</a>
         {{else}}
-        <span class="text-grey-dark leading-normal">No careers site</span>
+        <span class="text-grey-dark leading-normal">-</span>
         {{/if}}
       </div>
 
@@ -37,19 +37,19 @@
         {{#if company.emailAddress}}
         <a href="{{company.emailAddress}}" class="text-red leading-normal" target="_blank">{{company.emailAddress}}</a>
         {{else}}
-        <span class="text-grey-dark leading-normal">No contact email</span>
+        <span class="text-grey-dark leading-normal">-</span>
         {{/if}}
 
         <h4 class="mt-12 mb-2">Twitter</h4>
         {{#if company.twitterUrl}}
         <a href="{{company.twitterUrl}}" class="text-red leading-normal" target="_blank">{{company.twitterUrl}}</a>
         {{else}}
-        <span class="text-grey-dark leading-normal">No twitter profile</span>
+        <span class="text-grey-dark leading-normal">-</span>
         {{/if}}
       </div>
     </div>
 
-    <div class="w-full md:w-1/3">
+    {{!-- <div class="w-full md:w-1/3">
       <h4 class="mb-2 mt-12 md:mt-0">Current job openings</h4>
       <ul class="list-reset">
         {{#each matchedJobs}}
@@ -61,7 +61,7 @@
         <p class="text-grey-dark leading-normal">Why not try contacting them to find out!</p>
         {{/each}}
       </ul>
-    </div>
+    </div> --}}
   </div>
 
   <script>
