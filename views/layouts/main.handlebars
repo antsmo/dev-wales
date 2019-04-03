@@ -86,35 +86,24 @@
     {{{ body }}}
   </main>
 
-  <footer class="py-12 bg-black text-white">
-    <div class="container mx-auto px-4">
+  <footer class="py-12 px-4 bg-black text-white">
+    <div class="container mx-auto">
       <div class="w-full flex flex-col sm:flex-row justify-between items-start sm:px-0">
         <div class="text-sm md:flex-grow">
-          <a href="/companies"
-            class="block no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.companies}}text-white{{else}}text-grey{{/if}}">
-            ‍Companies
-          </a>
+          <a href="/companies" class="block no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.companies}}text-white{{else}}text-grey{{/if}}">‍Companies</a>
           {{!-- <a href="/jobs" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.jobs}}text-white{{else}}text-grey{{/if}}">
             Jobs
           </a> --}}
-          <a href="/speakers"
-            class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.speakers}}text-white{{else}}text-grey{{/if}}">
-            Speakers
-          </a>
-          <a href="/about"
-            class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-grey{{/if}}">
-            About
-          </a>
+          <a href="/speakers" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.speakers}}text-white{{else}}text-grey{{/if}}">Speakers</a>
+          <a href="/about" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-grey{{/if}}">About</a>
         </div>
         <div>
           <div class="text-sm flex flex-col md:flex-row sm:items-end">
-            <a class="flex items-center text-grey hover:text-white no-underline mt-8 sm:mt-0"
-              href="https://github.com/MyGuySi/dev-wales" target="_blank">
+            <a class="flex items-center text-grey hover:text-white no-underline mt-8 sm:mt-0" href="https://github.com/MyGuySi/dev-wales" target="_blank">
               <span class="mr-2">Open-sourced on GitHub</span>
               <img class="opacity-50" src="/static/github.svg" alt="GitHub logo" width="24" height="24" />
             </a>
-            <a class="flex items-center text-grey hover:text-white no-underline md:ml-8 mt-4 md:mt-0"
-              href="https://twitter.com/myguysi" target="_blank">
+            <a class="flex items-center text-grey hover:text-white no-underline md:ml-8 mt-4 md:mt-0" href="https://twitter.com/myguysi" target="_blank">
               <span class="mr-2">Built by Simon Anthony</span>
               <img class="opacity-50" src="/static/twitter.svg" alt="Twitter logo" width="25" height="20" />
             </a>
