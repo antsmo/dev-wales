@@ -19,12 +19,21 @@ router.get("/", (req, res) => {
 });
 
 router.get("/add", (req, res) => {
-  // TODO: Write this endpoint
-})
+  companiesApi.getCompanies(companies => {
+    res.render("add-job", { companies });
+  });
+});
 
 router.post("/add", (req, res) => {
-  // TODO: Write this endpoint
-})
+  const { title, description, companyName, link } = req.body;
+  console.log({
+    title,
+    description,
+    companyName,
+    link
+  });
+  res.send("Done");
+});
 
 module.exports = router;
 
