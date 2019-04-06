@@ -8,12 +8,9 @@ const logsApi = require("../lib/api/logs");
 router.get("/", (req, res) => {
   logsApi.logRequest(req);
   jobsApi.getJobs(jobs => {
-    companiesApi.getCompanies(companies => {
-      jobs = hydrateCompaniesInJobs(companies, jobs);
-      res.render("jobs", {
-        active: { jobs: true },
-        jobs
-      });
+    res.render("jobs", {
+      active: { jobs: true },
+      jobs
     });
   });
 });
@@ -25,14 +22,26 @@ router.get("/add", (req, res) => {
 });
 
 router.post("/add", (req, res) => {
-  const { title, description, companyName, link } = req.body;
-  console.log({
-    title,
-    description,
-    companyName,
-    link
-  });
-  res.send("Done");
+  const { type, title, description, companyName, location, link } = req.body;
+  jobsApi.addJob(
+    {
+      type,
+      title,
+      description,
+      companyName,
+      location,
+      link
+    },
+    error => {
+      companiesApi.getCompanies(companies => {
+        res.render("add-job", {
+          companies,
+          error: error ? true : false,
+          success: !error ? true : false
+        });
+      });
+    }
+  );
 });
 
 module.exports = router;

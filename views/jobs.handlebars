@@ -1,43 +1,30 @@
 <div class="bg-grey-lighter py-10 md:py-16">
   <div class="container mx-auto px-4">
     <div class="w-full md:w-3/4 lg:w-1/2">
-      <h1 class="text-black">Developer Jobs in Wales</h1>
-      <p class="mt-4 text-lg leading-normal text-grey-dark">We've collected a list of jobs currently being advertised
-        by companies in our list.</p>
-
-      <a href="/jobs/add" target="_blank"
-        class="inline-block px-4 py-3 leading-none no-underline rounded bg-red hover:bg-red-dark text-white mt-6">Post a job</a>
-
+      <h1 class="text-black">Jobs board</h1>
+      <p class="mt-4 text-lg leading-normal text-grey-dark">Here you'll find a list of jobs for developers across Wales</p>
+      <a href="/jobs/add" class="inline-block px-4 py-3 leading-none no-underline rounded bg-red hover:bg-red-dark text-white mt-6">
+        Post a job
+      </a>
     </div>
   </div>
 </div>
 
 <div class="py-8">
   <div class="container mx-auto px-4 flex flex-col lg:flex-row">
-    <div class="w-full lg:w-1/4 mr-6">
-      <label class="block tracking-wide text-grey-darker text-sm font-bold mb-2" for="grid-last-name">
-        Search
-      </label>
-      <input id="search" type="text" name="search" placeholder="Job title..."
-        class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red"
-        onkeyup="updateSearch();" autocomplete="off" />
-      <button class="text-red underline cursor-pointer" onclick="clearFilters();">Clear filters</button>
-    </div>
-    <div class="w-full lg:w-1/2">
-      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">Showing <span
-          id="result-count">{{jobs.length}}</span>
-        jobs</div>
+    <div class="w-full lg:w-2/3">
       <div id="job-list">
         {{#each jobs}}
         <a href="{{this.link}}" class="no-underline" target="_blank">
-          <div class="flex flex-row items-center bg-white p-4 sm:p-6 mb-2 rounded shadow">
-            <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain"
-              style="background-image: url({{this.company.logoUrl}})"></div>
-            <div class="w-full flex flex-col">
+          <div class="flex flex-row items-start bg-white p-4 sm:p-6 mb-2 rounded shadow">
+            <div class="flex-1 flex flex-col">
               <span class="text-black font-bold mb-1">{{this.title}}</span>
-              <span class="text-grey-darker leading-normal mb-2">at {{this.company.name}}</span>
-              <span class="text-grey-darker leading-normal text-xs">posted {{this.timeSince}}</span>
+              <span class="text-black text-sm leading-normal">at {{this.companyName}}, {{this.location}}</span>
+              {{#ifEquals this.type "post"}}
+              <span class="mt-2 text-grey-darker text-sm leading-normal">{{{this.description}}}</span>
+              {{/ifEquals}}
             </div>
+            <span class="text-grey-darker text-sm leading-normal">Added {{this.timeSince}}</span>
           </div>
         </a>
         {{/each}}
@@ -48,66 +35,5 @@
 
 <script>
   const jobs = {{{ json jobs }}};
-
-  function updateSearch() {
-    const value = document.getElementById("search").value;
-    const filteredJobs = jobs.filter(function (job) {
-      const jobTitle = job.title.toLowerCase();
-      const query = value.toLowerCase();
-      return jobTitle.indexOf(query) >= 0;
-    });
-    renderJobs(filteredJobs);
-  }
-
-  function clearFilters() {
-    document.getElementById("search").value = "";
-    updateSearch();
-  }
-
-  function renderJobs(jobs) {
-    const jobList = document.getElementById("job-list");
-    jobList.innerHTML = "";
-
-    const resultCount = document.getElementById("result-count");
-    resultCount.innerHTML = jobs.length;
-
-    if (jobs.length === 0) {
-      const emptyMessage = document.createElement("div");
-      emptyMessage.innerHTML = "Sorry, we couldn't find any matching jobs."
-      emptyMessage.classList = "text-grey-dark my-4"
-      jobList.appendChild(emptyMessage);
-      return;
-    }
-    jobs.forEach(function (job) {
-      const logo = document.createElement("div");
-      logo.classList = "w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain";
-      logo.style = "background-image: url(" + job.company.logoUrl + ")";
-
-      const title = document.createElement("span");
-      title.innerHTML = job.title;
-      title.classList = "text-black font-bold mb-2"
-
-      const company = document.createElement("span");
-      company.innerHTML = job.company.name;
-      company.classList = "text-grey-darker leading-normal";
-
-      const textContainer = document.createElement("div");
-      textContainer.classList = "w-full flex flex-col";
-      textContainer.appendChild(title);
-      textContainer.appendChild(company);
-
-      const card = document.createElement("div");
-      card.classList = "flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow";
-      card.appendChild(logo);
-      card.appendChild(textContainer);
-
-      const link = document.createElement("a");
-      link.classList = "no-underline";
-      link.href = job.link;
-      link.target = "_blank";
-      link.appendChild(card);
-
-      jobList.appendChild(link);
-    });
-  }
+  console.log(jobs);
 </script>

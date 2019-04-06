@@ -1,12 +1,25 @@
-<div class="px-4 pt-6 md:pt-12">
-  <div class="container mx-auto flex flex-col md:flex-row justify-between">
+<div class="px-4 py-6 md:py-12">
+  <div class="container mx-auto">
+    {{#if success}}
+    <div class="mb-6 px-4 py-3 bg-green-lightest border border-green-light text-green-dark rounded"
+      role="alert">
+      <strong class="font-bold">Job added!</strong>
+      <a href="/jobs" class="block sm:inline text-green-dark">View all jobs</a>
+    </div>
+    {{else if error}}
+    <div class="mb-6 px-4 py-3 bg-red-lightest border border-red-light text-red-dark rounded relative" role="alert">
+      <strong class="font-bold">Uh-oh!</strong>
+      <span class="block sm:inline">Something went wrong, please try again...</span>
+    </div>
+    {{/if}}
+
     <div class="w-full md:w-3/4 lg:w-1/2 md:mr-8 lg:mr-0">
       <h1 class="mb-8">Add a job</h1>
 
       <form name="jobForm" method="POST" action="/jobs/add" autocomplete="off">
         <div class="mb-6">
           <label for="type-link"
-            class="inline-flex items-center mr-2 p-4 bg-white text-lg text-grey-dark rounded border">
+            class="inline-flex items-center mr-2 p-4 bg-white text-lg text-grey-dark rounded border cursor-pointer">
             <input type="radio" id="type-link" name="type" value="link" class="mr-4" checked>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -17,7 +30,7 @@
             <span class="ml-2">Link</span>
           </label>
           <label for="type-post"
-            class="inline-flex items-center mr-2 p-4 bg-white text-lg text-grey-dark rounded border">
+            class="inline-flex items-center mr-2 p-4 bg-white text-lg text-grey-dark rounded border cursor-pointer">
             <input type="radio" id="type-post" name="type" value="post" class="mr-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -69,6 +82,15 @@
             <option value="{{this.name}}" />
             {{/each}}
           </datalist>
+        </div>
+
+        <div id="location">
+          <label for="location-input" class="block tracking-wide text-grey-darker text-sm font-bold mb-2">
+            Location
+          </label>
+          <input type="text" id="location-input" name="location"
+            class="mb-6 py-2 px-4 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded leading-tight focus:outline-none focus:bg-white focus:border-red"
+            required />
         </div>
 
         <button
