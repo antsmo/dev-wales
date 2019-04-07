@@ -30,12 +30,8 @@ router.get("/:slug", (req, res) => {
       res.sendStatus(404);
       return;
     }
-    jobsApi.getJobs(jobs => {
-      const matchedJobs = jobs.filter(job => job.companyId === company.id);
-      res.render("company-profile", {
-        company,
-        matchedJobs
-      });
+    res.render("company-profile", {
+      company
     });
   });
 });
