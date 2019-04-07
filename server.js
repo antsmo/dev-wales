@@ -1,7 +1,11 @@
 const express = require("express");
-const app = express();
 const exphbs = require("express-handlebars");
 const helpers = require("./lib/templateHelpers");
+const bodyParser = require('body-parser')
+
+const app = express();
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
 /* Setup templating */
 

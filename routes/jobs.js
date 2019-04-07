@@ -4,27 +4,52 @@ const router = express.Router();
 const jobsApi = require("../lib/api/jobs");
 const companiesApi = require("../lib/api/companies");
 const logsApi = require("../lib/api/logs");
+const alerting = require("../lib/alerting");
 
 router.get("/", (req, res) => {
   logsApi.logRequest(req);
   jobsApi.getJobs(jobs => {
-    companiesApi.getCompanies(companies => {
-      jobs = hydrateCompaniesInJobs(companies, jobs);
-      res.render("jobs", {
-        active: { jobs: true },
-        jobs
-      });
+    res.render("jobs", {
+      active: { jobs: true },
+      jobs
     });
   });
 });
 
 router.get("/add", (req, res) => {
-  // TODO: Write this endpoint
-})
+  companiesApi.getCompanies(companies => {
+    res.render("add-job", { companies });
+  });
+});
 
 router.post("/add", (req, res) => {
-  // TODO: Write this endpoint
-})
+  const { type, title, description, companyName, location, link } = req.body;
+  jobsApi.addJob(
+    {
+      type,
+      title,
+      description,
+      companyName,
+      location,
+      link
+    },
+    (error, recordId) => {
+      if (error) {
+        alerting.send(`Someone tried to add a job - ${error}`)
+      } else {
+        alerting.send(`New job added - (${recordId}) ${title}`)
+      }
+
+      companiesApi.getCompanies(companies => {
+        res.render("add-job", {
+          companies,
+          error: error ? true : false,
+          success: !error ? true : false
+        });
+      });
+    }
+  );
+});
 
 module.exports = router;
 

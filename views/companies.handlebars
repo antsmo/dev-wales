@@ -1,18 +1,12 @@
 <div class="bg-red-dark pt-6 md:pt-12 pb-10 md:pb-16 px-4">
   <div class="container mx-auto flex justify-between">
     <div class="w-full md:w-3/4 lg:w-1/2">
-      <h1 class="text-white">Companies for Developers in Wales</h1>
-      <p class="mt-4 text-lg text-red-lighter leading-normal">Tired of recruiters being the middle-man? Take back control
-        of your career and find companies that are right for you.</p>
+      <h1 class="text-white">Companies that 💛 software</h1>
+      <p class="mt-4 text-lg text-red-lighter leading-normal">Whether you're a developer hunting for jobs, a company searching for a development agency or a contractor advertising your services, we've got the biggest list of companies building software in Wales.</p>
 
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBgF-wPRtERRqpKKYH6-7cA-VBJ20okEGtVTlC-T-DtC-UFg/viewform?usp=sf_link" target="_blank"
-        class="inline-flex items-center px-4 py-3 leading-none no-underline rounded bg-red hover:bg-white text-white hover:text-red-dark mt-6">Add
-        a company <span class="text-2xl ml-2">✍️</span></a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBgF-wPRtERRqpKKYH6-7cA-VBJ20okEGtVTlC-T-DtC-UFg/viewform?usp=sf_link" target="_blank" class="inline-flex items-center px-4 py-3 leading-none no-underline rounded bg-red hover:bg-white text-white hover:text-red-dark mt-6">Add a company <span class="text-2xl ml-2">✍️</span></a>
 
-      <p class="mt-6 text-red-lighter leading-normal">So far we've added <span
-          class="font-bold">{{companies.length}}</span>
-        companies from <span class="font-bold">{{locations.length}}</span>
-        locations! 🎉</p>
+      <p class="mt-6 text-red-lighter leading-normal">So far we've added <span class="font-bold">{{companies.length}}</span> companies from <span class="font-bold">{{locations.length}}</span> locations! 🎉</p>
     </div>
   </div>
 </div>
@@ -32,9 +26,7 @@
           Location
         </label>
         <div class="mb-6 relative">
-          <select
-            class="block appearance-none w-full bg-white border border-grey-light text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-red"
-            id="location" onchange="renderCompanies()" autocomplete="off">
+          <select class="block appearance-none w-full bg-white border border-grey-light text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-red" id="location" onchange="renderCompanies()" autocomplete="off">
             <option value="">All</option>
             {{#each locations}}
             <option value="{{this}}">{{this}}</option>
@@ -50,9 +42,7 @@
           Company type
         </label>
         <div class="mb-6 relative">
-          <select id="company-type"
-            class="block appearance-none w-full bg-white border border-grey-light text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-red"
-            onchange="renderCompanies()" autocomplete="off">
+          <select id="company-type" class="block appearance-none w-full bg-white border border-grey-light text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-red" onchange="renderCompanies()" autocomplete="off">
             <option value="">All</option>
             <option value="Product or Service">Product or Service</option>
             <option value="Agency or Consultancy">Agency or Consultancy</option>
@@ -66,15 +56,12 @@
       </div>
     </div>
     <div class="w-full lg:w-3/4">
-      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">Showing <span
-          id="result-count">{{companies.length}}</span>
-        companies</div>
+      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">Showing <span id="result-count">{{companies.length}}</span> companies</div>
       <div id="company-list">
         {{#each companies}}
         <a href="/companies/{{this.slug}}" class="no-underline">
           <div class="flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow">
-            <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain"
-              style="background-image: url({{this.logoUrl}})"></div>
+            <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain" style="background-image: url({{this.logoUrl}})"></div>
             <div class="w-full flex flex-col">
               <span class="text-black font-bold mb-2">{{this.name}}</span>
               <span class="text-grey-darker leading-normal">{{this.description}}</span>
@@ -164,12 +151,12 @@
       description.classList = "text-grey-darker leading-normal";
       textContainer.appendChild(description);
 
-//      if (company.jobIds && company.jobIds.length > 0) {
-//        const jobOpenings = document.createElement("span");
-//        jobOpenings.innerHTML = company.jobIds.length + " job opening(s)";
-//        jobOpenings.classList = "mt-2 text-red leading-normal";
-//        textContainer.appendChild(jobOpenings);
-//      }
+      //      if (company.jobIds && company.jobIds.length > 0) {
+      //        const jobOpenings = document.createElement("span");
+      //        jobOpenings.innerHTML = company.jobIds.length + " job opening(s)";
+      //        jobOpenings.classList = "mt-2 text-red leading-normal";
+      //        textContainer.appendChild(jobOpenings);
+      //      }
 
       const card = document.createElement("div");
       card.classList = "flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow";
