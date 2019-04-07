@@ -4,6 +4,7 @@ const router = express.Router();
 const jobsApi = require("../lib/api/jobs");
 const companiesApi = require("../lib/api/companies");
 const logsApi = require("../lib/api/logs");
+const alerting = require("../lib/alerting");
 
 router.get("/", (req, res) => {
   logsApi.logRequest(req);
@@ -32,7 +33,13 @@ router.post("/add", (req, res) => {
       location,
       link
     },
-    error => {
+    (error, recordId) => {
+      if (error) {
+        alerting.send(`Someone tried to add a job - ${error}`)
+      } else {
+        alerting.send(`New job added - (${recordId}) ${title}`)
+      }
+
       companiesApi.getCompanies(companies => {
         res.render("add-job", {
           companies,
