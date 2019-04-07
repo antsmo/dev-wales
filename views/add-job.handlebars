@@ -17,24 +17,18 @@
       <h1 class="mb-8">Add a job</h1>
 
       <form name="jobForm" method="POST" action="/jobs/add" autocomplete="off">
-        <div class="mb-6">
-          <label for="type-link"
-            class="inline-flex items-center mr-2 p-4 bg-white text-lg text-grey-dark rounded border cursor-pointer">
+        <div class="mb-6 hidden">
+          <label for="type-link" class="inline-flex items-center mr-2 p-4 bg-white text-lg text-grey-dark rounded border cursor-pointer">
             <input type="radio" id="type-link" name="type" value="link" class="mr-4" checked>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="feather feather-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
               <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
               <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
             </svg>
             <span class="ml-2">Link</span>
           </label>
-          <label for="type-post"
-            class="inline-flex items-center mr-2 p-4 bg-white text-lg text-grey-dark rounded border cursor-pointer">
+          <label for="type-post" class="inline-flex items-center mr-2 p-4 bg-white text-lg text-grey-dark rounded border cursor-pointer">
             <input type="radio" id="type-post" name="type" value="post" class="mr-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="feather feather-edit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit">
               <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
               <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
             </svg>
@@ -55,28 +49,21 @@
           <label for="job-description-input" class="block tracking-wide text-grey-darker text-sm font-bold mb-2">
             Job description
           </label>
-          <textarea id="job-description-input" name="description" rows="4"
-            class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red"></textarea>
+          <textarea id="job-description-input" name="description" rows="4" class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red"></textarea>
         </div>
 
         <div id="job-link">
           <label for="job-link-input" class="block tracking-wide text-grey-darker text-sm font-bold mb-1">
             URL
           </label>
-          <input type="url" pattern="https?://.+"
-            oninvalid="this.setCustomValidity('Please enter a URL including https://')"
-            oninput="this.setCustomValidity('')" id="job-link-input" name="link"
-            class="mb-6 py-2 px-4 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded leading-tight focus:outline-none focus:bg-white focus:border-red"
-            required />
+          <input type="url" pattern="https?://.+" oninvalid="this.setCustomValidity('Please enter a URL including https://')" oninput="this.setCustomValidity('')" id="job-link-input" name="link" class="mb-6 py-2 px-4 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded leading-tight focus:outline-none focus:bg-white focus:border-red" required />
         </div>
 
         <div id="company-name">
           <label for="company-name-input" class="block tracking-wide text-grey-darker text-sm font-bold mb-2">
             Company name
           </label>
-          <input type="text" id="company-name-input" name="companyName" list="company-name-options"
-            class="mb-6 py-2 px-4 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded leading-tight focus:outline-none focus:bg-white focus:border-red"
-            required />
+          <input type="text" id="company-name-input" name="companyName" list="company-name-options" class="mb-6 py-2 px-4 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded leading-tight focus:outline-none focus:bg-white focus:border-red" required />
           <datalist id="company-name-options">
             {{#each companies}}
             <option value="{{this.name}}" />
@@ -88,13 +75,10 @@
           <label for="location-input" class="block tracking-wide text-grey-darker text-sm font-bold mb-2">
             Location
           </label>
-          <input type="text" id="location-input" name="location"
-            class="mb-6 py-2 px-4 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded leading-tight focus:outline-none focus:bg-white focus:border-red"
-            required />
+          <input type="text" id="location-input" name="location" class="mb-6 py-2 px-4 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded leading-tight focus:outline-none focus:bg-white focus:border-red" required />
         </div>
 
-        <button
-          class="inline-block mt-2 px-4 py-3 leading-none no-underline rounded bg-red hover:bg-red-dark text-white">
+        <button class="inline-block mt-2 px-4 py-3 leading-none no-underline rounded bg-red hover:bg-red-dark text-white">
           Add job
         </button>
       </form>
