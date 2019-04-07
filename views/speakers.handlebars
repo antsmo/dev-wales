@@ -1,14 +1,16 @@
 <div class="bg-red-dark pt-6 md:pt-12 pb-10 md:pb-16 px-4">
   <div class="container mx-auto">
     <div class="w-full md:w-3/4 lg:w-1/2">
-      <h1 class="text-white">Event Speakers</h1>
-      <p class="mt-4 text-lg leading-normal text-red-lighter">We're building a list of speakers who can give talks at
-        meetups, conferences or other events.</p>
-      <p class="mt-4 text-lg leading-normal text-red-lighter">If you're a speaker then join the list so that event
-        organisers can reach out to you.</p>
-      <a href="/speakers/add" target="_blank"
-        class="inline-flex items-center px-4 py-3 leading-none no-underline rounded bg-red hover:bg-white text-white hover:text-red-dark mt-6">Join
-        the list <span class="text-2xl ml-2">👋</span></a>
+      <h1 class="text-white">The best show in town 👩‍🎤</h1>
+      <p class="mt-4 text-lg leading-normal text-red-lighter">
+        We're building a list of the best speakers to give talks at meetups, conferences or other events.
+      </p>
+      <p class="mt-4 text-lg leading-normal text-red-lighter">
+        If you're a speaker then join the list so that event organisers can reach out to you.
+      </p>
+      <a href="/speakers/add" target="_blank" class="inline-flex items-center px-4 py-3 leading-none no-underline rounded bg-red hover:bg-white text-white hover:text-red-dark mt-6">
+        Join the list <span class="text-2xl ml-2">👋</span>
+      </a>
     </div>
   </div>
 </div>
@@ -16,9 +18,9 @@
 <div class="py-8 px-4">
   <div class="container mx-auto flex flex-col lg:flex-row">
     <div class="w-full lg:w-1/2">
-      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">Showing <span
-          id="result-count">{{speakers.length}}</span>
-        speakers</div>
+      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">
+        Showing <span id="result-count">{{speakers.length}}</span> speakers
+      </div>
       <div id="speakers-list">
         {{#each speakers}}
         <div class="flex flex-row items-center bg-white p-4 sm:p-6 mb-2 rounded shadow">
