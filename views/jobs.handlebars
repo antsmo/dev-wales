@@ -1,18 +1,28 @@
-<div class="bg-grey-lighter py-10 md:py-16">
-  <div class="container mx-auto px-4">
+<div class="bg-red-dark pt-6 md:pt-12 pb-10 md:pb-16 px-4">
+  <div class="container mx-auto">
     <div class="w-full md:w-3/4 lg:w-1/2">
-      <h1 class="text-black">Jobs board</h1>
-      <p class="mt-4 text-lg leading-normal text-grey-dark">Here you'll find a list of jobs for developers across Wales</p>
-      <a href="/jobs/add" class="inline-block px-4 py-3 leading-none no-underline rounded bg-red hover:bg-red-dark text-white mt-6">
-        Post a job
+      <h1 class="text-white">Jobs for Developers</h1>
+      <p class="mt-4 text-lg leading-normal text-red-lighter">No recruiters. No nonsense. Take control of your job hunt.</p>
+      <a href="/jobs/add"
+        class="inline-flex items-center px-4 py-3 leading-none no-underline rounded bg-red hover:bg-white text-white hover:text-red-dark mt-6">
+        Add a job <span class="text-2xl ml-2">📝</span>
       </a>
     </div>
   </div>
 </div>
 
-<div class="py-8">
-  <div class="container mx-auto px-4 flex flex-col lg:flex-row">
-    <div class="w-full lg:w-2/3">
+<div class="py-8 px-4">
+  <div class="container mx-auto flex flex-col lg:flex-row">
+    <div class="w-full lg:w-1/4 mr-6">
+      <label class="block tracking-wide text-grey-darker text-sm font-bold mb-2" for="search">
+        Search
+      </label>
+      <input id="search-input" type="text" name="search" placeholder="Search job titles..."
+        class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red"
+        onkeyup="updateJobs()" autocomplete="off" />
+      {{!-- <button class="text-red underline cursor-pointer" onclick="clearFilters();">Clear filters</button> --}}
+    </div>
+    <div class="w-full lg:w-1/2">
       <div id="job-list">
         {{#each jobs}}
         <a href="{{this.link}}" class="no-underline" target="_blank">
@@ -35,5 +45,77 @@
 
 <script>
   const jobs = {{{ json jobs }}};
-  console.log(jobs);
+  const jobList = document.getElementById("job-list");
+  const searchInput = document.getElementById("search-input");
+  
+  function updateJobs() {
+    let filteredJobs = jobs;
+    filteredJobs = applySearchFilter(filteredJobs);
+
+    jobList.innerHTML = "";
+    if (filteredJobs.length === 0) {
+      jobList.appendChild(renderEmptyState());
+      return;
+    }
+
+    filteredJobs.forEach(function(job) {
+      jobList.appendChild(renderJob(job));
+    });
+  }
+
+  function applySearchFilter(items) {
+    const query = searchInput.value;
+    return items.filter(item => item.title.indexOf(query) !== -1);
+  }
+
+  function renderEmptyState() {
+    const container = document.createElement("div");
+    container.classList = "p-6 text-center";
+
+    const text = document.createElement("span");
+    text.classList = "text-grey-darker";
+    text.innerHTML = "Sorry, there were no results matching your search.";
+    container.appendChild(text);
+
+    return container;
+  }
+
+  function renderJob(job) {
+    const link = document.createElement("a");
+    link.classList = "no-underline";
+    link.href = job.link;
+    link.target = "_blank";
+
+    const card = document.createElement("div");
+    card.classList = "flex flex-row items-start bg-white p-4 sm:p-6 mb-2 rounded shadow";
+    link.appendChild(card);
+
+    const container = document.createElement("div");
+    container.classList = "flex-1 flex flex-col";
+    card.appendChild(container);
+
+    const title = document.createElement("span");
+    title.classList = "text-black font-bold mb-1";
+    title.innerHTML = job.title;
+    container.appendChild(title);
+
+    const meta = document.createElement("span");
+    meta.classList = "text-black text-sm leading-normal";
+    meta.innerHTML = "at " + job.companyName + ", " + job.location;
+    container.appendChild(meta);
+
+    if (job.type === "post") {
+      const description = document.createElement("span");
+      description.classList = "mt-2 text-grey-darker text-sm leading-normal";
+      description.innerHTML = job.description;
+      container.appendChild(description);
+    }
+
+    const date = document.createElement("span");
+    date.classList = "text-grey-darker text-sm leading-normal";
+    date.innerHTML = "Added " + job.timeSince;
+    card.appendChild(date);
+
+    return link;
+  }
 </script>
