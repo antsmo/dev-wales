@@ -70,8 +70,8 @@
   }
 
   function applySearchFilter(items) {
-    const query = searchInput.value;
-    return items.filter(item => item.title.indexOf(query) !== -1);
+    const query = searchInput.value.toLowerCase();
+    return items.filter(item => item.title.toLowerCase().indexOf(query) !== -1);
   }
 
   function renderEmptyState() {
