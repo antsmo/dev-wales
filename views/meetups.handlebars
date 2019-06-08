@@ -1,0 +1,33 @@
+<div class="bg-red-dark pt-6 md:pt-12 pb-10 md:pb-16 px-4">
+  <div class="container mx-auto">
+    <div class="w-full md:w-3/4 lg:w-1/2">
+      <h1 class="text-white">Come one, come all! 🎪</h1>
+      <p class="mt-4 text-lg leading-normal text-red-lighter">
+        TODO: Fill this in!
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="py-8 px-4">
+  <div class="container mx-auto flex flex-col lg:flex-row">
+    <div class="w-full lg:w-1/2">
+      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">
+        Showing <span id="result-count">{{meetups.length}}</span> meetups
+      </div>
+      <div id="meetups-list">
+        {{#each meetups}}
+        <div class="flex flex-row items-center bg-white p-4 sm:p-6 mb-2 rounded shadow">
+          <div class="w-full flex flex-col">
+            <span class="text-black font-bold mb-2">{{this.name}}</span>
+            <a class="flex-no-shrink text-red" href="{{this.url}}" target="_blank">{{this.url}}</a>
+          </div>
+        </div>
+        {{else}}
+        <div class="my-4 text-lg leading-normal text-grey-dark">No meetups have been added yet 😩</div>
+        <a href="/meetups/add" class="text-red">Click here to join the list</a>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
