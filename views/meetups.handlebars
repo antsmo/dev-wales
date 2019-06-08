@@ -18,9 +18,10 @@
       <div id="meetups-list">
         {{#each meetups}}
         <div class="flex flex-row items-center bg-white p-4 sm:p-6 mb-2 rounded shadow">
+          <div class="w-16 h-16 mr-6 bg-center bg-no-repeat bg-contain" style="background-image: url({{this.logoUrl}})"></div>
           <div class="w-full flex flex-col">
             <span class="text-black font-bold mb-2">{{this.name}}</span>
-            <a class="flex-no-shrink text-red" href="{{this.url}}" target="_blank">{{this.url}}</a>
+            <a class="flex-no-shrink text-red" href="{{this.link}}" target="_blank">{{this.link}}</a>
           </div>
         </div>
         {{else}}
@@ -31,3 +32,8 @@
     </div>
   </div>
 </div>
+
+<script>
+    const meetups = {{{ json meetups }}}
+    console.log(meetups);
+</script>
