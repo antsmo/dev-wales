@@ -12,24 +12,38 @@
   </div>
 </div>
 
-<div class="py-8 px-4">
+<div class="pt-4 pb-12 px-4">
   <div class="container mx-auto flex flex-col lg:flex-row">
-    <div class="w-full lg:w-1/2">
-      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">
-        Showing <span id="result-count">{{meetups.length}}</span> meetups
-      </div>
-      <div id="meetups-list">
+    <div class="w-full">
+      <div id="meetups-list" class="md:flex md:flex-row md:flex-wrap">
         {{#each meetups}}
-        <div class="flex flex-row items-center bg-white p-4 sm:p-6 mb-2 rounded shadow">
-          <div class="w-16 h-16 mr-6 bg-center bg-no-repeat bg-contain" style="background-image: url({{this.logoUrl}})"></div>
-          <div class="w-full flex flex-col">
-            <span class="text-black font-bold mb-2">{{this.name}}</span>
-            <a class="flex-no-shrink text-red" href="{{this.link}}" target="_blank">{{this.link}}</a>
+        <div class="md:w-1/3 md:mt-12 md:px-4 lg:mt-16">
+          <div class="bg-white mb-2 p-4 shadow rounded flex items-center md:inline-flex md:flex-col md:w-full md:h-full md:p-6">
+            {{#if this.logoUrl}}
+            <div class="w-16 h-16 flex-shrink-0 rounded bg-center bg-no-repeat bg-contain md:-mt-12 md:shadow md:mb-6 md:bg-white lg:w-24 lg:h-24" style="background-image: url({{this.logoUrl}})"></div>
+            {{else}}
+            <div class="w-16 h-16 flex-shrink-0 rounded flex items-center justify-center md:-mt-12 md:shadow md:bg-white md:mb-6 lg:w-24 lg:h-24">
+              <div class="w-full h-full bg-center bg-no-repeat bg-contain opacity-25" style="background-image: url(/static/logo-mark-black.svg)"></div>
+            </div>
+            {{/if}}
+            <div class="ml-4 flex flex-col sm:flex-row sm:items-center flex-1 md:flex-col md:items-center md:ml-0">
+              <span class="text-grey-darkest font-bold md:text-center sm:flex-1 md:text-lg lg:text-xl">{{this.name}}</span>
+              <div class="flex items-center mt-2 md:mt-6 sm:flex-row-reverse md:flex-row">
+                <a href="#" class="flex items-center bg-grey-lighter h-8 px-2 rounded-full">
+                  <img src="/static/meetup.svg" class="h-6" />
+                </a>
+                {{#if this.twitterUrl}}
+                <a href="#" class="flex items-center bg-grey-lighter h-8 px-2 rounded-full ml-2 sm:ml-0 sm:mr-2 md:mr-0 md:ml-2">
+                  <img src="/static/twitter-solid.svg" class="h-6" />
+                </a>
+                {{/if}}
+              </div>
+            </div>
           </div>
         </div>
+
         {{else}}
         <div class="my-4 text-lg leading-normal text-grey-dark">No meetups have been added yet 😩</div>
-        <a href="/meetups/add" class="text-red">Click here to join the list</a>
         {{/each}}
       </div>
     </div>
