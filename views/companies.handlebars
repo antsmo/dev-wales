@@ -1,15 +1,15 @@
-<div class="bg-red-dark pt-6 md:pt-12 pb-10 md:pb-16 px-4">
-  <div class="container mx-auto flex justify-between">
-    <div class="w-full md:w-3/4 lg:w-1/2">
-      <h1 class="text-white">Companies that 💛 software</h1>
-      <p class="mt-4 text-lg text-red-lighter leading-normal">Whether you're a developer hunting for jobs, a company searching for a development agency or a contractor advertising your services, we've got the biggest list of companies building software in Wales.</p>
-
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBgF-wPRtERRqpKKYH6-7cA-VBJ20okEGtVTlC-T-DtC-UFg/viewform?usp=sf_link" target="_blank" class="inline-flex items-center px-4 py-3 leading-none no-underline rounded bg-red hover:bg-white text-white hover:text-red-dark mt-6">Add a company <span class="text-2xl ml-2">✍️</span></a>
-
-      <p class="mt-6 text-red-lighter leading-normal">So far we've added <span class="font-bold">{{companies.length}}</span> companies from <span class="font-bold">{{locations.length}}</span> locations! 🎉</p>
-    </div>
-  </div>
-</div>
+{{#> pageHero }}
+  <h1 class="text-white">Companies that 💛 software</h1>
+  <p class="mt-4 text-lg text-red-lighter leading-normal">
+    Whether you're a developer hunting for jobs, a company searching for a development agency or a contractor advertising your services, we've got the biggest list of companies building software in Wales.
+  </p>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBgF-wPRtERRqpKKYH6-7cA-VBJ20okEGtVTlC-T-DtC-UFg/viewform?usp=sf_link" target="_blank" class="inline-flex items-center px-4 py-3 leading-none no-underline rounded bg-red hover:bg-white text-white hover:text-red-dark mt-6">
+    Add a company <span class="text-2xl ml-2">✍️</span>
+  </a>
+  <p class="mt-6 text-red-lighter leading-normal">
+    So far we've added <span class="font-bold">{{companies.length}}</span> companies from <span class="font-bold">{{locations.length}}</span> locations! 🎉
+  </p>
+{{/pageHero}}
 
 <div class="py-8 px-4">
   <div class="container mx-auto flex flex-col lg:flex-row">
