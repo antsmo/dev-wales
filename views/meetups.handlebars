@@ -30,12 +30,19 @@
             <div class="ml-4 flex flex-col sm:flex-row sm:items-center flex-1 md:flex-col md:items-center md:ml-0">
               <span class="text-grey-darkest font-bold md:text-center sm:flex-1 md:text-lg lg:text-xl">{{this.name}}</span>
               <div class="flex items-center mt-2 md:mt-6 sm:flex-row-reverse md:flex-row">
-                <a href="{{this.meetupUrl}}" target="_blank" class="flex items-center bg-grey-lighter h-8 px-2 rounded-full">
+                {{#if this.meetupUrl}}
+                <a href="{{this.meetupUrl}}" target="_blank" class="flex items-center bg-grey-lighter h-8 px-2 rounded-full mr-2 sm:mr-0 sm:ml-2 md:ml-0 md:mr-2">
                   <img src="/static/meetup.svg" class="h-6" />
                 </a>
+                {{/if}}
                 {{#if this.twitterUrl}}
-                <a href="{{this.twitterUrl}}" target="_blank" class="flex items-center bg-grey-lighter h-8 px-2 rounded-full ml-2 sm:ml-0 sm:mr-2 md:mr-0 md:ml-2">
+                <a href="{{this.twitterUrl}}" target="_blank" class="flex items-center bg-grey-lighter h-8 px-2 rounded-full mr-2 sm:mr-0 sm:ml-2 md:ml-0 md:mr-2">
                   <img src="/static/twitter-solid.svg" class="h-6" />
+                </a>
+                {{/if}}
+                {{#if this.eventbriteUrl}}
+                <a href="{{this.eventbriteUrl}}" target="_blank" class="flex items-center bg-grey-lighter h-8 px-2 rounded-full mr-2 sm:mr-0 sm:ml-2 md:ml-0 md:mr-2">
+                  <img src="/static/eventbrite.svg" class="h-6" />
                 </a>
                 {{/if}}
               </div>
