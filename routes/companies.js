@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 
 const companiesApi = require("../lib/api/companies");
-const jobsApi = require("../lib/api/jobs");
 const logsApi = require("../lib/api/logs");
 
 router.get("/", (req, res) => {

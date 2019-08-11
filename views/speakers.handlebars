@@ -20,7 +20,7 @@
       <div id="speakers-list">
         {{#each speakers}}
         <div class="bg-white p-4 sm:p-6 mb-2 rounded shadow">
-          <h2 class="text-black font-bold mb-2">{{this.name}}</h2>
+          <h2 class="font-bold mb-2">{{this.name}}</h2>
           <p class="text-gray-700 leading-normal mb-2">{{this.topics}}</p>
           {{#preferredContact this}}
           <a class="text-red-600 hover:underline" href="{{this.link}}" target="_blank">{{this.label}}</a>

@@ -5,25 +5,95 @@
 </p>
 {{/pageHero}}
 
-<section class="py-8 px-4">
+<section class="py-8 lg:py-12 px-4">
   <div class="container mx-auto">
-    <h2 class="text-2xl">Recently added speakers</h2>
-    <ul class="list-none mt-4 flex flex-row">
-      <li class="w-1/5 pr-2">
-        <div class="bg-white p-4 shadow">Joe Bloggs</div>
-      </li>
-      <li class="w-1/5 px-2">
-        <div class="bg-white p-4 shadow">Joe Bloggs</div>
-      </li>
-      <li class="w-1/5 px-2">
-        <div class="bg-white p-4 shadow">Joe Bloggs</div>
-      </li>
-      <li class="w-1/5 px-2">
-        <div class="bg-white p-4 shadow">Joe Bloggs</div>
-      </li>
-      <li class="w-1/5 pl-2">
-        <div class="bg-white p-4 shadow">Joe Bloggs</div>
-      </li>
-    </ul>
+    <section class="mb-8 lg:mb-16">
+      <h2 class="text-2xl">Meetups</h2>
+      <ul class="list-none mt-4 md:mt-10 flex flex-col md:flex-row">
+        {{#each meetups}}
+        <li class="flex-1 mb-4 md:mb-0 md:pr-4">
+          <div class="bg-white p-4 shadow rounded flex items-center md:inline-flex md:flex-col md:w-full md:h-full md:p-6">
+            {{#if this.logoUrl}}
+            <div class="w-16 h-16 flex-shrink-0 rounded bg-center bg-no-repeat bg-contain md:-mt-12 md:shadow md:mb-6 md:bg-white lg:w-24 lg:h-24" style="background-image: url({{this.logoUrl}})"></div>
+            {{else}}
+            <div class="w-16 h-16 flex-shrink-0 rounded flex items-center justify-center md:-mt-12 md:shadow md:bg-white md:mb-6 lg:w-24 lg:h-24">
+              <div class="w-full h-full bg-center bg-no-repeat bg-contain opacity-25" style="background-image: url(/static/logo-mark-black.svg)"></div>
+            </div>
+            {{/if}}
+            <div class="ml-4 flex flex-col sm:flex-row sm:items-center flex-1 md:flex-col md:items-center md:ml-0">
+              <span class="text-gray-800 font-bold md:text-center sm:flex-1 md:text-lg lg:text-xl">{{this.name}}</span>
+              <div class="flex items-center mt-2 md:mt-6 sm:flex-row-reverse md:flex-row">
+                {{#if this.meetupUrl}}
+                <a href="{{this.meetupUrl}}" target="_blank" class="flex items-center bg-gray-200 hover:bg-red-200 h-8 px-2 rounded-full mr-2 sm:mr-0 sm:ml-2 md:ml-0 md:mr-2">
+                  <img src="/static/meetup.svg" class="h-6" alt="Meetup" />
+                </a>
+                {{/if}}
+                {{#if this.twitterUrl}}
+                <a href="{{this.twitterUrl}}" target="_blank" class="flex items-center bg-gray-200 hover:bg-red-200 h-8 px-2 rounded-full mr-2 sm:mr-0 sm:ml-2 md:ml-0 md:mr-2">
+                  <img src="/static/twitter-solid.svg" class="h-6" alt="Twitter" />
+                </a>
+                {{/if}}
+                {{#if this.eventbriteUrl}}
+                <a href="{{this.eventbriteUrl}}" target="_blank" class="flex items-center bg-gray-200 hover:bg-red-200 h-8 px-2 rounded-full mr-2 sm:mr-0 sm:ml-2 md:ml-0 md:mr-2">
+                  <img src="/static/eventbrite.svg" class="h-6" alt="Eventbrite" />
+                </a>
+                {{/if}}
+                {{#if this.youtubeUrl}}
+                <a href="{{this.youtubeUrl}}" target="_blank" class="flex items-center bg-gray-200 hover:bg-red-200 h-8 px-2 rounded-full mr-2 sm:mr-0 sm:ml-2 md:ml-0 md:mr-2">
+                  <img src="/static/youtube.svg" class="h-6" alt="YouTube" />
+                </a>
+                {{/if}}
+              </div>
+            </div>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+      <div class="md:mt-4">
+        <a href="/meetups" class="text-red-600 leading-normal hover:underline">View all meetups</a>
+      </div>
+    </section>
+
+    <section class="mb-8 lg:mb-16">
+      <h2 class="text-2xl">Speakers</h2>
+      <ul class="list-none mt-4 flex flex-col lg:flex-row items-stretch">
+        {{#each speakers}}
+        <li class="flex-1 mb-4 lg:mb-0 lg:pr-4">
+          <div class="flex flex-col bg-white p-4 sm:p-6 rounded shadow h-full">
+            <h2 class="font-bold mb-2">{{this.name}}</h2>
+            <p class="flex-1 text-gray-700 leading-normal mb-2">{{this.topics}}</p>
+            {{#preferredContact this}}
+            <a class="text-red-600 hover:underline" href="{{this.link}}" target="_blank">{{this.label}}</a>
+            {{/preferredContact}}
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+      <div class="lg:mt-4">
+        <a href="/speakers" class="text-red-600 leading-normal hover:underline">View all speakers</a>
+      </div>
+    </section>
+
+    <section class="mb-8 lg:mb-16">
+      <h2 class="text-2xl">Companies</h2>
+      <ul class="list-none mt-4 flex flex-col lg:flex-row items-stretch">
+        {{#each companies}}
+        <li class="flex-1 mb-4 lg:mb-0 lg:pr-4">
+          <a href="/companies/{{this.slug}}">
+            <div class="flex flex-row bg-white p-4 sm:p-6 rounded shadow h-full">
+              <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain" style="background-image: url({{this.logoUrl}})"></div>
+              <div class="w-full flex flex-col">
+                <h2 class="font-bold mb-2">{{this.name}}</h2>
+                <p class="text-gray-700 leading-normal">{{this.description}}</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+      <div class="md:mt-4">
+        <a href="/companies" class="text-red-600 leading-normal hover:underline">View all companies</a>
+      </div>
+    </section>
   </div>
 </section>

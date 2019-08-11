@@ -5,14 +5,14 @@ const router = express.Router();
 
 const aboutRouter = require("./about");
 const companiesRouter = require("./companies");
+const homeRouter = require("./home");
 const jobsRouter = require("./jobs");
 const speakersRouter = require("./speakers");
 const meetupsRouter = require("./meetups");
 
 /* Routes */
 
-router.get("/", (req, res) => res.render("home"));
-
+router.use("/", homeRouter);
 router.use("/about", aboutRouter);
 router.use("/companies", companiesRouter);
 router.use("/jobs", jobsRouter);
