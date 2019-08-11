@@ -24,7 +24,7 @@
           <dt class="font-bold mt-12 mb-2">Website</dt>
           <dd class="text-grey-dark leading-normal">
             {{#if company.websiteUrl}}
-            <a href="{{company.websiteUrl}}" class="text-red leading-normal" target="_blank">{{company.websiteUrl}}</a>
+            <a href="{{company.websiteUrl}}" class="text-red-600 leading-normal hover:underline" target="_blank">{{company.websiteUrl}}</a>
             {{else}}
             -
             {{/if}}
@@ -35,7 +35,7 @@
           <dt class="font-bold mt-12 mb-2">Careers</dt>
           <dd class="text-grey-dark leading-normal">
             {{#if company.careersUrl}}
-            <a href="{{company.careersUrl}}" class="text-red leading-normal" target="_blank">{{company.careersUrl}}</a>
+            <a href="{{company.careersUrl}}" class="text-red-600 leading-normal hover:underline" target="_blank">{{company.careersUrl}}</a>
             {{else}}
             -
             {{/if}}
@@ -48,7 +48,7 @@
           <dt class="font-bold mt-12 mb-2 lg:mt-0">Contact email</dt>
           <dd class="leading-normal">
             {{#if company.emailAddress}}
-            <a href="{{company.emailAddress}}" class="text-red leading-normal" target="_blank">{{company.emailAddress}}</a>
+            <a href="{{company.emailAddress}}" class="text-red-600 leading-normal hover:underline" target="_blank">{{company.emailAddress}}</a>
             {{else}}
             <span class="text-grey-dark leading-normal">-</span>
             {{/if}}
@@ -59,7 +59,7 @@
           <dt class="font-bold mt-12 mb-2">Twitter</dt>
           <dd class="leading-normal">
             {{#if company.twitterUrl}}
-            <a href="{{company.twitterUrl}}" class="text-red leading-normal" target="_blank">{{company.twitterUrl}}</a>
+            <a href="{{company.twitterUrl}}" class="text-red-600 leading-normal hover:underline" target="_blank">{{company.twitterUrl}}</a>
             {{else}}
             <span class="text-grey-dark leading-normal">-</span>
             {{/if}}
@@ -73,7 +73,7 @@
       <ul class="list-reset">
         {{#each matchedJobs}}
         <li class="mb-4">
-          <a href="{{this.link}}" class="text-red" target="_blank">{{this.title}}</a>
+          <a href="{{this.link}}" class="text-red-600" target="_blank">{{this.title}}</a>
         </li>
         {{else}}
         <p class="text-grey-dark leading-normal mb-4">We don't know of any job openings at the moment but that doesn't mean they're not recruiting...</p>
