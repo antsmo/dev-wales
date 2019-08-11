@@ -11,7 +11,7 @@ const meetupsRouter = require("./meetups");
 
 /* Routes */
 
-router.get("/", (req, res) => res.redirect("/companies"));
+router.get("/", (req, res) => res.render("home"));
 
 router.use("/about", aboutRouter);
 router.use("/companies", companiesRouter);
