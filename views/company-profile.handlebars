@@ -1,10 +1,10 @@
-<div class="bg-grey-lighter py-16">
+<div class="bg-gray-200 py-16">
   <div class="container mx-auto px-4">
     <div class="w-full md:w-2/3 xl:w-1/2 flex">
-      <div class="w-24 h-24 mr-8 bg-contain bg-no-repeat bg-center rounded flex-no-shrink" style="background-image: url({{company.logoUrl}})"></div>
+      <div class="w-24 h-24 mr-8 bg-contain bg-no-repeat bg-center rounded flex-shrink-0" style="background-image: url({{company.logoUrl}})"></div>
       <div>
-        <h1>{{company.name}}</h1>
-        <p class="mt-4 text-lg text-grey-dark leading-normal">{{company.description}}</p>
+        <h1 class="text-4xl">{{company.name}}</h1>
+        <p class="mt-4 text-lg text-gray-600 leading-normal">{{company.description}}</p>
       </div>
     </div>
   </div>
@@ -14,43 +14,62 @@
   <div class="container mx-auto px-4 flex flex-wrap">
     <div class="w-full md:w-1/2 lg:w-2/3 flex flex-row flex-wrap">
       <div class="w-full lg:w-1/2">
-        <h4 class="mb-2">Location</h4>
-        <span class="leading-normal">{{arrayToListString company.locations}}</span>
 
-        <h4 class="mb-2 mt-12">Website</h4>
-        {{#if company.websiteUrl}}
-        <a href="{{company.websiteUrl}}" class="text-red leading-normal" target="_blank">{{company.websiteUrl}}</a>
-        {{else}}
-        <span class="text-grey-dark leading-normal">-</span>
-        {{/if}}
+        <dl>
+          <dt class="font-bold mb-2">Location</dt>
+          <dd class="leading-normal">{{arrayToListString company.locations}}</dd>
+        </dl>
 
-        <h4 class="mt-12 mb-2">Careers</h4>
-        {{#if company.careersUrl}}
-        <a href="{{company.careersUrl}}" class="text-red leading-normal" target="_blank">{{company.careersUrl}}</a>
-        {{else}}
-        <span class="text-grey-dark leading-normal">-</span>
-        {{/if}}
+        <dl>
+          <dt class="font-bold mt-12 mb-2">Website</dt>
+          <dd class="text-grey-dark leading-normal">
+            {{#if company.websiteUrl}}
+            <a href="{{company.websiteUrl}}" class="text-red leading-normal" target="_blank">{{company.websiteUrl}}</a>
+            {{else}}
+            -
+            {{/if}}
+          </dd>
+        </dl>
+
+        <dl>
+          <dt class="font-bold mt-12 mb-2">Careers</dt>
+          <dd class="text-grey-dark leading-normal">
+            {{#if company.careersUrl}}
+            <a href="{{company.careersUrl}}" class="text-red leading-normal" target="_blank">{{company.careersUrl}}</a>
+            {{else}}
+            -
+            {{/if}}
+          </dd>
+        </dl>
       </div>
 
       <div class="w-full lg:w-1/2">
-        <h4 class="mt-12 mb-2 lg:mt-0">Contact email</h4>
-        {{#if company.emailAddress}}
-        <a href="{{company.emailAddress}}" class="text-red leading-normal" target="_blank">{{company.emailAddress}}</a>
-        {{else}}
-        <span class="text-grey-dark leading-normal">-</span>
-        {{/if}}
+        <dl>
+          <dt class="font-bold mt-12 mb-2 lg:mt-0">Contact email</dt>
+          <dd class="leading-normal">
+            {{#if company.emailAddress}}
+            <a href="{{company.emailAddress}}" class="text-red leading-normal" target="_blank">{{company.emailAddress}}</a>
+            {{else}}
+            <span class="text-grey-dark leading-normal">-</span>
+            {{/if}}
+          </dd>
+        </dl>
 
-        <h4 class="mt-12 mb-2">Twitter</h4>
-        {{#if company.twitterUrl}}
-        <a href="{{company.twitterUrl}}" class="text-red leading-normal" target="_blank">{{company.twitterUrl}}</a>
-        {{else}}
-        <span class="text-grey-dark leading-normal">-</span>
-        {{/if}}
+        <dl>
+          <dt class="font-bold mt-12 mb-2">Twitter</dt>
+          <dd class="leading-normal">
+            {{#if company.twitterUrl}}
+            <a href="{{company.twitterUrl}}" class="text-red leading-normal" target="_blank">{{company.twitterUrl}}</a>
+            {{else}}
+            <span class="text-grey-dark leading-normal">-</span>
+            {{/if}}
+          </dd>
+        </dl>
       </div>
     </div>
 
     {{!-- <div class="w-full md:w-1/3">
-      <h4 class="mb-2 mt-12 md:mt-0">Current job openings</h4>
+      <h2 class="mb-2 mt-12 md:mt-0">Current job openings</h2>
       <ul class="list-reset">
         {{#each matchedJobs}}
         <li class="mb-4">

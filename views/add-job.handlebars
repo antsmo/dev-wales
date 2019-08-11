@@ -7,14 +7,14 @@
       <a href="/jobs" class="block sm:inline text-green-dark">View all jobs</a>
     </div>
     {{else if error}}
-    <div class="mb-6 px-4 py-3 bg-red-lightest border border-red-light text-red-dark rounded relative" role="alert">
+    <div class="mb-6 px-4 py-3 bg-red-lightest border border-red-600-light text-red-dark rounded relative" role="alert">
       <strong class="font-bold">Uh-oh!</strong>
       <span class="block sm:inline">Something went wrong, please try again...</span>
     </div>
     {{/if}}
 
     <div class="w-full md:w-3/4 lg:w-1/2 md:mr-8 lg:mr-0">
-      <h1 class="mb-8">Add a job</h1>
+      <h1 class="text-4xl mb-8">Add a job</h1>
 
       <form name="jobForm" method="POST" action="/jobs/add" autocomplete="off">
         <div class="mb-6 hidden">
@@ -41,7 +41,7 @@
             Job title
           </label>
           <input type="text" id="job-title-input" name="title"
-            class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red"
+            class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-600"
             required />
         </div>
 
@@ -49,44 +49,44 @@
           <label for="job-description-input" class="block tracking-wide text-grey-darker text-sm font-bold mb-2">
             Job description
           </label>
-          <textarea id="job-description-input" name="description" rows="4" class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red"></textarea>
+          <textarea id="job-description-input" name="description" rows="4" class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-600"></textarea>
         </div>
 
         <div id="job-link">
           <label for="job-link-input" class="block tracking-wide text-grey-darker text-sm font-bold mb-1">
             URL
           </label>
-          <input type="url" pattern="https?://.+" oninvalid="this.setCustomValidity('Please enter a URL including https://')" oninput="this.setCustomValidity('')" id="job-link-input" name="link" class="mb-6 py-2 px-4 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded leading-tight focus:outline-none focus:bg-white focus:border-red" required />
+          <input type="url" pattern="https?://.+" oninvalid="this.setCustomValidity('Please enter a URL including https://')" oninput="this.setCustomValidity('')" id="job-link-input" name="link" class="mb-6 py-2 px-4 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded leading-tight focus:outline-none focus:bg-white focus:border-red-600" required />
         </div>
 
         <div id="company-name">
           <label for="company-name-input" class="block tracking-wide text-grey-darker text-sm font-bold mb-2">
             Company name
           </label>
-          <input type="text" id="company-name-input" name="companyName" list="company-name-options" class="mb-6 py-2 px-4 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded leading-tight focus:outline-none focus:bg-white focus:border-red" required />
+          <input type="text" id="company-name-input" name="companyName" list="company-name-options" class="mb-6 py-2 px-4 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded leading-tight focus:outline-none focus:bg-white focus:border-red-600" required />
           <datalist id="company-name-options">
             {{#each companies}}
             <option value="{{this.name}}" />
-            {{/each}}
-          </datalist>
-        </div>
+              {{/each}}
+            </datalist>
+          </div>
 
-        <div id="location">
-          <label for="location-input" class="block tracking-wide text-grey-darker text-sm font-bold mb-2">
-            Location
-          </label>
-          <input type="text" id="location-input" name="location" class="mb-6 py-2 px-4 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded leading-tight focus:outline-none focus:bg-white focus:border-red" required />
-        </div>
+          <div id="location">
+            <label for="location-input" class="block tracking-wide text-grey-darker text-sm font-bold mb-2">
+              Location
+            </label>
+            <input type="text" id="location-input" name="location" class="mb-6 py-2 px-4 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded leading-tight focus:outline-none focus:bg-white focus:border-red-600" required />
+          </div>
 
-        <button class="inline-block mt-2 px-4 py-3 leading-none no-underline rounded bg-red hover:bg-red-dark text-white">
-          Add job
-        </button>
-      </form>
+          <button type="submit" class="inline-flex items-center px-4 py-3 leading-none no-underline rounded bg-red-600 hover:bg-red-700 text-white mt-6">
+            Add job
+          </button>
+        </form>
+      </div>
     </div>
   </div>
-</div>
 
-<script>
+  <script>
   // Handle radio button onchange event
   var rad = document.jobForm.type;
   var prev = null;

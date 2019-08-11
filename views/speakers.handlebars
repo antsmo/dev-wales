@@ -1,36 +1,34 @@
 {{#> pageHero}}
-  <h1 class="text-white">Psst, we've got what you need ‍👩‍🎤</h1>
-  <p class="mt-4 text-lg leading-normal text-red-lighter">
-    We're building a list of the best speakers to give talks at meetups, conferences or other events.
-  </p>
-  <p class="mt-4 text-lg leading-normal text-red-lighter">
-    If you're a speaker then join the list so that event organisers can reach out to you.
-  </p>
-  <a href="/speakers/add" target="_blank" class="inline-flex items-center px-4 py-3 leading-none no-underline rounded bg-red hover:bg-white text-white hover:text-red-dark mt-6">
-    Join the list <span class="text-2xl ml-2">👋</span>
-  </a>
+<h1 class="text-white text-4xl">Psst, we've got what you need ‍👩‍🎤</h1>
+<p class="mt-4 text-lg text-red-200 leading-normal">
+  We're building a list of the best speakers to give talks at meetups, conferences or other events.
+</p>
+<p class="mt-4 text-lg text-red-200 leading-normal">
+  If you're a speaker then join the list so that event organisers can reach out to you.
+</p>
+<a href="/speakers/add" target="_blank" class="inline-flex items-center px-4 py-3 leading-none no-underline rounded bg-red-600 hover:bg-white text-white hover:text-red-800 mt-6">
+  Join the list <span class="text-2xl ml-2">👋</span>
+</a>
 {{/pageHero}}
 
 <div class="py-8 px-4">
   <div class="container mx-auto flex flex-col lg:flex-row">
     <div class="w-full lg:w-1/2">
-      <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">
+      <div class="block tracking-wide text-gray-700 text-sm font-bold mb-2">
         Showing <span id="result-count">{{speakers.length}}</span> speakers
       </div>
       <div id="speakers-list">
         {{#each speakers}}
-        <div class="flex flex-row items-center bg-white p-4 sm:p-6 mb-2 rounded shadow">
-          <div class="w-full flex flex-col">
-            <span class="text-black font-bold mb-2">{{this.name}}</span>
-            <span class="text-grey-darker leading-normal">{{this.topics}}</span>
-          </div>
+        <div class="bg-white p-4 sm:p-6 mb-2 rounded shadow">
+          <h2 class="text-black font-bold mb-2">{{this.name}}</h2>
+          <p class="text-gray-700 leading-normal mb-2">{{this.topics}}</p>
           {{#preferredContact this}}
-          <a class="flex-no-shrink text-red" href="{{this.link}}" target="_blank">{{this.label}}</a>
+          <a class="text-red-600 hover:underline" href="{{this.link}}" target="_blank">{{this.label}}</a>
           {{/preferredContact}}
         </div>
         {{else}}
-        <div class="my-4 text-lg leading-normal text-grey-dark">No speakers have been added yet 😩</div>
-        <a href="/speakers/add" class="text-red">Click here to join the list</a>
+        <div class="my-4 text-lg leading-normal text-gray-800">No speakers have been added yet 😩</div>
+        <a href="/speakers/add" class="text-red-600">Click here to join the list</a>
         {{/each}}
       </div>
     </div>

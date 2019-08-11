@@ -1,46 +1,48 @@
 {{#> pageHero}}
-  <div class="flex flex-row items-center">
-    <h1 class="text-white">Take control of your career 💪</h1>
-    <div class="ml-4 py-2 px-4 rounded-full bg-red-lighter text-red-dark">Beta</div>
-  </div>
-  <p class="mt-4 text-lg leading-normal text-red-lighter">
-    No recruiters, no nonsense - just awesome jobs for developers.
-  </p>
-  <p class="mt-4 text-lg leading-normal text-red-lighter">
-    We'll get out of the way so that you can take control of your job hunt and apply directly to your favourite companies.
-  </p>
-  <a href="/jobs/add" class="inline-flex items-center px-4 py-3 leading-none no-underline rounded bg-red hover:bg-white text-white hover:text-red-dark mt-6">
-    Add a job <span class="text-2xl ml-2">📝</span>
-  </a>
+<div class="flex flex-row items-center">
+  <h1 class="text-white text-4xl">Take control of your career 💪</h1>
+  <div class="ml-4 py-2 px-4 rounded-full bg-red-300 text-red-800">Beta</div>
+</div>
+<p class="mt-4 text-lg text-red-200 leading-normal">
+  No recruiters, no nonsense - just awesome jobs for developers.
+</p>
+<p class="mt-4 text-lg text-red-200 leading-normal">
+  We'll get out of the way so that you can take control of your job hunt and apply directly to your favourite companies.
+</p>
+<a href="/jobs/add" class="inline-flex items-center px-4 py-3 leading-none no-underline rounded bg-red-600 hover:bg-white text-white hover:text-red-800 mt-6">
+  Add a job <span class="text-2xl ml-2">📝</span>
+</a>
 {{/pageHero}}
 
 <div class="py-8 px-4">
   <div class="container mx-auto flex flex-col lg:flex-row">
     <div class="w-full lg:w-1/4 mr-6">
-      <label class="block tracking-wide text-grey-darker text-sm font-bold mb-2" for="search-input">
+      <label class="block tracking-wide text-gray-700 text-sm font-bold mb-2" for="search-input">
         Search
       </label>
-      <input id="search-input" type="text" name="search" placeholder="Search job titles..." onkeyup="updateJobs()" autocomplete="off" class="mb-6 appearance-none block w-full bg-white text-grey-darker border border-grey-light rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red" />
+      <input id="search-input" type="text" name="search" placeholder="Search job titles..." onkeyup="updateJobs()" autocomplete="off" class="mb-6 appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-600" />
       {{!-- <button class="text-red underline cursor-pointer" onclick="clearFilters();">Clear filters</button> --}}
     </div>
     <div class="w-full lg:w-1/2">
       <div class="block tracking-wide text-grey-darker text-sm font-bold mb-2">Showing <span id="result-count">{{jobs.length}}</span> jobs</div>
-      <div id="job-list">
+      <ul id="job-list">
         {{#each jobs}}
-        <a href="{{this.link}}" class="no-underline" target="_blank">
-          <div class="flex flex-row items-start bg-white p-4 sm:p-6 mb-2 rounded shadow">
-            <div class="flex-1 flex flex-col">
-              <span class="text-black font-bold mb-1">{{this.title}}</span>
-              <span class="text-black text-sm leading-normal">at {{this.companyName}}, {{this.location}}</span>
-              {{#ifEquals this.type "post"}}
-              <span class="mt-2 text-grey-darker text-sm leading-normal">{{{this.description}}}</span>
-              {{/ifEquals}}
+        <li>
+          <a href="{{this.link}}" class="no-underline" target="_blank">
+            <div class="flex flex-row items-start bg-white p-4 sm:p-6 mb-2 rounded shadow">
+              <div class="flex-1 flex flex-col">
+                <h2 class="font-bold mb-1">{{this.title}}</h2>
+                <p class="text-gray-700 text-sm leading-normal">at {{this.companyName}}, {{this.location}}</p>
+                {{#ifEquals this.type "post"}}
+                <p class="mt-2 text-gray-700 text-sm leading-normal">{{{this.description}}}</p>
+                {{/ifEquals}}
+              </div>
+              <p class="text-gray-700 text-sm leading-normal">Added {{this.timeSince}}</p>
             </div>
-            <span class="text-grey-darker text-sm leading-normal">Added {{this.timeSince}}</span>
-          </div>
-        </a>
+          </a>
+        </li>
         {{/each}}
-      </div>
+      </ul>
     </div>
   </div>
 </div>
@@ -50,7 +52,7 @@
   const jobList = document.getElementById("job-list");
   const searchInput = document.getElementById("search-input");
   const resultCount = document.getElementById("result-count");
-  
+
   function updateJobs() {
     let filteredJobs = jobs;
     filteredJobs = applySearchFilter(filteredJobs);
