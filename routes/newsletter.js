@@ -7,7 +7,7 @@ router.get("/", (req, res) => {
   res.render("newsletter");
 })
 
-router.post("/", (req, res) => {
+router.post("/subscribe", (req, res) => {
   const { email } = req.body;
   newsletterApi.addSubscriber(email, recordId => {
     if (!recordId) {
