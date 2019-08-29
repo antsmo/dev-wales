@@ -5,6 +5,7 @@ const router = express.Router();
 
 const aboutRouter = require("./about");
 const companiesRouter = require("./companies");
+const eventsRouter = require("./events");
 const homeRouter = require("./home");
 const jobsRouter = require("./jobs");
 const newsletterRouter = require("./newsletter");
@@ -16,6 +17,7 @@ const meetupsRouter = require("./meetups");
 router.use("/", homeRouter);
 router.use("/about", aboutRouter);
 router.use("/companies", companiesRouter);
+router.use("/events", eventsRouter);
 router.use("/jobs", jobsRouter);
 router.use("/newsletter", newsletterRouter);
 router.use("/speakers", speakersRouter);
