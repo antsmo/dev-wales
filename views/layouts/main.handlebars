@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:700|Open+Sans|Open+Sans:700|Open+Sans:600" rel="stylesheet">
     <script>
       !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+      // TODO - Move this API key into ENV
       analytics.load("HMCs1KCAwj2HG1RvthoiNWBkPKJ4yTee");
       analytics.page();
       }}();
@@ -48,67 +49,68 @@
         </div>
         <div class="block md:hidden">
           <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-red-100 border-red-200 hover:text-white hover:border-white">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <p class="mr-3">Menu</p>
+            <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <title>Menu</title>
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-              </svg>
-            </button>
+            </svg>
+          </button>
+        </div>
+        <div id="nav-items" class="w-full flex-grow hidden md:block md:flex md:items-center md:w-auto">
+          <div class="text-sm md:flex-grow">
+            <a href="/meetups" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.meetups}}text-white{{else}}text-red-200{{/if}}">
+              <span class="text-lg mr-2">🍺</span> Meetups
+            </a>
+            <a href="/speakers" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.speakers}}text-white{{else}}text-red-200{{/if}}">
+              <span class="text-lg mr-2">🎤</span> Speakers
+            </a>
+            <a href="/companies" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.companies}}text-white{{else}}text-red-200{{/if}}">
+              <span class="text-lg mr-2">📖</span> Companies
+            </a>
+            <a href="/jobs" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.jobs}}text-white{{else}}text-red-200{{/if}}">
+              <span class="text-lg mr-2">👩‍💻</span> Job board
+            </a>
+            <a href="/about" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-red-200{{/if}}">
+              <span class="text-lg mr-2">🚀</span> About
+            </a>
           </div>
-          <div id="nav-items" class="w-full flex-grow hidden md:block md:flex md:items-center md:w-auto">
-            <div class="text-sm md:flex-grow">
-              <a href="/meetups" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.meetups}}text-white{{else}}text-red-200{{/if}}">
-                <span class="text-lg mr-2">🍺</span> Meetups
+        </div>
+      </div>
+    </nav>
+    <main class="bg-gray-100">
+      {{{ body }}}
+    </main>
+    <footer class="py-12 px-4 bg-gray-900 text-white">
+      <div class="container mx-auto">
+        <div class="w-full flex flex-col sm:flex-row justify-between items-start sm:px-0">
+          <div class="text-sm md:flex-grow">
+            <a href="/meetups" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.meetups}}text-white{{else}}text-gray-500{{/if}}">Meetups</a>
+            <a href="/speakers" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.speakers}}text-white{{else}}text-gray-500{{/if}}">Speakers</a>
+            <a href="/companies" class="block no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.companies}}text-white{{else}}text-gray-500{{/if}}">Companies</a>
+            <a href="/jobs" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.jobs}}text-white{{else}}text-gray-500{{/if}}">Job board</a>
+            <a href="/about" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-gray-500{{/if}}">About</a>
+          </div>
+          <div>
+            <div class="text-sm flex flex-col md:flex-row sm:items-end">
+              <a class="flex items-center text-gray-500 hover:text-white no-underline mt-8 sm:mt-0" href="https://github.com/MyGuySi/dev-wales" target="_blank">
+                <span class="mr-2">Open-sourced on GitHub</span>
+                <img class="opacity-50" src="/static/github.svg" alt="GitHub logo" width="24" height="24" />
               </a>
-              <a href="/speakers" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.speakers}}text-white{{else}}text-red-200{{/if}}">
-                <span class="text-lg mr-2">🎤</span> Speakers
-              </a>
-              <a href="/companies" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.companies}}text-white{{else}}text-red-200{{/if}}">
-                <span class="text-lg mr-2">📖</span> Companies
-              </a>
-              <a href="/jobs" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.jobs}}text-white{{else}}text-red-200{{/if}}">
-                <span class="text-lg mr-2">👩‍💻</span> Job board
-              </a>
-              <a href="/about" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-red-200{{/if}}">
-                <span class="text-lg mr-2">🚀</span> About
+              <a class="flex items-center text-gray-500 hover:text-white no-underline md:ml-8 mt-4 md:mt-0" href="https://twitter.com/myguysi" target="_blank">
+                <span class="mr-2">Built by Simon Anthony</span>
+                <img class="opacity-50" src="/static/twitter.svg" alt="Twitter logo" width="25" height="20" />
               </a>
             </div>
           </div>
         </div>
-      </nav>
-      <main class="bg-gray-100">
-        {{{ body }}}
-      </main>
-      <footer class="py-12 px-4 bg-gray-900 text-white">
-        <div class="container mx-auto">
-          <div class="w-full flex flex-col sm:flex-row justify-between items-start sm:px-0">
-            <div class="text-sm md:flex-grow">
-              <a href="/meetups" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.meetups}}text-white{{else}}text-gray-500{{/if}}">Meetups</a>
-              <a href="/speakers" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.speakers}}text-white{{else}}text-gray-500{{/if}}">Speakers</a>
-              <a href="/companies" class="block no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.companies}}text-white{{else}}text-gray-500{{/if}}">Companies</a>
-              <a href="/jobs" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.jobs}}text-white{{else}}text-gray-500{{/if}}">Job board</a>
-              <a href="/about" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-gray-500{{/if}}">About</a>
-            </div>
-            <div>
-              <div class="text-sm flex flex-col md:flex-row sm:items-end">
-                <a class="flex items-center text-gray-500 hover:text-white no-underline mt-8 sm:mt-0" href="https://github.com/MyGuySi/dev-wales" target="_blank">
-                  <span class="mr-2">Open-sourced on GitHub</span>
-                  <img class="opacity-50" src="/static/github.svg" alt="GitHub logo" width="24" height="24" />
-                </a>
-                <a class="flex items-center text-gray-500 hover:text-white no-underline md:ml-8 mt-4 md:mt-0" href="https://twitter.com/myguysi" target="_blank">
-                  <span class="mr-2">Built by Simon Anthony</span>
-                  <img class="opacity-50" src="/static/twitter.svg" alt="Twitter logo" width="25" height="20" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <script>
-        const navToggle = document.getElementById("nav-toggle");
-        const navItems = document.getElementById("nav-items")
-        navToggle.onclick = function () {
-          navItems.classList.toggle("hidden");
-        }
-      </script>
-    </body>
-  </html>
+      </div>
+    </footer>
+    <script>
+      const navToggle = document.getElementById("nav-toggle");
+      const navItems = document.getElementById("nav-items")
+      navToggle.onclick = function () {
+        navItems.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
