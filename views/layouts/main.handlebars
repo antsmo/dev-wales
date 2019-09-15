@@ -33,7 +33,7 @@
   </style>
   </head>
   <body>
-    <nav class="bg-red-700 px-4 py-3">
+    <header class="bg-red-700 px-4 py-3">
       <div class="container mx-auto flex items-center justify-between flex-wrap">
         <div class="flex-no-shrink mr-10">
           <a href="/">
@@ -49,7 +49,7 @@
             </svg>
           </button>
         </div>
-        <div id="nav-items" class="w-full flex-grow hidden md:block md:flex md:items-center md:w-auto">
+        <nav id="nav-items" class="w-full flex-grow hidden md:block md:flex md:items-center md:w-auto">
           <div class="text-sm md:flex-grow">
             <a href="/meetups" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.meetups}}text-white{{else}}text-red-200{{/if}}">
               <span class="text-lg mr-2">🍺</span> Meetups
@@ -67,9 +67,9 @@
               <span class="text-lg mr-2">🚀</span> About
             </a>
           </div>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </header>
     <main class="bg-gray-100">
       {{{ body }}}
     </main>
