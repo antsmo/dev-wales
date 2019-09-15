@@ -5,13 +5,18 @@ const usersApi = require("../lib/api/users");
 const logsApi = require("../lib/api/logs");
 
 router.get("/:username", (req, res) => {
-  const username = req.params.username.toLowerCase();
   logsApi.logRequest(req);
+  
+  const username = req.params.username.toLowerCase();
   usersApi.getUsers(users => {
     const user = users.find(user => user.username.toLowerCase() === username)
-    res.render("user-profile", {
-      user
-    });
+
+    if (!user) {
+      res.status(404).render("404");
+      return;
+    }
+
+    res.render("user-profile", { user });
   });
 });
 

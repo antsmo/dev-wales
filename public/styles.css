@@ -1,0 +1,17 @@
+.l-user-profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .l-user-profile {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .l-user-profile {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}

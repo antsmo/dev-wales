@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="/static/favicon.png" />
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:700|Open+Sans|Open+Sans:700|Open+Sans:600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
     <!-- Segment -->
     <script>
       !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
@@ -30,11 +31,14 @@
     h1, h2, h3, h4, h5, h6, #title {
       font-family: 'Muli', sans-serif;
     }
+    .container-xs {
+      max-width: 600px;
+    }
   </style>
   </head>
   <body>
-    <header class="bg-red-700 px-4 py-3">
-      <div class="container mx-auto flex items-center justify-between flex-wrap">
+    <header class="bg-red-700 py-3">
+      <div class="container px-4 mx-auto flex items-center justify-between flex-wrap">
         <div class="flex-no-shrink mr-10">
           <a href="/">
             <img src="/static/logo-alt.png" width="124" height="56" alt="website logo" />
@@ -70,11 +74,11 @@
         </nav>
       </div>
     </header>
-    <main class="bg-gray-100">
+    <main class="bg-gray-100 relative">
       {{{ body }}}
     </main>
-    <footer class="py-12 px-4 bg-gray-900 text-white">
-      <div class="container mx-auto">
+    <footer class="py-12 bg-gray-900 text-white">
+      <div class="container px-4 mx-auto">
         <div class="w-full flex flex-col sm:flex-row justify-between items-start sm:px-0">
           <div class="text-sm md:flex-grow">
             <a href="/meetups" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.meetups}}text-white{{else}}text-gray-500{{/if}}">Meetups</a>
