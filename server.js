@@ -23,6 +23,9 @@ const appRouter = require("./routes/index");
 
 app.use("/", appRouter);
 app.use("/static", express.static("public"));
+app.use(function (req, res, next) {
+  res.status(404).render("404");
+})
 
 /* Start server */
 
