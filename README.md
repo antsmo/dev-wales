@@ -1,6 +1,6 @@
 # Dev Wales
 
-> A community-led website featuring a collection of resources for developers in Wales.
+> A community-led website featuring a collection of resources for developers in Wales. You can find it at devwales.com.
 
 * [About this project]()
 * [Getting started]()
@@ -33,6 +33,10 @@ The application is a [Node.js Express](https://expressjs.com/) web server that r
 Data is stored in an [Airtable](https://airtable.com/) database and cached locally by the application for 30 minutes. Once the cache has expired it won't refresh until a web page is requested.
 
 HTML templates use the [Handlebars](https://handlebarsjs.com/) templating engine and live in the `/views` directory.
+
+For UI design and styling we're using the [Tailwind CSS](https://tailwindcss.com/) utility library.
+
+The app is currently hosted on [Heroku](https://www.heroku.com/home). Automatic deployments are enabled, so when changes are commited to the `master` branch it will build and deploy.
 
 ## Contributor guidelines
 
