@@ -2,10 +2,10 @@
 
 > A community-led website featuring a collection of resources for developers in Wales. You can find it at devwales.com.
 
-* [About this project]()
-* [Getting started]()
-* [Tech stack]()
-* [Contributor guidelines]()
+* [About this project](#about-this-project)
+* [Getting started](#getting-started)
+* [Tech stack](#tech-stack)
+* [Contributor guidelines](#contributor-guidelines)
 
 ## About this project
 
