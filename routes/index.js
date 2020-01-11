@@ -12,6 +12,7 @@ const newsletterRouter = require("./newsletter");
 const speakersRouter = require("./speakers");
 const meetupsRouter = require("./meetups");
 const usersRouter = require("./users");
+const venuesRouter = require("./venues");
 
 /* Routes */
 
@@ -24,5 +25,6 @@ router.use("/newsletter", newsletterRouter);
 router.use("/speakers", speakersRouter);
 router.use("/meetups", meetupsRouter);
 router.use("/users", usersRouter);
+router.use("/venues", venuesRouter);
 
 module.exports = router;
