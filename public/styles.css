@@ -13,6 +13,11 @@ h1, h2, h3, h4, h5, h6, #title {
   font-family: 'Muli', sans-serif;
 }
 
+a:not([class]) {
+  color: #e53e3e;
+  text-decoration: underline;
+}
+
 .container-xs {
   max-width: 600px;
 }
