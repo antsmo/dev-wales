@@ -22,6 +22,12 @@ a:not([class]) {
   max-width: 600px;
 }
 
+.l-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
 /* ====== */
 
 .l-user-profile {
@@ -33,6 +39,10 @@ a:not([class]) {
 @media only screen and (min-width: 768px) {
   .l-user-profile {
     grid-template-columns: 1fr 2fr;
+  }
+
+  .l-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

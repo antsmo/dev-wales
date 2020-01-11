@@ -5,35 +5,37 @@
 </p>
 {{/pageHero}}
 
-<section class="bg-red-700 pt-4 pb-8">
+<section class="bg-red-700 pb-8">
   <div class="container px-4 mx-auto">
-    <section class="bg-white rounded p-6">
-      <h2 class="text-2xl">I want to get involved in the community</h2>
-      <p class="mt-2">Why not join some local <a href="/meetups">meetups</a> and attend their <a href="/events">events</a>.</p>
-      <p class="mt-2">If you’re interested in giving a talk then join the <a href="/speakers">speakers</a> list.</p>
-    </section>
+    <div class="l-grid">
+      <section class="bg-white rounded p-6">
+        <h2 class="text-2xl">I want to get involved in the community</h2>
+        <p class="mt-2">Why not join some local <a href="/meetups">meetups</a> and attend their <a href="/events">events</a>.</p>
+        <p class="mt-2">If you’re interested in giving a talk then join the <a href="/speakers">speakers</a> list.</p>
+      </section>
 
-    <section class="bg-white rounded p-6 mt-4">
-      <h2 class="text-2xl">I’m a developer looking for work</h2>
-      <p class="mt-2">Check out <a href="/jobs">jobs</a> or check out <a href="/companies">companies</a> directly.</p>
-      <p class="mt-2">If you’re a contractor, join the <a href="/companies">companies</a> list.</p>
-    </section>
+      <section class="bg-white rounded p-6">
+        <h2 class="text-2xl">I’m a developer looking for work</h2>
+        <p class="mt-2">Check out <a href="/jobs">jobs</a> or check out <a href="/companies">companies</a> directly.</p>
+        <p class="mt-2">If you’re a contractor, join the <a href="/companies">companies</a> list.</p>
+      </section>
 
-    <section class="bg-white rounded p-6 mt-4">
-      <h2 class="text-2xl">We’re a company recruiting developers</h2>
-      <p class="mt-2">First make sure you’re on our list on <a href="/companies">companies</a> then add a listing to <a href="/jobs">jobs</a>. The <a href="/companies">companies</a> also list includes contractors that you can reach out to.</p>
-    </section>
+      <section class="bg-white rounded p-6">
+        <h2 class="text-2xl">We’re a company recruiting developers</h2>
+        <p class="mt-2">First make sure you’re on our list on <a href="/companies">companies</a> then add a listing to <a href="/jobs">jobs</a>. The <a href="/companies">companies</a> also list includes contractors that you can reach out to.</p>
+      </section>
 
-    <section class="bg-white rounded p-6 mt-4">
-      <h2 class="text-2xl">I’m an event organiser</h2>
-      <p class="mt-2">If you’re organising a <a href="/meetups">meetup</a> make sure you’re on the list. Reach out to <a href="/speakers">speakers</a> and find suitable <a href="/venues">venues</a>.</p>
-    </section>
+      <section class="bg-white rounded p-6">
+        <h2 class="text-2xl">I’m an event organiser</h2>
+        <p class="mt-2">If you’re organising a <a href="/meetups">meetup</a> make sure you’re on the list. Reach out to <a href="/speakers">speakers</a> and find suitable <a href="/venues">venues</a>.</p>
+      </section>
 
-    <section class="bg-white rounded p-6 mt-4">
-      <h2 class="text-2xl">I'm a student looking for opportunities</h2>
-      <p class="mt-2">There are lots of <a href="/companies">companies</a> that offer placements and graduate roles which you can find in <a href="/jobs">jobs</a>.</p>
-      <p class="mt-2">If you’re looking to study then check out these <a href="/courses">courses</a>.</p>
-    </section>
+      <section class="bg-white rounded p-6">
+        <h2 class="text-2xl">I'm a student looking for opportunities</h2>
+        <p class="mt-2">There are lots of <a href="/companies">companies</a> that offer placements and graduate roles which you can find in <a href="/jobs">jobs</a>.</p>
+        <p class="mt-2">If you’re looking to study then check out these <a href="/courses">courses</a>.</p>
+      </section>
+    </div>
   </div>
 </section>
 
@@ -115,10 +117,10 @@
         {{#each companies}}
         <li class="flex-1 mb-4 lg:mb-0 lg:pr-4">
           <div class="flex flex-row bg-white p-4 sm:p-6 rounded border border-gray-400 h-full">
-            <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain" style="background-image: url({{this.logoUrl}})"></div>
-            <div class="w-full flex flex-col">
+            <div class="w-16 h-16 flex-shrink-0 rounded bg-center bg-no-repeat bg-contain" style="background-image: url({{this.logoUrl}})"></div>
+            <div class="ml-4 flex flex-col flex-1">
               <h2 class="font-bold mb-2">{{this.name}}</h2>
-              <p class="text-gray-700 leading-normal">{{this.description}}</p>
+              <p class="flex-1 text-gray-700 leading-normal">{{this.description}}</p>
               <a class="mt-2 text-red-600 hover:underline" href="/companies/{{this.slug}}">View profile</a>
             </div>
           </div>
