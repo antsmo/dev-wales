@@ -5,6 +5,8 @@ const jobsApi = require("../lib/api/jobs");
 const companiesApi = require("../lib/api/companies");
 const logsApi = require("../lib/api/logs");
 
+const alertService = require("../services/alert");
+
 router.get("/", (req, res) => {
   logsApi.logRequest(req);
   jobsApi.getJobs(jobs => {
@@ -23,25 +25,26 @@ router.get("/add", (req, res) => {
 
 router.post("/add", (req, res) => {
   const { type, title, description, companyName, location, link } = req.body;
-  jobsApi.addJob(
-    {
-      type,
-      title,
-      description,
-      companyName,
-      location,
-      link
-    },
-    (error, recordId) => {
-      companiesApi.getCompanies(companies => {
-        res.render("add-job", {
-          companies,
-          error: error ? true : false,
-          success: !error ? true : false
-        });
-      });
+  const job = {
+    type,
+    title,
+    description,
+    companyName,
+    location,
+    link
+  }
+  jobsApi.addJob(job, (error, recordId) => {
+    if (!error) {
+      alertService.send({ event: "New job added", ...job });
     }
-  );
+    companiesApi.getCompanies(companies => {
+      res.render("add-job", {
+        companies,
+        error: error ? true : false,
+        success: !error ? true : false
+      });
+    });
+  });
 });
 
 module.exports = router;
