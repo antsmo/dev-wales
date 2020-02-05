@@ -31,64 +31,60 @@
             <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <title>Menu</title>
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
+              </svg>
+            </button>
+          </div>
+          <nav id="nav-items" class="w-full flex-grow hidden md:block md:flex md:items-center md:w-auto">
+            <div class="text-sm md:flex-grow">
+              <a href="/meetups" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.meetups}}text-white{{else}}text-red-200{{/if}}">
+                <span class="text-lg mr-2">🍺</span> Meetups
+              </a>
+              <a href="/speakers" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.speakers}}text-white{{else}}text-red-200{{/if}}">
+                <span class="text-lg mr-2">🎤</span> Speakers
+              </a>
+              <a href="/companies" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.companies}}text-white{{else}}text-red-200{{/if}}">
+                <span class="text-lg mr-2">📖</span> Companies
+              </a>
+              <a href="/jobs" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.jobs}}text-white{{else}}text-red-200{{/if}}">
+                <span class="text-lg mr-2">👩‍💻</span> Job board
+              </a>
+              <a href="/about" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-red-200{{/if}}">
+                <span class="text-lg mr-2">🚀</span> About
+              </a>
+            </div>
+          </nav>
         </div>
-        <nav id="nav-items" class="w-full flex-grow hidden md:block md:flex md:items-center md:w-auto">
-          <div class="text-sm md:flex-grow">
-            <a href="/meetups" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.meetups}}text-white{{else}}text-red-200{{/if}}">
-              <span class="text-lg mr-2">🍺</span> Meetups
-            </a>
-            <a href="/speakers" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.speakers}}text-white{{else}}text-red-200{{/if}}">
-              <span class="text-lg mr-2">🎤</span> Speakers
-            </a>
-            <a href="/companies" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.companies}}text-white{{else}}text-red-200{{/if}}">
-              <span class="text-lg mr-2">📖</span> Companies
-            </a>
-            <a href="/jobs" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white mr-6 {{#if active.jobs}}text-white{{else}}text-red-200{{/if}}">
-              <span class="text-lg mr-2">👩‍💻</span> Job board
-            </a>
-            <a href="/about" class="flex md:inline-flex items-center mt-4 no-underline md:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-red-200{{/if}}">
-              <span class="text-lg mr-2">🚀</span> About
-            </a>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main class="bg-gray-100 relative">
-      {{{ body }}}
-    </main>
-    <footer class="py-12 bg-gray-900 text-white">
-      <div class="container px-4 mx-auto">
-        <div class="w-full flex flex-col sm:flex-row justify-between items-start sm:px-0">
-          <div class="text-sm md:flex-grow">
-            <a href="/meetups" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.meetups}}text-white{{else}}text-gray-500{{/if}}">Meetups</a>
-            <a href="/speakers" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.speakers}}text-white{{else}}text-gray-500{{/if}}">Speakers</a>
-            <a href="/companies" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.companies}}text-white{{else}}text-gray-500{{/if}}">Companies</a>
-            <a href="/jobs" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.jobs}}text-white{{else}}text-gray-500{{/if}}">Job board</a>
-            <a href="/about" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-gray-500{{/if}}">About</a>
-          </div>
-          <div>
-            <div class="text-sm flex flex-col md:flex-row sm:items-end">
-              <a class="flex items-center text-gray-500 hover:text-white no-underline mt-8 sm:mt-0" href="https://github.com/MyGuySi/dev-wales" target="_blank">
-                <span class="mr-2">Open-sourced on GitHub</span>
-                <img class="opacity-50" src="/static/github.svg" alt="GitHub logo" width="24" height="24" />
-              </a>
-              <a class="flex items-center text-gray-500 hover:text-white no-underline md:ml-8 mt-4 md:mt-0" href="https://twitter.com/myguysi" target="_blank">
-                <span class="mr-2">Built by Simon Anthony</span>
-                <img class="opacity-50" src="/static/twitter.svg" alt="Twitter logo" width="25" height="20" />
-              </a>
+      </header>
+      <main class="bg-gray-100 relative">
+        {{{ body }}}
+      </main>
+      <footer class="py-12 bg-gray-900 text-white">
+        <div class="container px-4 mx-auto">
+          <div class="w-full flex flex-col sm:flex-row justify-between items-start sm:px-0">
+            <div class="text-sm md:flex-grow">
+              <a href="/meetups" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.meetups}}text-white{{else}}text-gray-500{{/if}}">Meetups</a>
+              <a href="/speakers" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.speakers}}text-white{{else}}text-gray-500{{/if}}">Speakers</a>
+              <a href="/companies" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.companies}}text-white{{else}}text-gray-500{{/if}}">Companies</a>
+              <a href="/jobs" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white mr-4 {{#if active.jobs}}text-white{{else}}text-gray-500{{/if}}">Job board</a>
+              <a href="/about" class="block mt-4 no-underline lg:inline-block lg:mt-0 hover:text-white {{#if active.about}}text-white{{else}}text-gray-500{{/if}}">About</a>
+            </div>
+            <div>
+              <div class="text-sm flex flex-col md:flex-row sm:items-end">
+                <a class="flex items-center text-gray-500 hover:text-white no-underline mt-8 sm:mt-0" href="https://twitter.com/myguysi" target="_blank">
+                  <span class="mr-2">Built by Simon Anthony</span>
+                  <img class="opacity-50" src="/static/twitter.svg" alt="Twitter logo" width="25" height="20" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <script>
-      const navToggle = document.getElementById("nav-toggle");
-      const navItems = document.getElementById("nav-items")
-      navToggle.onclick = function () {
-        navItems.classList.toggle("hidden");
-      }
-    </script>
-  </body>
-</html>
+      </footer>
+      <script>
+    const navToggle = document.getElementById("nav-toggle");
+    const navItems = document.getElementById("nav-items")
+    navToggle.onclick = function () {
+      navItems.classList.toggle("hidden");
+    }
+  </script>
+    </body>
+  </html>
