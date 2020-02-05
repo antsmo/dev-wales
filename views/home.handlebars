@@ -10,24 +10,24 @@
     <div class="l-grid">
       <section class="bg-white rounded p-6">
         <h2 class="text-2xl">I want to get involved in the community</h2>
-        <p class="mt-2">Why not join some local <a href="/meetups">meetups</a> and attend their events.</p>
-        <p class="mt-2">If you’re interested in giving a talk then join the <a href="/speakers">speakers</a> list.</p>
+        <p class="mt-2">Why not join some local <a id='community-meetup-link' href="/meetups">meetups</a> and attend their events.</p>
+        <p class="mt-2">If you’re interested in giving a talk then join the <a id='community-speakers-link' href="/speakers">speakers</a> list.</p>
       </section>
 
       <section class="bg-white rounded p-6">
         <h2 class="text-2xl">I’m a developer looking for work</h2>
-        <p class="mt-2">Check out <a href="/jobs">jobs</a> or check out <a href="/companies">companies</a> directly.</p>
-        <p class="mt-2">If you’re a contractor, join the <a href="/companies">companies</a> list.</p>
+        <p class="mt-2">Check out <a id='developer-jobs-link' href="/jobs">jobs</a> or check out <a id='developer-companies-link' href="/companies">companies</a> directly.</p>
+        <p class="mt-2">If you’re a contractor, join the <a id='contractor-companies-link' href="/companies">companies</a> list.</p>
       </section>
 
       <section class="bg-white rounded p-6">
         <h2 class="text-2xl">We’re a company recruiting developers</h2>
-        <p class="mt-2">First make sure you’re on our list on <a href="/companies">companies</a> then add a listing to <a href="/jobs">jobs</a>. The <a href="/companies">companies</a> also list includes contractors that you can reach out to.</p>
+        <p class="mt-2">First make sure you’re on our list on <a id='company-companies-link' href="/companies">companies</a> then add a listing to <a id='company-jobs-link' href="/jobs">jobs</a>. The <a id='company-contractors-link' href="/companies">companies</a> also list includes contractors that you can reach out to.</p>
       </section>
 
       <section class="bg-white rounded p-6">
         <h2 class="text-2xl">I’m an event organiser</h2>
-        <p class="mt-2">If you’re organising a <a href="/meetups">meetup</a> make sure you’re on the list. Reach out to <a href="/speakers">speakers</a> to come and talk at your events.</p>
+        <p class="mt-2">If you’re organising a <a id='organiser-meetups-link' href="/meetups">meetup</a> make sure you’re on the list. Reach out to <a id='organiser-speakers-link' href="/speakers">speakers</a> to come and talk at your events.</p>
       </section>
     </div>
   </div>
@@ -38,7 +38,7 @@
     <section class="mb-8 lg:mb-16">
       <h2 class="text-2xl">Featured meetups</h2>
       <div class="md:mt-4">
-        <a href="/meetups" class="text-red-600 leading-normal hover:underline">View all meetups</a>
+        <a id='view-meetups-link' href="/meetups" class="text-red-600 leading-normal hover:underline">View all meetups</a>
       </div>
       <ul class="list-none mt-4 md:mt-10 flex flex-col md:flex-row">
         {{#each meetups}}
@@ -85,7 +85,7 @@
     <section class="mb-8 lg:mb-16">
       <h2 class="text-2xl">Featured speakers</h2>
       <div class="lg:mt-4">
-        <a href="/speakers" class="text-red-600 leading-normal hover:underline">View all speakers</a>
+        <a id='view-speakers-link' href="/speakers" class="text-red-600 leading-normal hover:underline">View all speakers</a>
       </div>
       <ul class="list-none mt-4 flex flex-col lg:flex-row items-stretch">
         {{#each speakers}}
@@ -105,7 +105,7 @@
     <section class="mb-8 lg:mb-16">
       <h2 class="text-2xl">Featured companies</h2>
       <div class="md:mt-4">
-        <a href="/companies" class="text-red-600 leading-normal hover:underline">View all companies</a>
+        <a id='view-companies-link' href="/companies" class="text-red-600 leading-normal hover:underline">View all companies</a>
       </div>
       <ul class="list-none mt-4 flex flex-col lg:flex-row items-stretch">
         {{#each companies}}
@@ -124,3 +124,25 @@
     </section>
   </div>
 </section>
+
+<script>
+  const links = [
+    document.getElementById('community-meetup-link'),
+    document.getElementById('community-speakers-link'),
+    document.getElementById('developer-jobs-link'),
+    document.getElementById('developer-companies-link'),
+    document.getElementById('contractor-companies-link'),
+    document.getElementById('company-companies-link'),
+    document.getElementById('company-jobs-link'),
+    document.getElementById('company-contractors-link'),
+    document.getElementById('organiser-meetups-link'),
+    document.getElementById('organiser-speakers-link'),
+    document.getElementById('view-meetups-link'),
+    document.getElementById('view-speakers-link'),
+    document.getElementById('view-companies-link')
+  ];
+
+  links.forEach(element => {
+    analytics.trackLink(element, `Clicked ${element.id}`);
+  })
+</script>
