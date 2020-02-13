@@ -43,6 +43,16 @@
           <img src="/static/youtube.svg" class="h-6" alt="YouTube" />
         </a>
         {{/if}}
+        {{#if this.slackUrl}}
+        <a href="{{this.slackUrl}}" target="_blank" class="flex items-center bg-gray-200 hover:bg-red-200 h-8 px-2 rounded-full mr-2 sm:mr-0 sm:ml-2 md:ml-0 md:mr-2">
+          <img src="/static/slack.svg" class="h-6" alt="Slack" />
+        </a>
+        {{/if}}
+        {{#if this.websiteUrl}}
+        <a href="{{this.websiteUrl}}" target="_blank" class="flex items-center bg-gray-200 hover:bg-red-200 h-8 px-2 rounded-full mr-2 sm:mr-0 sm:ml-2 md:ml-0 md:mr-2">
+          <span class="text-gray-700 font-bold">Website</span>
+        </a>
+        {{/if}}
       </div>
     </div>
   </div>
