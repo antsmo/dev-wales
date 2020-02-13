@@ -1,18 +1,18 @@
 const express = require("express");
 const router = express.Router();
 
-const meetupsApi = require("../lib/api/meetups");
+const groupsApi = require("../lib/api/groups");
 const companiesApi = require("../lib/api/companies");
 const speakersApi = require("../lib/api/speakers");
 
 router.get("/", (req, res) => {
   companiesApi.getCompanies(companies => {
     speakersApi.getSpeakers(speakers => {
-      meetupsApi.getMeetups(meetups => {
+      groupsApi.getGroups(groups => {
         res.render("home", {
           companies: randomSubsetFromArray(companies, 3),
           speakers: randomSubsetFromArray(speakers, 3),
-          meetups: randomSubsetFromArray(meetups, 3)
+          groups: randomSubsetFromArray(groups, 3)
         });
       });
     });

@@ -4,13 +4,13 @@
   Communities grow when like-minded people come together and share their passions.
 </p>
 <p class="mt-4 text-lg text-red-200 leading-normal">
-  Find a meetup that resonates with you and get involved.
+  Find a group that resonates with you and get involved.
 </p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSewz_bJdPB-Nzt9O9Lia5v--_KLhILBldGjMLe378hZXibI7A/viewform?usp=sf_link" target="_blank" class="inline-flex items-center px-4 py-3 leading-none no-underline rounded bg-red-600 hover:bg-white text-white hover:text-red-800 mt-6">Add a meetup <span class="text-2xl ml-2">✍️</span></a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSewz_bJdPB-Nzt9O9Lia5v--_KLhILBldGjMLe378hZXibI7A/viewform?usp=sf_link" target="_blank" class="inline-flex items-center px-4 py-3 leading-none no-underline rounded bg-red-600 hover:bg-white text-white hover:text-red-800 mt-6">Add a group <span class="text-2xl ml-2">✍️</span></a>
 {{/pageHero}}
 
 {{#> gridLayout}}
-{{#each meetups}}
+{{#each groups}}
 <div class="md:w-1/3 md:mt-12 md:px-4 lg:mt-16">
   <div class="bg-white mb-2 p-4 shadow rounded flex items-center md:inline-flex md:flex-col md:w-full md:h-full md:p-6">
     {{#if this.logoUrl}}
@@ -59,6 +59,6 @@
 </div>
 
 {{else}}
-<div class="my-4 text-lg leading-normal text-gray-dark">No meetups have been added yet 😩</div>
+<div class="my-4 text-lg leading-normal text-gray-dark">No groups have been added yet 😩</div>
 {{/each}}
 {{/gridLayout}}

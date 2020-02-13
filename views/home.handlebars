@@ -10,7 +10,7 @@
     <div class="l-grid">
       <section class="bg-white rounded p-6">
         <h2 class="text-2xl">I want to get involved in the community</h2>
-        <p class="mt-2">Join one of the local <a id='community-meetup-link' href="/meetups">meetups</a> and attend their events. If you’re interested in giving a talk then join our <a id='community-speakers-link' href="/speakers">speakers</a> list so that organisers can find you.</p>
+        <p class="mt-2">Join one of the local <a id='community-groups-link' href="/groups">groups</a>. If you’re interested in giving a talk then join our <a id='community-speakers-link' href="/speakers">speakers</a> list so that organisers can find you.</p>
       </section>
 
       <section class="bg-white rounded p-6">
@@ -25,7 +25,7 @@
 
       <section class="bg-white rounded p-6">
         <h2 class="text-2xl">I’m an organiser running an event</h2>
-        <p class="mt-2">If you organise a <a id='organiser-meetups-link' href="/meetups">meetup</a> make sure you’re on the list. Reach out to <a id='organiser-speakers-link' href="/speakers">speakers</a> and invite them talk at your events.</p>
+        <p class="mt-2">If you organise a meetup make sure you’re on the <a id='organiser-meetups-link' href="/groups">groups</a> list. Reach out to <a id='organiser-speakers-link' href="/speakers">speakers</a> and invite them talk at your events.</p>
       </section>
     </div>
   </div>
@@ -34,12 +34,12 @@
 <section class="py-8 lg:py-12">
   <div class="container px-4 mx-auto">
     <section class="mb-8 lg:mb-16">
-      <h2 class="text-2xl">Featured meetups</h2>
+      <h2 class="text-2xl">Featured groups</h2>
       <div class="md:mt-4">
-        <a id='view-meetups-link' href="/meetups" class="text-red-600 leading-normal hover:underline">View all meetups</a>
+        <a id='view-meetups-link' href="/groups" class="text-red-600 leading-normal hover:underline">View all groups</a>
       </div>
       <ul class="list-none mt-4 md:mt-10 flex flex-col md:flex-row">
-        {{#each meetups}}
+        {{#each groups}}
         <li class="flex-1 mb-4 md:mb-0 md:pr-4">
           <div class="bg-white border border-gray-400 rounded p-4 flex items-center md:inline-flex md:flex-col md:w-full md:h-full md:p-6">
             {{#if this.logoUrl}}

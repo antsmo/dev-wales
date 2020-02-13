@@ -10,7 +10,7 @@ const homeRouter = require("./home");
 const jobsRouter = require("./jobs");
 const newsletterRouter = require("./newsletter");
 const speakersRouter = require("./speakers");
-const meetupsRouter = require("./meetups");
+const groupsRouter = require("./groups");
 const usersRouter = require("./users");
 const venuesRouter = require("./venues");
 
@@ -23,7 +23,7 @@ router.use("/events", eventsRouter);
 router.use("/jobs", jobsRouter);
 router.use("/newsletter", newsletterRouter);
 router.use("/speakers", speakersRouter);
-router.use("/meetups", meetupsRouter);
+router.use("/groups", groupsRouter);
 router.use("/users", usersRouter);
 router.use("/venues", venuesRouter);
 
