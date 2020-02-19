@@ -1,6 +1,16 @@
 const express = require("express");
 const router = express.Router();
 
+/* Controllers */
+
+const companiesController = require('../lib/api/companies');
+const eventsController = require('../lib/api/events');
+const groupsController = require('../lib/api/groups');
+const jobsController = require('../lib/api/jobs');
+const speakersController = require('../lib/api/speakers');
+const usersController = require('../lib/api/users');
+const venuesController = require('../lib/api/venues');
+
 /* Routers */
 
 const aboutRouter = require("./about");
@@ -26,5 +36,16 @@ router.use("/speakers", speakersRouter);
 router.use("/groups", groupsRouter);
 router.use("/users", usersRouter);
 router.use("/venues", venuesRouter);
+
+router.get("/invalidate", (req, res) => {
+  companiesController.invalidateCache();
+  eventsController.invalidateCache();
+  groupsController.invalidateCache();
+  jobsController.invalidateCache();
+  speakersController.invalidateCache();
+  usersController.invalidateCache();
+  venuesController.invalidateCache();
+  res.redirect('/');
+});
 
 module.exports = router;
