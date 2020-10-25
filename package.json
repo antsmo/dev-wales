@@ -1,0 +1,24 @@
+{
+  "name": "dev-wales",
+  "version": "1.0.0",
+  "description": "> A community-led website featuring a collection of resources for developers in Wales. You can find it at devwales.com.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyGuySi/dev-wales.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MyGuySi/dev-wales/issues"
+  },
+  "homepage": "https://github.com/MyGuySi/dev-wales#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "minimist": "^1.2.5"
+  }
+}
