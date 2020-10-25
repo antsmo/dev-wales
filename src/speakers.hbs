@@ -1,0 +1,14 @@
+---
+layout: main-layout
+---
+
+<h1>Speakers</h1>
+
+<ul>
+{{#each speakers}}
+  <li>
+    <p>{{ this.name }}</p>
+    <p>{{ this.topics }}</p>
+  </li>
+{{/each}}
+</ul>

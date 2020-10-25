@@ -1,0 +1,226 @@
+[
+  {
+    "name": "Matthew Macdonald-Wallace",
+    "topics": "Rural IoT, General IoT, Monitoring/Metrics, DevOps, Cultural Change",
+    "preferred_contact": "email",
+    "email_address": "matt@mockingbirdconsulting.co.uk",
+    "twitter_url": "",
+    "created_date": "8/2/2019 10:19am"
+  },
+  {
+    "name": "Thomas Guest",
+    "topics": "Python, Go, Remote Working, Testing, Algorithms, Software Development",
+    "preferred_contact": "email",
+    "email_address": "thomas.guest@gmail.com",
+    "twitter_url": "",
+    "created_date": "8/2/2019 12:27pm"
+  },
+  {
+    "name": "Vincent Knight",
+    "topics": "Python, Community, Game Theory, Education",
+    "preferred_contact": "email",
+    "email_address": "knightva@cardiff.ac.uk",
+    "twitter_url": "https://twitter.com/drvinceknight",
+    "created_date": "8/2/2019 12:28pm"
+  },
+  {
+    "name": "Craig Marvelley",
+    "topics": "Programming, Infrastructure, Team strategy",
+    "preferred_contact": "email",
+    "email_address": "craig@bipsync.com",
+    "twitter_url": "",
+    "created_date": "11/2/2019 2:37pm"
+  },
+  {
+    "name": "Jordan Phillips",
+    "topics": "Digital marketing/entrepreneurship",
+    "preferred_contact": "email",
+    "email_address": "jordan@webboxdigital.co.uk",
+    "twitter_url": "",
+    "created_date": "12/2/2019 3:12pm"
+  },
+  {
+    "name": "Will Roberts",
+    "topics": "Web design/digital marketing/entrepreneurship",
+    "preferred_contact": "email",
+    "email_address": "will@webboxdigital.co.uk",
+    "twitter_url": "",
+    "created_date": "12/2/2019 3:13pm"
+  },
+  {
+    "name": "Steph Locke",
+    "topics": "Data Science, DataOps, AI, Tech Startups",
+    "preferred_contact": "email",
+    "email_address": "steph@itsalocke.com",
+    "twitter_url": "",
+    "created_date": "13/2/2019 9:58am"
+  },
+  {
+    "name": "Eleanor Deal",
+    "topics": "Go, Software Development, Team Culture, Diversity and Inclusion",
+    "preferred_contact": "email",
+    "email_address": "eleanor.deal@methods.co.uk",
+    "twitter_url": "",
+    "created_date": "13/2/2019 10:05am"
+  },
+  {
+    "name": "Jack Rimell",
+    "topics": "JavaScript",
+    "preferred_contact": "email",
+    "email_address": "jackrimell123@gmail.com",
+    "twitter_url": "",
+    "created_date": "13/2/2019 10:05am"
+  },
+  {
+    "name": "Martin Chorley",
+    "topics": "Coding, Education, Data Visualisation",
+    "preferred_contact": "email",
+    "email_address": "chorleymj@cardiff.ac.uk",
+    "twitter_url": "",
+    "created_date": "13/2/2019 11:14am"
+  },
+  {
+    "name": "Steve McDougall",
+    "topics": "PHP, DevOps, APIs, API Standards, Automation",
+    "preferred_contact": "email",
+    "email_address": "juststevemcd@gmail.com",
+    "twitter_url": "https://twitter.com/JustSteveKing",
+    "created_date": "24/2/2019 1:04pm"
+  },
+  {
+    "name": "Viv Richards",
+    "topics": "Software testing, test automation, Chrome DevTools, Postman/API Testing, Visual testing",
+    "preferred_contact": "email",
+    "email_address": "hello@vivrichards.co.uk",
+    "twitter_url": "",
+    "created_date": "8/6/2019 10:14pm"
+  },
+  {
+    "name": "Dave Grant",
+    "topics": "Lean & Agile Software Development, inc XP, Scrum, Kanban & CD",
+    "preferred_contact": "twitter",
+    "email_address": "",
+    "twitter_url": "https://twitter.com/seize_the_dave",
+    "created_date": "9/6/2019 9:11pm"
+  },
+  {
+    "name": "Dave Lewis",
+    "topics": "Front End development, UX, CSS, Vue.js, Design Ops",
+    "preferred_contact": "twitter",
+    "email_address": "",
+    "twitter_url": "https://twitter.com/davehlewis",
+    "created_date": "16/6/2019 9:28am"
+  },
+  {
+    "name": "Sarah Williams",
+    "topics": "Full Stack Development (specifically in Azure, .NET Core, Vue, Typescript), Leadership, Culture",
+    "preferred_contact": "email",
+    "email_address": "sarah@yellowbrickcode.co.uk",
+    "twitter_url": "",
+    "created_date": "17/6/2019 11:12am"
+  },
+  {
+    "name": "Sarah Pantry",
+    "topics": "General development topics, eg Code Review, support or handling outages. PHP and WordPress",
+    "preferred_contact": "twitter",
+    "email_address": "sarah@anigel.net",
+    "twitter_url": "https://twitter.com/anigeluk",
+    "created_date": "17/6/2019 11:13pm"
+  },
+  {
+    "name": "Oliver Davies",
+    "topics": "Drupal, PHP, automated testing, Git, Vue.js, Tailwind CSS",
+    "preferred_contact": "twitter",
+    "email_address": "",
+    "twitter_url": "https://twitter.com/opdavies",
+    "created_date": "23/6/2019 11:26am"
+  },
+  {
+    "name": "Lewis Denham-Parry",
+    "topics": "Everything Cloud Native (Containers, Kubernetes and Service Meshes to name a few)",
+    "preferred_contact": "twitter",
+    "email_address": "",
+    "twitter_url": "https://twitter.com/denhamparry",
+    "created_date": "24/6/2019 3:38pm"
+  },
+  {
+    "name": "Salman Iqbal",
+    "topics": "Cloud Native Tech, Azure, Amazon, Python, .NET",
+    "preferred_contact": "twitter",
+    "email_address": "",
+    "twitter_url": "https://twitter.com/soulmanIqbal",
+    "created_date": "5/7/2019 10:00am"
+  },
+  {
+    "name": "Carwyn Edwards",
+    "topics": "Tech Communities, Software Engineering, Systems Engineering",
+    "preferred_contact": "twitter",
+    "email_address": "",
+    "twitter_url": "https://twitter.com/carwynedwards",
+    "created_date": "24/7/2019 3:22pm"
+  },
+  {
+    "name": "Fred Heath",
+    "topics": "Software Design, Programming Languages, Requirements Management, Estimation, Relational Databases, Ruby, Nim",
+    "preferred_contact": "email",
+    "email_address": "fred@bootstrap.me.uk",
+    "twitter_url": "",
+    "created_date": "4/8/2019 2:18pm"
+  },
+  {
+    "name": "Baf Kurtulaj",
+    "topics": "Building Great Software Product from concept to launch and beyond",
+    "preferred_contact": "twitter",
+    "email_address": "",
+    "twitter_url": "https://twitter.com/BafKurtulaj",
+    "created_date": "13/9/2019 1:54pm"
+  },
+  {
+    "name": "Nat Morris",
+    "topics": "Hyper-Scaling, Python, Remote working, Network Automation, Freedom and responsibility culture at Netflix.",
+    "preferred_contact": "email",
+    "email_address": "nat@netflix.com",
+    "twitter_url": "",
+    "created_date": "10/10/2019 6:44pm"
+  },
+  {
+    "name": "Jack Davies",
+    "topics": "Blockchain, DLT, graph theory, consensus algorithms, game theory.",
+    "preferred_contact": "email",
+    "email_address": "j.davies9628@gmail.com",
+    "twitter_url": "",
+    "created_date": "2/1/2020 12:34pm"
+  },
+  {
+    "name": "Andrew Moreton",
+    "topics": "Web Development, Tech Communities and Security",
+    "preferred_contact": "twitter",
+    "email_address": "",
+    "twitter_url": "https://twitter.com/agmoreton",
+    "created_date": "2/1/2020 2:57pm"
+  },
+  {
+    "name": "Adam Bolton",
+    "topics": "Tech Recruitment, Tech Hiring, Meetups.",
+    "preferred_contact": "twitter",
+    "email_address": "",
+    "twitter_url": "https://twitter.com/adam__bolton",
+    "created_date": "12/2/2020 5:25pm"
+  },
+  {
+    "name": "Simon Stratton",
+    "topics": "Performance Testing in TypeScript, BDD and TDD in JavaScript",
+    "preferred_contact": "email",
+    "email_address": "simon.stratton@gmail.com",
+    "twitter_url": "",
+    "created_date": "25/2/2020 9:54pm"
+  },
+  {
+    "name": "Steve Peck",
+    "topics": "Fintech, price comparison, coding",
+    "preferred_contact": "",
+    "email_address": "",
+    "twitter_url": "",
+    "created_date": "20/7/2020 3:06pm"
+  }
+]

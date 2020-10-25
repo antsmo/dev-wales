@@ -1,0 +1,13 @@
+---
+layout: main-layout
+---
+
+<h1>Companies</h1>
+
+<ul>
+{{#each companies}}
+  <li>
+    <a href="/companies/{{ this.slug }}">{{ this.name }}</a>
+  </li>
+{{/each}}
+</ul>

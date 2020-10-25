@@ -1,0 +1,54 @@
+---
+layout: main-layout
+pagination:
+    data: companies
+    size: 1
+    alias: company
+permalink: "companies/{{ company.slug }}/"
+---
+
+<a href="/companies">Back to companies</a>
+
+<h1>{{ company.name }}</h1>
+<p>{{ company.description }}</p>
+
+<dl>
+  {{#if company.location}}
+  <dt>Location</dt>
+  <dd>{{ company.location }}</dd>
+  {{/if}}
+
+  {{#if company.website_url}}
+  <dt>Website</dt>
+  <dd>
+    <a href="{{ company.website_url }}">{{ company.website_url }}</a>
+  </dd>
+  {{/if}}
+
+  {{#if company.careers_url}}
+  <dt>Careers</dt>
+  <dd>
+    <a href="{{ company.careers_url }}">
+      {{ company.careers_url }}
+    </a>
+  </dd>
+  {{/if}}
+
+  {{#if company.email}}
+  <dt>Email</dt>
+  <dd>
+    <a href="mailto:{{ company.email }}">
+      {{ company.email }}
+    </a>
+  </dd>
+  {{/if}}
+
+  {{#if company.twitter}}
+  <dt>Twitter</dt>
+  <dd>
+    <a href="{{ company.twitter }}">
+      {{ company.twitter }}
+    </a>
+  </dd>
+  {{/if}}
+</dl>
