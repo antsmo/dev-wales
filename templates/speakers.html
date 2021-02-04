@@ -24,20 +24,20 @@
       </ul>
     </nav>
 
-    <h1>Companies</h1>
-    {{#companies}}
-    <h2>{{name}}</h2>
-    <p>{{description}}</p>
+    <h1>Speakers</h1>
+    {{#speakers}}
+    <h2>{{{name}}}</h2>
     <dl>
-      <dt>Location</dt>
-      <dd>{{location}}</dd>
+      <dt>Topics</dt>
+      <dd>{{topics}}</dd>
+
+      <dt>Links</dt>
       {{#links}}
-      <dt>{{name}}</dt>
       <dd>
-        <a href="{{link}}">{{link}}</a>
+        <a href="{{link}}">{{name}}</a>
       </dd>
       {{/links}}
     </dl>
-    {{/companies}}
+    {{/speakers}}
   </body>
 </html>

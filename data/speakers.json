@@ -1,0 +1,289 @@
+[
+  {
+    "name": "Adam Bolton",
+    "topics": "Tech Recruitment, Tech Hiring, Meetups.",
+    "links": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/adam__bolton"
+      }
+    ]
+  },
+  {
+    "name": "Andrew Moreton",
+    "topics": "Web Development, Tech Communities and Security",
+    "links": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/agmoreton"
+      }
+    ]
+  },
+  {
+    "name": "Baf Kurtulaj",
+    "topics": "Building Great Software Product from concept to launch and beyond",
+    "links": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/BafKurtulaj"
+      }
+    ]
+  },
+  {
+    "name": "Carwyn Edwards",
+    "topics": "Tech Communities, Software Engineering, Systems Engineering",
+    "links": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/carwynedwards"
+      }
+    ]
+  },
+  {
+    "name": "Craig Marvelley",
+    "topics": "Programming, Infrastructure, Team strategy",
+    "links": [
+      {
+        "name": "Email",
+        "link": "craig@bipsync.com"
+      }
+    ]
+  },
+  {
+    "name": "Dave Grant",
+    "topics": "Lean & Agile Software Development, inc XP, Scrum, Kanban & CD",
+    "links": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/seize_the_dave"
+      }
+    ]
+  },
+  {
+    "name": "Dave Lewis",
+    "topics": "Front End development, UX, CSS, Vue.js, Design Ops",
+    "links": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/davehlewis"
+      }
+    ]
+  },
+  {
+    "name": "Eleanor Deal",
+    "topics": "Go, Software Development, Team Culture, Diversity and Inclusion",
+    "links": [
+      {
+        "name": "Email",
+        "link": "eleanor.deal@methods.co.uk"
+      }
+    ]
+  },
+  {
+    "name": "Fred Heath",
+    "topics": "Software Design, Programming Languages, Requirements Management, Estimation, Relational Databases, Ruby, Nim",
+    "links": [
+      {
+        "name": "Email",
+        "link": "fred@bootstrap.me.uk"
+      }
+    ]
+  },
+  {
+    "name": "Jack Davies",
+    "topics": "Blockchain, DLT, graph theory, consensus algorithms, game theory.",
+    "links": [
+      {
+        "name": "Email",
+        "link": "j.davies9628@gmail.com"
+      }
+    ]
+  },
+  {
+    "name": "Jack Rimell",
+    "topics": "JavaScript",
+    "links": [
+      {
+        "name": "Email",
+        "link": "jackrimell123@gmail.com"
+      }
+    ]
+  },
+  {
+    "name": "Jordan Phillips",
+    "topics": "Digital marketing/entrepreneurship",
+    "links": [
+      {
+        "name": "Email",
+        "link": "jordan@webboxdigital.co.uk"
+      }
+    ]
+  },
+  {
+    "name": "Lewis Denham-Parry",
+    "topics": "Everything Cloud Native (Containers, Kubernetes and Service Meshes to name a few)",
+    "links": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/denhamparry"
+      }
+    ]
+  },
+  {
+    "name": "Martin Chorley",
+    "topics": "Coding, Education, Data Visualisation",
+    "links": [
+      {
+        "name": "Email",
+        "link": "chorleymj@cardiff.ac.uk"
+      }
+    ]
+  },
+  {
+    "name": "Matthew Macdonald-Wallace",
+    "topics": "Rural IoT, General IoT, Monitoring/Metrics, DevOps, Cultural Change",
+    "links": [
+      {
+        "name": "Email",
+        "link": "matt@mockingbirdconsulting.co.uk"
+      }
+    ]
+  },
+  {
+    "name": "Nat Morris",
+    "topics": "Hyper-Scaling, Python, Remote working, Network Automation, Freedom and responsibility culture at Netflix.",
+    "links": [
+      {
+        "name": "Email",
+        "link": "nat@netflix.com"
+      }
+    ]
+  },
+  {
+    "name": "Oliver Davies",
+    "topics": "Drupal, PHP, automated testing, Git, Vue.js, Tailwind CSS",
+    "links": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/opdavies"
+      }
+    ]
+  },
+  {
+    "name": "Salman Iqbal",
+    "topics": "Cloud Native Tech, Azure, Amazon, Python, .NET",
+    "links": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/soulmanIqbal"
+      }
+    ]
+  },
+  {
+    "name": "Sarah Pantry",
+    "topics": "General development topics, eg Code Review, support or handling outages. PHP and WordPress",
+    "links": [
+      {
+        "name": "Email",
+        "link": "sarah@anigel.net"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/anigeluk"
+      }
+    ]
+  },
+  {
+    "name": "Sarah Williams",
+    "topics": "Full Stack Development (specifically in Azure, .NET Core, Vue, Typescript), Leadership, Culture",
+    "links": [
+      {
+        "name": "Email",
+        "link": "sarah@yellowbrickcode.co.uk"
+      }
+    ]
+  },
+  {
+    "name": "Simon Stratton",
+    "topics": "Performance Testing in TypeScript, BDD and TDD in JavaScript",
+    "links": [
+      {
+        "name": "Email",
+        "link": "simon.stratton@gmail.com"
+      }
+    ]
+  },
+  {
+    "name": "Steph Locke",
+    "topics": "Data Science, DataOps, AI, Tech Startups",
+    "links": [
+      {
+        "name": "Email",
+        "link": "steph@itsalocke.com"
+      }
+    ]
+  },
+  {
+    "name": "Steve McDougall",
+    "topics": "PHP, DevOps, APIs, API Standards, Automation",
+    "links": [
+      {
+        "name": "Email",
+        "link": "juststevemcd@gmail.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/JustSteveKing"
+      }
+    ]
+  },
+  {
+    "name": "Steve Peck",
+    "topics": "Fintech, price comparison, coding",
+    "links": []
+  },
+  {
+    "name": "Thomas Guest",
+    "topics": "Python, Go, Remote Working, Testing, Algorithms, Software Development",
+    "links": [
+      {
+        "name": "Email",
+        "link": "thomas.guest@gmail.com"
+      }
+    ]
+  },
+  {
+    "name": "Vincent Knight",
+    "topics": "Python, Community, Game Theory, Education",
+    "links": [
+      {
+        "name": "Email",
+        "link": "knightva@cardiff.ac.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/drvinceknight"
+      }
+    ]
+  },
+  {
+    "name": "Viv Richards",
+    "topics": "Software testing, test automation, Chrome DevTools, Postman/API Testing, Visual testing",
+    "links": [
+      {
+        "name": "Email",
+        "link": "hello@vivrichards.co.uk"
+      }
+    ]
+  },
+  {
+    "name": "Will Roberts",
+    "topics": "Web design/digital marketing/entrepreneurship",
+    "links": [
+      {
+        "name": "Email",
+        "link": "will@webboxdigital.co.uk"
+      }
+    ]
+  }
+]

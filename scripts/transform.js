@@ -1,20 +1,13 @@
 const fs = require("fs");
-const groups = require("../data/groups.json");
+const data = require("../data/speakers.json");
 
-const data = groups.map(item => ({
+const newData = data.map(item => ({
   name: item.name,
-  logo: item.logo,
-  organisers: item.organisers,
-  meetupSlug: item.meetupSlug,
+  topics: item.topics,
   links: [
-    { name: "Website", link: item.website },
-    { name: "Meetup", link: item.meetup },
-    { name: "Twitter", link: item.twitter },
-    { name: "Eventbrite", link: item.eventbrite },
-    { name: "Youtube", link: item.youtube },
-    { name: "Slack", link: item.slack },
-    { name: "Discord", link: item.discord },
+    { name: "Email", link: item.email_address },
+    { name: "Twitter", link: item.twitter_url }
   ].filter((item) => item.link !== "")
 }));
 
-fs.writeFileSync('./data/newGroups.json', JSON.stringify(data, null, 2), 'utf-8');
+fs.writeFileSync('./data/newSpeakers.json', JSON.stringify(newData, null, 2), 'utf-8');

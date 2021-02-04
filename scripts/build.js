@@ -1,23 +1,24 @@
 const fs = require("fs");
 const mustache = require("mustache");
-const companies = require("../data/newCompanies.json");
-const groups = require("../data/newGroups.json");
+const companies = require("../data/companies.json");
+const groups = require("../data/groups.json");
+const speakers = require("../data/speakers.json");
 
 const data = {
   companies,
-  groups
+  groups,
+  speakers
 };
 
-const inputDir = './test/';
+const inputDir = './templates/';
 const outputDir = './public/';
-const files = fs.readdirSync(inputDir);
 
 if (fs.existsSync(outputDir)) {
   fs.rmdirSync(outputDir, { recursive: true });
 }
-
 fs.mkdirSync(outputDir);
 
+const files = fs.readdirSync(inputDir);
 files.forEach((inputFileName) => {
   const inputFilePath = inputDir + inputFileName;
   const template = fs.readFileSync(inputFilePath, 'utf-8');
