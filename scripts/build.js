@@ -3,11 +3,13 @@ const mustache = require("mustache");
 const companies = require("../data/companies.json");
 const groups = require("../data/groups.json");
 const speakers = require("../data/speakers.json");
+const jobs = require("../data/jobs.json");
 
 const data = {
   companies,
   groups,
-  speakers
+  speakers,
+  jobs
 };
 
 const inputDir = './templates/';
