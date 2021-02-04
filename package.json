@@ -1,26 +1,21 @@
 {
   "name": "dev-wales",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "version": "2.0.0",
+  "description": "A community-led website featuring a collection of resources for developers in Wales. You can find it at devwales.com.",
+  "main": "public/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server",
-    "dev": "npx nodemon server"
+    "build": "node scripts/build"
   },
-  "author": "",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyGuySi/dev-wales.git"
+  },
+  "author": "Simon Anthony",
+  "bugs": {
+    "url": "https://github.com/MyGuySi/dev-wales/issues"
+  },
+  "homepage": "https://github.com/MyGuySi/dev-wales#readme",
   "dependencies": {
-    "airtable": "^0.7.1",
-    "axios": "^0.19.1",
-    "body-parser": "^1.18.3",
-    "dotenv": "^8.2.0",
-    "express": "^4.16.4",
-    "express-handlebars": "^3.1.0",
-    "moment": "^2.24.0",
-    "twilio": "^3.30.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.6"
+    "mustache": "^4.1.0"
   }
 }

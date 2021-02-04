@@ -1,0 +1,2630 @@
+[
+  {
+    "slug": 2132,
+    "name": "21:32",
+    "description": "Producing software solutions for the giants of fast food.",
+    "location": "Newport",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://2132.io/"
+      },
+      {
+        "name": "Email",
+        "link": "hello@2132.io"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/twenty1thirty2"
+      }
+    ]
+  },
+  {
+    "slug": "active-quote",
+    "name": "ActiveQuote",
+    "description": "Price comparison and insurance broker for health insurance, life insurance and income protection",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.activequote.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.activequote.com/careers/"
+      }
+    ]
+  },
+  {
+    "slug": "adgistics",
+    "name": "Adgistics ltd",
+    "description": "Digital Asset Management",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.adgistics.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Adgistics"
+      }
+    ]
+  },
+  {
+    "slug": "admiral",
+    "name": "Admiral",
+    "description": "Insurance provider",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.admiral.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://admiraljobs.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/AdmiralUK"
+      }
+    ]
+  },
+  {
+    "slug": "aforza",
+    "name": "Aforza",
+    "description": "Building applications on the Salesforce platform for the Consumer Goods Industry",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.aforza.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.aforza.com/#careers"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Aforzaltd"
+      }
+    ]
+  },
+  {
+    "slug": "alcumus",
+    "name": "Alcumus Group",
+    "description": "Working with the latest technology, across a wide range of devices, we are devising solutions that make the lives of our users safer with a wide range of products deployed through our cuttingedge cloud based platform.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.alcumusgroup.com/"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.alcumusgroup.com/vacancies"
+      },
+      {
+        "name": "Email",
+        "link": "info@alcumusgroup.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/alcumusgroup"
+      }
+    ]
+  },
+  {
+    "slug": "alert-logic",
+    "name": "Alert Logic",
+    "description": "Alert Logic offers SIEMless Threat Management that connects platform, intelligence, & experts to provide the best security and peace of mind for your business.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.alertlogic.com/"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.alertlogic.com/careers/"
+      },
+      {
+        "name": "Email",
+        "link": "info@alertlogic.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/alertlogic"
+      }
+    ]
+  },
+  {
+    "slug": "amber-energy",
+    "name": "Amber Energy",
+    "description": "We provide solutions to the complex world of energy. Values: transparency, honesty, integrity, innovation, \"our client is our CEO",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.amberenergy.net"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.amberenergy.net/careers"
+      },
+      {
+        "name": "Email",
+        "link": "hello@amberenergy.net"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/amberEnergynet"
+      }
+    ]
+  },
+  {
+    "slug": "amplyfi",
+    "name": "Amplyfi",
+    "description": "AMPLYFI's mission is to deliver a paradigm shift in global business intelligence and research capabilities, starting with our AI-powered platform, DataVoyant™.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://amplyfigroup.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://amplyfigroup.com/careers"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/AMPLYFItech"
+      }
+    ]
+  },
+  {
+    "slug": "applingua",
+    "name": "Applingua",
+    "description": "Translation Service for Growing Tech Companies",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://applingua.com"
+      },
+      {
+        "name": "Email",
+        "link": "hello@applingua.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/applingua"
+      }
+    ]
+  },
+  {
+    "slug": "artimus",
+    "name": "ARTIMUS",
+    "description": "A development agency which focuses on developing AI-related projects for startups, and helping larger organisations adopt AI into their internal Projects.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.artimus-uk.com/"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.artimus-uk.com/careers/"
+      },
+      {
+        "name": "Email",
+        "link": "info@artimus-uk.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/ARTIMUS_UK"
+      }
+    ]
+  },
+  {
+    "slug": "automise",
+    "name": "Automise",
+    "description": "Software development agency",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.automise.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "hello@automise.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/automise"
+      }
+    ]
+  },
+  {
+    "slug": "babapp",
+    "name": "BabApp",
+    "description": "BabApp is a parenting app that connects parents with childcare providers",
+    "location": "Penarth",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://babapp.co.uk/home"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/babappuk"
+      }
+    ]
+  },
+  {
+    "slug": "backbase",
+    "name": "Backbase",
+    "description": "Digital banking platform, combining fintech capabilities and core banking systems into a seamless customer experience",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://backbase.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://workatbackbase.com"
+      },
+      {
+        "name": "Email",
+        "link": "sales-eu@backbase.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/backbase"
+      }
+    ]
+  },
+  {
+    "slug": "bbc",
+    "name": "BBC",
+    "description": "Broadcasting and technology platform",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.bbc.co.uk"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.bbc.co.uk/careers"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/BBCCareers"
+      }
+    ]
+  },
+  {
+    "slug": "big-eye-deers",
+    "name": "Big Eye Deers",
+    "description": "eCommerce Agency focusing on Magento 2 and Shopify",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.bigeyedeers.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "info@bigeyedeers.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/big_eye_deers"
+      }
+    ]
+  },
+  {
+    "slug": "big-lemon",
+    "name": "Big Lemon",
+    "description": "Web Apps, Native Apps and Bots",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://biglemon.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "hello@biglemon.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/BigLemonTweets"
+      }
+    ]
+  },
+  {
+    "slug": "bipsync",
+    "name": "Bipsync",
+    "description": "Research Automation for Modern Investors",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.bipsync.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.bipsync.com/company/careers/"
+      },
+      {
+        "name": "Email",
+        "link": "info@bipsync.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/BipsyncApp"
+      }
+    ]
+  },
+  {
+    "slug": "blanco-digital",
+    "name": "Blanco Digital",
+    "description": "Automotive Digital Marketing and PPC Automation",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.blancodigital.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/blancodigital"
+      }
+    ]
+  },
+  {
+    "slug": "bluegg",
+    "name": "Bluegg",
+    "description": "Digital Branding and Development",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://bluegg.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "hello@bluegg.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Bluegg"
+      }
+    ]
+  },
+  {
+    "slug": "bond-digital-health",
+    "name": "Bond Digital Health",
+    "description": "Bond Digital Health is a Software consultancy developing bespoke App & Cloud solutions for innovators in life sciences.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://bondhealth.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "info@bondhealth.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/bondhealthUK"
+      }
+    ]
+  },
+  {
+    "slug": "boxuk",
+    "name": "BoxUK",
+    "description": "Web application developers",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.boxuk.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.boxuk.com/about-us/careers"
+      },
+      {
+        "name": "Email",
+        "link": "info@boxuk.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/boxuk"
+      }
+    ]
+  },
+  {
+    "slug": "cafex-communications",
+    "name": "CafeX Communications",
+    "description": "WebRTC / Customer Engagement",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.cafex.com/en/"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.cafex.com/en/company/careers/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/CafeXComms"
+      }
+    ]
+  },
+  {
+    "slug": "care-direct",
+    "name": "Care Direct",
+    "description": "Disrupting the care industry with new tech solutions to help people stay living in their own homes for longer.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://caredirect.app"
+      }
+    ]
+  },
+  {
+    "slug": "carsnip",
+    "name": "Carsnip",
+    "description": "We are building the most comprehensive car search site and only charge dealers on performance.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://carsnip.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Carsnip"
+      }
+    ]
+  },
+  {
+    "slug": "cdsm-thinqi",
+    "name": "CDSM Thinqi",
+    "description": "Deliver engaging and effective modern learning experiences with Thinqi, the easiest way to maximise the performance of your people and organisation.",
+    "location": "Swansea",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.cdsm.co.uk/"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.cdsm.co.uk/careers/"
+      },
+      {
+        "name": "Email",
+        "link": "info@cdsm.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/cdsmthinqi"
+      }
+    ]
+  },
+  {
+    "slug": "celf-creative",
+    "name": "Celf Creative",
+    "description": "Celf Creative is a multi-discipline creative agency with a philosophy for imagination, innovation and impact.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://celfcreative.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://celfcreative.com/careers"
+      },
+      {
+        "name": "Email",
+        "link": "info@celfcreative.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/celfcreative"
+      }
+    ]
+  },
+  {
+    "slug": "cellnovo",
+    "name": "Cellnovo",
+    "description": "Cellnovo is a medical technology company specialising in diabetes.",
+    "location": "Bridgend",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.cellnovo.com/en/homepage"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.cellnovo.com/careers"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/cellnovo"
+      }
+    ]
+  },
+  {
+    "slug": "cgi",
+    "name": "CGI",
+    "description": "Information technology (IT) consulting, systems integration, outsourcing, and solutions",
+    "location": "Bridgend",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.cgi-group.co.uk/en-gb"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.cgi-group.co.uk/en-gb/careers"
+      },
+      {
+        "name": "Email",
+        "link": "enquiry.uk@cgi.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/CGI_UKNEWS"
+      }
+    ]
+  },
+  {
+    "slug": "clinithink",
+    "name": "Clinithink",
+    "description": "Automated searching and processing of electronic medical records, using NLP techniques",
+    "location": "Bridgend",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://clinithink.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://clinithink.com/careers/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Clinithink"
+      }
+    ]
+  },
+  {
+    "slug": "clockers",
+    "name": "Clockers",
+    "description": "Software development outsourcing",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.clockers.io"
+      },
+      {
+        "name": "Email",
+        "link": "hello@clockers.io"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/clockersuk"
+      }
+    ]
+  },
+  {
+    "slug": "cloud-iq",
+    "name": "Cloud IQ",
+    "description": "Conversion Rate Optimisation Platform partnered with the payment powerhouse PayPal.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.cloud-iq.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.cloud-iq.com/careers"
+      },
+      {
+        "name": "Email",
+        "link": "uk@cloud-iq.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/cloudIQApps"
+      }
+    ]
+  },
+  {
+    "slug": "coade3",
+    "name": "Coade3",
+    "description": "Context search, insight and sentiment engine for Enterprise",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://www.coade3.com"
+      },
+      {
+        "name": "Email",
+        "link": "contact@coade3.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/coade3"
+      }
+    ]
+  },
+  {
+    "slug": "codez-academy",
+    "name": "Codez Academy",
+    "description": "Training Provider",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://www.codezacademy.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "learn@codezacademy.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/CodezAcademy"
+      }
+    ]
+  },
+  {
+    "slug": "companies-house",
+    "name": "Companies House",
+    "description": "The Government registry for companies, their officers and many other details.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.gov.uk/government/organisations/companies-house"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.civilservicejobs.service.gov.uk/csr/jobs.cgi"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/CompaniesHouse"
+      }
+    ]
+  },
+  {
+    "slug": "comparison-creator",
+    "name": "Comparison Creator",
+    "description": "As the only impartial independent and privately owned white label company in the UK, we can create true unbiased market leading comparison solutions.",
+    "location": "Cwmbran",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://comparisoncreator.com"
+      },
+      {
+        "name": "Email",
+        "link": "enquiries@comparisoncreator.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Comparison_C"
+      }
+    ]
+  },
+  {
+    "slug": "concentric",
+    "name": "Concentric",
+    "description": "Health tech startup taking consent paperless, empowering patients and clinicians with outcome data, and supporting shared decisions.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://concentric.health"
+      },
+      {
+        "name": "Careers",
+        "link": "https://concentric.health/careers.html"
+      },
+      {
+        "name": "Email",
+        "link": "daf@concentric.health"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Concentric_Hlth"
+      }
+    ]
+  },
+  {
+    "slug": "confused",
+    "name": "Confused.com",
+    "description": "Insurance comparison site",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.confused.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.confused.com/about-us/careers"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Confused_com"
+      }
+    ]
+  },
+  {
+    "slug": "core-internet-solutions",
+    "name": "Core Internet Solutions",
+    "description": "We specialise in all things digital, from website design and development to social media, apps and search optimisation.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://wearecore.co.uk/"
+      },
+      {
+        "name": "Email",
+        "link": "hello@wearecore.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/WeAre_Core"
+      }
+    ]
+  },
+  {
+    "slug": "credas",
+    "name": "Credas",
+    "description": "Identity Verification",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.credas.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "hello@credas.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/mycredas"
+      }
+    ]
+  },
+  {
+    "slug": "creditsafe",
+    "name": "Creditsafe",
+    "description": "We help businesses stay ahead of the game with expert business solutions designed to aid your company in the B2B market.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.creditsafe.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://careers.creditsafe.com/"
+      },
+      {
+        "name": "Email",
+        "link": "ukinfo@creditsafeuk.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Creditsafe"
+      }
+    ]
+  },
+  {
+    "slug": "culturvate",
+    "name": "CulturVate",
+    "description": "Cloud-based technology that enables your business to drive results",
+    "location": "Newport",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://www.culturvate.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "craig@culturvate.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/CulturVate"
+      }
+    ]
+  },
+  {
+    "slug": "currencycloud",
+    "name": "Currencycloud",
+    "description": "Our cloud-based platform removes that complexity from international transactions, giving you clarity and control over your business so you can focus on the things that matter: your customers. With enterprise-class solutions for clients and partners such as Visa, Starling Bank, and Travelex, Currencycloud understands your needs and can help with market-leading products.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.currencycloud.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.currencycloud.com/company/careers"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/currencycloud"
+      }
+    ]
+  },
+  {
+    "slug": "dabapps",
+    "name": "DabApps Limited",
+    "description": "We design and build bespoke web and mobile applications that help our clients succeed.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.dabapps.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.dabapps.com/careers/"
+      },
+      {
+        "name": "Email",
+        "link": "hello@dabapps.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/dabapps"
+      }
+    ]
+  },
+  {
+    "slug": "dashhound",
+    "name": "DashHound",
+    "description": "Use data to help beauty consumers make better-informed purchase decisions.",
+    "location": "Newport",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://dashhound.co"
+      },
+      {
+        "name": "Careers",
+        "link": "https://dashhound.co/careers"
+      },
+      {
+        "name": "Email",
+        "link": "hello@dashhound.co"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/dashhound"
+      }
+    ]
+  },
+  {
+    "slug": "datris",
+    "name": "Datris Limited",
+    "description": "Software & Data Consultancy, Programme & Project Management, Club Membership Software",
+    "location": "Caerphilly",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://datris.uk"
+      },
+      {
+        "name": "Email",
+        "link": "contact@datris.solutions"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/DatrisSolutions"
+      }
+    ]
+  },
+  {
+    "slug": "delio",
+    "name": "Delio",
+    "description": "Creating and delivering private asset platforms to help organisations connect private deal flow with high net worth capital.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.deliowealth.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.deliowealth.com/work-with-us/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/DelioWealth"
+      }
+    ]
+  },
+  {
+    "slug": "deloitte-uk",
+    "name": "Deloitte UK",
+    "description": "“Deloitte” is the brand under which tens of thousands of dedicated professionals in independent firms throughout the world collaborate to provide audit, consulting, financial advisory, risk management, tax, and related services to select clients.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://deloitte.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://jobs2.deloitte.com/uk/en/search-results?qcity=Cardiff&qstate=South&qcountry=United%20Kingdom"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/DeloitteUK?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+      }
+    ]
+  },
+  {
+    "slug": "designdough",
+    "name": "designdough",
+    "description": "We are designdough; an exciting and progressive design agency of Brand Shapers, Marketing Strategists and Creative thinkers.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://designdough.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "studio@designdough.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/designdough"
+      }
+    ]
+  },
+  {
+    "slug": "devopsgroup",
+    "name": "DevOpsGroup",
+    "description": "DevOpsGroup provide solutions that enable IT Transformation at the speed of disruption.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.devopsgroup.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.devopsgroup.com/careers/"
+      },
+      {
+        "name": "Email",
+        "link": "team@devopsgroup.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/DevOpsGroup"
+      }
+    ]
+  },
+  {
+    "slug": "dezrez",
+    "name": "Dezrez",
+    "description": "Dezrez is a major supplier of online EstateAgency Sales and Lettings Software.",
+    "location": "Swansea",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://dezrez.co.uk"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.dezrez.co.uk/careers/welcome"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/dezrezsoftware"
+      }
+    ]
+  },
+  {
+    "slug": "digital-health-labs",
+    "name": "Digital Health Labs",
+    "description": "Digital Health Labs is an innovative research consultancy specialising in technology-driven research in pharmacoepidemiology, health economics and outcomes research.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://digitalhealthlabs.com"
+      },
+      {
+        "name": "Email",
+        "link": "hello@digitalhealthlabs.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/digihealthlabs"
+      }
+    ]
+  },
+  {
+    "slug": "digital-morphosis",
+    "name": "Digital Morphosis",
+    "description": "Custom application development and business support",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://digital-morphosis.com"
+      },
+      {
+        "name": "Careers",
+        "link": "http://digital-morphosis.com/careers"
+      },
+      {
+        "name": "Email",
+        "link": "hello@digital-morphosis.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/digimorph"
+      }
+    ]
+  },
+  {
+    "slug": "digital-profile",
+    "name": "Digital Profile",
+    "description": "We're replacing the #cv with a digital profile that empowers privacy and personality! We are the fresh approach to careers.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.digitalprofile.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/digital_profile"
+      }
+    ]
+  },
+  {
+    "slug": "diligent-software",
+    "name": "Diligent Software Ltd",
+    "description": "Software Development consultancy based near Swansea with experience of delivering software in a number of industries including Government, Finance, Insurance and Education.",
+    "location": "Swansea",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://www.diligentsoft.co"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/DiligentSoft"
+      }
+    ]
+  },
+  {
+    "slug": "doopoll",
+    "name": "doopoll",
+    "description": "Online polling",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://doopoll.co"
+      },
+      {
+        "name": "Careers",
+        "link": "https://doopoll.co/jobs"
+      },
+      {
+        "name": "Email",
+        "link": "marc@doopoll.co"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/doopoll"
+      }
+    ]
+  },
+  {
+    "slug": "dvla",
+    "name": "Driver and Vehicle Licensing Agency (DVLA)",
+    "description": "We maintain the registration and licensing of drivers in Great Britain.",
+    "location": "Swansea",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.civilservicejobs.service.gov.uk/csr/index.cgi?SID=dXNlcnNlYXJjaGNvbnRleHQ9NzA4Mjc3MDkmcGFnZWNsYXNzPUpvYnMmcGFnZWFjdGlvbj1zZWFyY2hieWNvbnRleHRpZCZrZXk9NTA3MDAwMA=="
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/DVLAgovuk"
+      }
+    ]
+  },
+  {
+    "slug": "dst-innnovations",
+    "name": "DST Innovations",
+    "description": "Groundbreaking Screen, Lighting, and Energy Tech focused on reducing carbon footprint and costs",
+    "location": "Bridgend",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://www.dst-innovations.net"
+      },
+      {
+        "name": "Email",
+        "link": "info@dst-innovations.net"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/DSTInnovations"
+      }
+    ]
+  },
+  {
+    "slug": "escentual",
+    "name": "Escentual",
+    "description": "Escentual provides its worldwide customers luxurious beauty products in the fast-moving world of e-retail.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.escentual.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.escentual.com/help-and-advice/jobs-and-careers/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/escentual"
+      }
+    ]
+  },
+  {
+    "slug": "fortium-technologies",
+    "name": "Fortium Technologies",
+    "description": "Content Security Software for the Media and Entertainment Industry",
+    "location": "Bridgend",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.fortiumtech.com"
+      },
+      {
+        "name": "Email",
+        "link": "info@fortiumtech.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/FortiumTech"
+      }
+    ]
+  },
+  {
+    "slug": "geolang",
+    "name": "GeoLang",
+    "description": "Data discovery and data loss prevention",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.geolang.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.geolang.com/careers/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/GeoLangLtd"
+      }
+    ]
+  },
+  {
+    "slug": "gocompare",
+    "name": "GoCompare",
+    "description": "Insurance comparison site",
+    "location": "Newport",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.gocompare.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.gocomparecareers.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Gocompare"
+      }
+    ]
+  },
+  {
+    "slug": "guwii",
+    "name": "guwii",
+    "description": "Full service web studio—offering web design, bespoke systems, SEO, digital marketing and IT for small businesses.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://guwii.com"
+      },
+      {
+        "name": "Email",
+        "link": "alex@guwii.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/guwiidigital"
+      }
+    ]
+  },
+  {
+    "slug": "high-level-software",
+    "name": "High Level Software",
+    "description": "Hotel Management Software",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://www.high-level-software.com"
+      },
+      {
+        "name": "Careers",
+        "link": "http://www.high-level-software.com/careers/"
+      },
+      {
+        "name": "Email",
+        "link": "info@high-level-software.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/HiLevelSoftware"
+      }
+    ]
+  },
+  {
+    "slug": "hoowla",
+    "name": "Hoowla",
+    "description": "Online legal case management software for firms of all shapes and sizes.",
+    "location": "Swansea",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.hoowla.com"
+      },
+      {
+        "name": "Email",
+        "link": "hello@hoowla.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Hoowla"
+      }
+    ]
+  },
+  {
+    "slug": "hut-six",
+    "name": "Hut Six",
+    "description": "Solving the most prevalent cause of security breaches: Human Error.",
+    "location": "Newport",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.hutsix.io"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.hutsix.io/careers/"
+      },
+      {
+        "name": "Email",
+        "link": "info@hutsix.io"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/HutSixSecurity"
+      }
+    ]
+  },
+  {
+    "slug": "imaginet",
+    "name": "Imaginet",
+    "description": "Award winning website development agency.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.imaginet.co.uk/"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.imaginet.co.uk/jobs"
+      },
+      {
+        "name": "Email",
+        "link": "contact@imaginet.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Imaginet_ltd"
+      }
+    ]
+  },
+  {
+    "slug": "inspiretec",
+    "name": "Inspiretec",
+    "description": "Global provider of leisure travel, loyalty and hospitality solutions and systems.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.inspiretec.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.inspiretec.com/careers"
+      },
+      {
+        "name": "Email",
+        "link": "info@inspiretec.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Inspiretec_DGL"
+      }
+    ]
+  },
+  {
+    "slug": "instantecare",
+    "name": "InstanteCare",
+    "description": "We are innovating within the pharmaceutical industry striving to provide better services to patients through technology.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.instantecare.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "support@instantecare.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/instantecare"
+      }
+    ]
+  },
+  {
+    "slug": "journolink",
+    "name": "JournoLink",
+    "description": "Press Release Distribution Software",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://journolink.com"
+      },
+      {
+        "name": "Email",
+        "link": "info@journolink.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/JournoLink"
+      }
+    ]
+  },
+  {
+    "slug": "jtc-guitar",
+    "name": "JTC Guitar",
+    "description": "Purveyors of backing tracks, videos, lessons and other cool guitar stuff!",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://jtcguitar.com/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/jamtracks/"
+      }
+    ]
+  },
+  {
+    "slug": "kagool",
+    "name": "Kagool",
+    "description": "We're an award-winning digital agency and top Sitecore Platinum Partner.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://www.bekagool.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/bekagool"
+      }
+    ]
+  },
+  {
+    "slug": "kanso",
+    "name": "Kanso",
+    "description": "Ruby and Javascript Development",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://kanso.io/"
+      },
+      {
+        "name": "Email",
+        "link": "hello@kanso.io"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/kansohq"
+      }
+    ]
+  },
+  {
+    "slug": "karolo",
+    "name": "Karolo",
+    "description": "Design agency based in Cardiff creating clever websites and memorable branding for clients across the UK.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://karolo.com"
+      },
+      {
+        "name": "Email",
+        "link": "hello@karolo.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/karolo"
+      }
+    ]
+  },
+  {
+    "slug": "kinderly",
+    "name": "Kinderly",
+    "description": "The leading Early Years learning & development App. Nurturing great starts, developing BIG futures Online | App",
+    "location": "Newport",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://kinderly.co.uk"
+      },
+      {
+        "name": "Careers",
+        "link": "https://kinderly.co.uk/working-for-kinderly/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/kinderly"
+      }
+    ]
+  },
+  {
+    "slug": "kinetic-pixel",
+    "name": "Kinetic Pixel",
+    "description": "Kinetic Pixel are a team of UK-based technology specialists who design and engineer Computer Systems and Real-time Graphics for Quiz and Light Entertainment Television shows.",
+    "location": "Caerphilly",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "www.kineticpixel.tv"
+      },
+      {
+        "name": "Careers",
+        "link": "http://www.kineticpixel.tv/jobs-at-kinetic-pixel/"
+      },
+      {
+        "name": "Email",
+        "link": "info@kineticpixel.tv"
+      },
+      {
+        "name": "Twitter",
+        "link": "http://twitter.com/kineticpixelgfx"
+      }
+    ]
+  },
+  {
+    "slug": "ldms",
+    "name": "LDMS",
+    "description": "LDMS is a full lifecycle program covering all aspects of the loan management journey – it’s the only system you need.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.ldms.eu/"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.ldms.eu/careers/"
+      },
+      {
+        "name": "Email",
+        "link": "cwhitcombe@ldms.eu"
+      }
+    ]
+  },
+  {
+    "slug": "lenderlink",
+    "name": "Lenderlink",
+    "description": "Fintech software; specialist finance quoting and packaging",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://lenderlink.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Lenderlink_SMG"
+      }
+    ]
+  },
+  {
+    "slug": "lila-fuches",
+    "name": "Lila Fuches",
+    "description": "A software consultancy company based in the Welsh Valleys, specialises in bespoke applications.",
+    "location": "Mountain Ash",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.lilafuches.com"
+      },
+      {
+        "name": "Email",
+        "link": "lilafuches@gmail.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/lilafuches"
+      }
+    ]
+  },
+  {
+    "slug": "limegreentangerine",
+    "name": "LimeGreenTangerine",
+    "description": "Hello, we're Limegreentangerine, a brand & digital studio.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.limegreentangerine.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/lgtdesign"
+      }
+    ]
+  },
+  {
+    "slug": "logically-secure",
+    "name": "Logically Secure",
+    "description": "Logically Secure provide IT Security Testing, HMG Security & Crypto advice, Incident Response and IT Security Training",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.logicallysecure.com/"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.logicallysecure.com/about-us/careers/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/logicallysecure"
+      }
+    ]
+  },
+  {
+    "slug": "method4",
+    "name": "Method4",
+    "description": "We’re development people. We build smart and brilliant software solutions, and make it look super easy. Microsoft Gold Partner | Umbraco Gold Partner",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.method4.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/method4ltd?lang=en"
+      }
+    ]
+  },
+  {
+    "slug": "mockingbird-consulting",
+    "name": "Mockingbird Consulting Ltd",
+    "description": "IoT Infrastructure and Data Processing",
+    "location": "Monmouth",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.mockingbirdconsulting.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "info@mockingbirdconsulting.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/mbconsultinguk"
+      }
+    ]
+  },
+  {
+    "slug": "motokiki",
+    "name": "Motokiki",
+    "description": "Your impartial tyre comparison site",
+    "location": "Port Talbot",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.motokiki.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.motokiki.com/jobs"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Motokikidotcom"
+      }
+    ]
+  },
+  {
+    "slug": "mypinpad",
+    "name": "MyPinPad",
+    "description": "MYPINPAD is an enabler of multi-factor authentication for unsecured touchscreen devices such as mobile phones and tablets.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.mypinpad.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.mypinpad.com/careers/"
+      },
+      {
+        "name": "Email",
+        "link": "info@mypinpad.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/myPINpad"
+      }
+    ]
+  },
+  {
+    "slug": "nwis",
+    "name": "NHS Wales Informatics Service",
+    "description": "National organisation delivering digital health services to NHS Wales.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://nwis.nhs.wales/"
+      },
+      {
+        "name": "Careers",
+        "link": "https://nwis.nhs.wales/working-for-us/job-vacancies/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/nwisupdates"
+      }
+    ]
+  },
+  {
+    "slug": "nifty-digits",
+    "name": "Nifty Digits",
+    "description": "Simple, Quality Software. Python/JavaScript Development and Consultancy.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://www.niftydigits.com"
+      },
+      {
+        "name": "Email",
+        "link": "hi@niftydigits.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/iwootten"
+      }
+    ]
+  },
+  {
+    "slug": "nightingale-hq",
+    "name": "Nightingale HQ",
+    "description": "Helping businesses adopt AI",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://nightingalehq.ai"
+      },
+      {
+        "name": "Careers",
+        "link": "https://nightingalehq.ai/careers"
+      },
+      {
+        "name": "Email",
+        "link": "founders@nightingalehq.ai"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/nightingalehqai"
+      }
+    ]
+  },
+  {
+    "slug": "ons",
+    "name": "Office for National Statistics",
+    "description": "The UK's largest independent producer of official statistics and the recognised national statistical institute of the UK.",
+    "location": "Newport",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.ons.gov.uk"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.ons.gov.uk/aboutus/careers"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/ONS"
+      }
+    ]
+  },
+  {
+    "slug": "one-iota",
+    "name": "One iota",
+    "description": "e-commerce & retail technology",
+    "location": "Pembroke Dock, Swansea",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.itsoneiota.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.itsoneiota.com/join-the-team"
+      },
+      {
+        "name": "Email",
+        "link": "info@itsoneiota.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/itsoneiota"
+      }
+    ]
+  },
+  {
+    "slug": "oodle-finance",
+    "name": "Oodle Finance",
+    "description": "Used car finance",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.oodlecarfinance.com/"
+      }
+    ]
+  },
+  {
+    "slug": "owsy",
+    "name": "Owsy",
+    "description": "Insurtech products",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://owsy.com"
+      },
+      {
+        "name": "Email",
+        "link": "hello@owsy.com"
+      }
+    ]
+  },
+  {
+    "slug": "payzip",
+    "name": "PayZip",
+    "description": "The easy way to manage club payments",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.payzip.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "hello@payzip.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "http://www.twitter.com/payzip"
+      }
+    ]
+  },
+  {
+    "slug": "penguin-internet",
+    "name": "Penguin Internet Ltd",
+    "description": "Web Hosting, Servers, Domain Names, Web Development",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.penguin-uk.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.penguin-uk.com/careers.php"
+      },
+      {
+        "name": "Email",
+        "link": "sales@penguin-uk.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/penguininternet"
+      }
+    ]
+  },
+  {
+    "slug": "prodigi",
+    "name": "Prodigi",
+    "description": "We make beautiful products and build powerful software to help you outsource your printing.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://prodigi.uk/"
+      },
+      {
+        "name": "Careers",
+        "link": "https://prodigigroup.recruitee.com/"
+      },
+      {
+        "name": "Email",
+        "link": "hi@prodigi.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/PwintyApp"
+      }
+    ]
+  },
+  {
+    "slug": "proper-design",
+    "name": "Proper Design",
+    "description": "Web designers and developers",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://properdesign.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "hello@properdesign.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/properdesignrs"
+      }
+    ]
+  },
+  {
+    "slug": "ramp",
+    "name": "Ramp",
+    "description": "Ecommerce platforms & sites for merchandise - we run several for ourselves, not clients.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://ramptshirts.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/RampTshirts"
+      }
+    ]
+  },
+  {
+    "slug": "rantmedia",
+    "name": "Rantmedia",
+    "description": "We design and develop awesome mobile apps for iPhone and Android.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.rantmedia.com"
+      },
+      {
+        "name": "Email",
+        "link": "hello@rantmedia.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/rantmediaUK"
+      }
+    ]
+  },
+  {
+    "slug": "rateswitch",
+    "name": "RateSwitch",
+    "description": "We switch homeowners to better mortgage rates through their current bank or building society",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://rateswitch.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/rateswitch"
+      }
+    ]
+  },
+  {
+    "slug": "rubber-duck",
+    "name": "Rubber Duck Consulting",
+    "description": "From QA consultancy services to automation training, Rubber Duck Consulting provides clients with the knowledge and tools that create value, build relationships, and grow revenue. We adapt to a variety of needs and goals across industries, providing quality assurance so our clients can truly transform and have the confidence to deliver quality software.",
+    "location": "Swansea",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://rubberduckconsulting.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "viv@rubberduckconsulting.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "http://twitter.com/rdconsultingltd"
+      }
+    ]
+  },
+  {
+    "slug": "seecode",
+    "name": "SeeCode",
+    "description": "Rapid prototype development through to fully-fledged applications, technical debt analysis and appraisal, and rescue of problem projects.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.seecode.uk"
+      }
+    ]
+  },
+  {
+    "slug": "simply-do-ideas",
+    "name": "Simply Do Ideas",
+    "description": "The digital space to crowdsource ideas and drive continuous improvement",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://simplydo.co.uk"
+      },
+      {
+        "name": "Careers",
+        "link": "https://simplydo.co.uk/jobs"
+      },
+      {
+        "name": "Email",
+        "link": "hello@simplydo.io"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/SimplyDoIdeas"
+      }
+    ]
+  },
+  {
+    "slug": "smallspark-space-systems",
+    "name": "SmallSpark Space Systems",
+    "description": "Developing hybrid rocket for orbital launch",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://smallspark.space"
+      },
+      {
+        "name": "Careers",
+        "link": "https://smallspark.space/careers"
+      },
+      {
+        "name": "Email",
+        "link": "ceo@smallspark.space"
+      }
+    ]
+  },
+  {
+    "slug": "sorbet",
+    "name": "Sorbet",
+    "description": "Property maintenance Software - We take the work out of connecting with contractors and tenants so you can accomplish more.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.sorbethq.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://company.sorbethq.com/careers/"
+      },
+      {
+        "name": "Email",
+        "link": "hello@sorbethq.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/SorbetHQ"
+      }
+    ]
+  },
+  {
+    "slug": "sotic",
+    "name": "Sotic",
+    "description": "Since 2002 Sotic have been working with clubs, leagues, tournament and event organisers, governing bodies and international federations to develop innovative, engaging and practical digital solutions.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://sotic.co.uk/"
+      },
+      {
+        "name": "Careers",
+        "link": "https://sotic.net/careers/"
+      },
+      {
+        "name": "Email",
+        "link": "hr@sotic.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/sotic"
+      }
+    ]
+  },
+  {
+    "slug": "spectrum-internet",
+    "name": "Spectrum Internet",
+    "description": "Internet Service Provider",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://spectruminternet.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/spectrumisp"
+      }
+    ]
+  },
+  {
+    "slug": "spindogs",
+    "name": "Spindogs",
+    "description": "We help users find and engage with you online. We love everything digital.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.spindogs.co.uk/"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.spindogs.co.uk/careers/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/spindogs"
+      }
+    ]
+  },
+  {
+    "slug": "sports-injury-fix",
+    "name": "Sports Injury Fix",
+    "description": "Treatment provider finder. Therapist online booking and customer notes system.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.sportsinjuryfix.com"
+      },
+      {
+        "name": "Email",
+        "link": "info@sportsinjuryfix.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/SportsInjuryFix"
+      }
+    ]
+  },
+  {
+    "slug": "sugar-creative-studio",
+    "name": "Sugar Creative Studio",
+    "description": "Mobile Applications & Games, Augmented Reality specialists.",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://sugarcs.com"
+      },
+      {
+        "name": "Email",
+        "link": "info@sugarcs.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/sugarcreative"
+      }
+    ]
+  },
+  {
+    "slug": "surple",
+    "name": "Surple",
+    "description": "Energy engagement software - optimising energy use in large organisations and property portfolios.",
+    "location": "Newport",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://surple.co.uk"
+      },
+      {
+        "name": "Careers",
+        "link": "https://surple.co.uk/careers"
+      },
+      {
+        "name": "Email",
+        "link": "team@surple.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/SurpleUK"
+      }
+    ]
+  },
+  {
+    "slug": "talkative",
+    "name": "Talkative",
+    "description": "Helping companies to communicate with customers through their website/app",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://talkative.uk"
+      },
+      {
+        "name": "Careers",
+        "link": "https://talkative.uk/company/careers/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/talkativeuk"
+      }
+    ]
+  },
+  {
+    "slug": "tendertec",
+    "name": "Tendertec",
+    "description": "Powering the lives you choose to live. Developing personalised room sensing technology to support independent living.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://tendertec.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "contact@tendertec.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/tendertec"
+      }
+    ]
+  },
+  {
+    "slug": "testlodge",
+    "name": "TestLodge",
+    "description": "Online test case management tool",
+    "location": "Penarth",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.testlodge.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/TestLodge"
+      }
+    ]
+  },
+  {
+    "slug": "tigerbay",
+    "name": "Tigerbay",
+    "description": "Reservation and ecommerce platform for specialist travel.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.tigerbay.co.uk"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.tigerbay.co.uk/careers"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/tigerbaysystems"
+      }
+    ]
+  },
+  {
+    "slug": "uproots",
+    "name": "Uproots",
+    "description": "Revolutionising the rental process",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://uproots.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "support@uproots.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/uprootsapp"
+      }
+    ]
+  },
+  {
+    "slug": "veeqo",
+    "name": "Veeqo",
+    "description": "Veeqo helps multichannel retailers manage and grow their entire ecommerce business.",
+    "location": "Swansea",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.veeqo.com/"
+      },
+      {
+        "name": "Careers",
+        "link": "https://veeqo-ltd.breezy.hr/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Veeqo"
+      }
+    ]
+  },
+  {
+    "slug": "venuenow",
+    "name": "Venue Now",
+    "description": "Agency providing mobile apps for leading sporting venues, conferences, exhibitions and more.",
+    "location": "Newport",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "venuenow.co.uk"
+      }
+    ]
+  },
+  {
+    "slug": "veygo",
+    "name": "Veygo",
+    "description": "From Learner Driver Insurance for those looking to practice in their parent’s car to temporary cover for friends looking to share the driving for a weekend, we’ve got the right short term cover for you.",
+    "location": "Cardiff",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.veygo.com"
+      }
+    ]
+  },
+  {
+    "slug": "vortex-iot",
+    "name": "Vortex IoT",
+    "description": "Vortex IoT build sensors and networks for harsh environments where conditions are hostile, power supply is limited, AI is needed & data security is critical.",
+    "location": "Swansea",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://vortexiot.com"
+      },
+      {
+        "name": "Email",
+        "link": "info@vortexiot.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/VortexIoT"
+      }
+    ]
+  },
+  {
+    "slug": "we-are-digital-vision",
+    "name": "We are digital vision",
+    "description": "Web apps and design",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.wearedigitalvision.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/wadv"
+      }
+    ]
+  },
+  {
+    "slug": "wealthify",
+    "name": "Wealthify",
+    "description": "We're an exciting FinTech business helping Britain invest",
+    "location": "Penarth",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.wealthify.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.wealthify.com/careers"
+      },
+      {
+        "name": "Email",
+        "link": "info@wealthify.com"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/wealthify_com"
+      }
+    ]
+  },
+  {
+    "slug": "webbox",
+    "name": "WebBox",
+    "description": "We are a multi award-winning agency, offering bespoke website development, creative design & full-service digital marketing services.",
+    "location": "Penarth",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.webbox.digital"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.webbox.digital/en/page/careers"
+      },
+      {
+        "name": "Email",
+        "link": "contact@webboxdigital.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/webboxdigital"
+      }
+    ]
+  },
+  {
+    "slug": "yellow-brick-code",
+    "name": "Yellow Brick Code",
+    "description": "Consultancy and development services for cloud first architecture & full stack web application development",
+    "location": "Cardiff",
+    "type": "Agency or Consultancy",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.yellowbrickcode.co.uk"
+      },
+      {
+        "name": "Email",
+        "link": "hello@yellowbrickcode.co.uk"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/ff0brickcode"
+      }
+    ]
+  },
+  {
+    "slug": "yokogawa-rap",
+    "name": "Yokogawa RAP",
+    "description": "Yokogawa RAP specialises in the development and implementation of Electronic Permit to Work (ePTW) and Integrated Safe Systems of Work (ISSoW) products.",
+    "location": "Swansea",
+    "type": "Product or Service",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.yokogawa-rap.com"
+      },
+      {
+        "name": "Careers",
+        "link": "https://www.rap-international.com/careers.php"
+      },
+      {
+        "name": "Email",
+        "link": "enquiries@rap.yokogawa.com"
+      }
+    ]
+  }
+]

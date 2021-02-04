@@ -1,0 +1,188 @@
+<header class="bg-red-700 pt-6 md:pt-12 pb-10 md:pb-16">
+  <div class="container mx-auto px-4">
+    <div class="w-full md:w-3/4 lg:w-1/2">
+      <h1 class="text-white text-4xl">Companies that 💛 software</h1>
+      <p class="mt-4 text-lg text-red-200 leading-normal">
+        Whether you're a developer hunting for jobs, a company searching for a development agency or a contractor advertising your services, we've got the biggest list of companies building software in Wales.
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBgF-wPRtERRqpKKYH6-7cA-VBJ20okEGtVTlC-T-DtC-UFg/viewform?usp=sf_link" target="_blank" class="inline-flex items-center mt-6 py-4 px-6 md:p-6 bg-yellow-400 hover:bg-yellow-500 text-black font-bold md:leading-none underline-none rounded">
+        <img src="/static/icons/plus.svg" class="mr-4 h-6" width="24" height="24" />
+        Add a company
+      </a>
+      <p class="mt-6 text-red-200 leading-normal">
+        So far we've added <span class="font-bold">{{companies.length}}</span> companies from <span class="font-bold">{{locations.length}}</span> locations! 🎉
+      </p>
+    </div>
+  </div>
+</header>
+
+<div class="py-8">
+  <div class="container mx-auto px-4 flex flex-col lg:flex-row">
+    <div class="w-full lg:w-1/4 mr-6">
+      <label class="block tracking-wide text-gray-700 text-sm font-bold mb-2" for="search">
+        Search
+      </label>
+      <input id="search" type="text" name="search" placeholder="Company name..."
+        class="mb-6 appearance-none block w-full bg-white text-gray-700 border border-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-600"
+        onkeyup="onChangeSearch()" autocomplete="off" />
+
+      <div class="hidden lg:block">
+        <label class="block tracking-wide text-gray-700 text-sm font-bold mb-2" for="location">
+          Location
+        </label>
+        <div class="mb-6 relative">
+          <select class="cursor-pointer block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-red-600" id="location" onchange="onChangeLocation()" autocomplete="off">
+            <option value="">All</option>
+            {{#each locations}}
+            <option value="{{this}}">{{this}}</option>
+            {{/each}}
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </div>
+          </div>
+
+          <label class="block tracking-wide text-gray-700 text-sm font-bold mb-2" for="company-type">
+            Company type
+          </label>
+          <div class="mb-6 relative">
+            <select id="company-type" class="cursor-pointer block appearance-none w-full bg-white border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-red-600" onchange="onChangeCompanyType()" autocomplete="off">
+              <option value="">All</option>
+              <option value="Product or Service">Product or Service</option>
+              <option value="Agency or Consultancy">Agency or Consultancy</option>
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+              </div>
+            </div>
+            <button class="cursor-pointer text-red-600 hover:underline" onclick="clearFilters();">Clear filters</button>
+          </div>
+        </div>
+        <div class="w-full lg:w-3/4">
+          <div class="block tracking-wide text-gray-700 text-sm font-bold mb-2">Showing <span id="result-count">{{companies.length}}</span> companies</div>
+          <div id="company-list">
+            {{#each companies}}
+            <a href="/companies/{{this.slug}}" class="no-underline">
+              <div class="flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow">
+                <div class="w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain" style="background-image: url({{this.logoUrl}})"></div>
+                <div class="w-full flex flex-col">
+                  <h2 class="font-bold mb-2">{{this.name}}</h2>
+                  <p class="text-gray-700 leading-normal">{{this.description}}</p>
+                </div>
+              </div>
+            </a>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  const companies = {{{ json companies }}}
+
+  const searchQuery = document.getElementById("search");
+  const locationFilter = document.getElementById("location");
+  const companyTypeFilter = document.getElementById("company-type");
+
+  let searchDebounceTimer;
+  function onChangeSearch () {
+    clearTimeout(searchDebounceTimer);
+    searchDebounceTimer = setTimeout(function() {
+      renderCompanies();
+    }, 250);
+  }
+
+  function onChangeLocation () {
+    renderCompanies();
+  }
+
+  function onChangeCompanyType () {
+    renderCompanies();
+  }
+
+  function applySearchFilter(query, companies) {
+    if (query === "") return companies;
+    const filteredCompanies = companies.filter(function (company) {
+      const companyName = company.name.toLowerCase();
+      const value = query.toLowerCase();
+      return companyName.indexOf(value) >= 0;
+    });
+    return filteredCompanies;
+  }
+
+  function applyLocationFilter(location, companies) {
+    if (location === "") return companies;
+    return companies.filter(company => company.locations.includes(location))
+  }
+
+  function applyCompanyTypeFilter(companyType, companies) {
+    if (companyType === "") return companies;
+    return companies.filter(company => company.companyType === companyType);
+  }
+
+  function applyFilters(companies) {
+    let filteredCompanies = applySearchFilter(searchQuery.value, companies);
+    filteredCompanies = applyLocationFilter(locationFilter.value, filteredCompanies);
+    filteredCompanies = applyCompanyTypeFilter(companyTypeFilter.value, filteredCompanies);
+    return filteredCompanies;
+  }
+
+  function clearFilters() {
+    searchQuery.value = "";
+    locationFilter.value = "";
+    companyTypeFilter.value = "";
+    renderCompanies();
+  }
+
+  function renderCompanies() {
+    const companyList = document.getElementById("company-list");
+    companyList.innerHTML = "";
+    filteredCompanies = applyFilters(companies);
+
+    const resultCount = document.getElementById("result-count");
+    resultCount.innerHTML = filteredCompanies.length;
+
+    if (filteredCompanies.length === 0) {
+      const emptyMessage = document.createElement("div");
+      emptyMessage.innerHTML = "Sorry, we couldn't find any matching companies."
+      emptyMessage.classList = "text-gray-dark my-4"
+      companyList.appendChild(emptyMessage);
+      return;
+    }
+
+    filteredCompanies.forEach(function (company) {
+      const logo = document.createElement("div");
+      logo.classList = "w-8 sm:w-12 h-8 sm:h-12 mr-6 flex-no-shrink rounded bg-center bg-no-repeat bg-contain";
+      logo.style = "background-image: url(" + company.logoUrl + ")";
+
+      const textContainer = document.createElement("div");
+      textContainer.classList = "w-full flex flex-col";
+
+      const name = document.createElement("span");
+      name.innerHTML = company.name;
+      name.classList = "text-black font-bold mb-2";
+      textContainer.appendChild(name);
+
+      const description = document.createElement("span");
+      description.innerHTML = company.description;
+      description.classList = "text-gray-700 leading-normal";
+      textContainer.appendChild(description);
+
+      const card = document.createElement("div");
+      card.classList = "flex flex-row bg-white p-4 sm:p-6 mb-2 rounded shadow";
+      card.appendChild(logo);
+      card.appendChild(textContainer);
+
+      const link = document.createElement("a");
+      link.classList = "no-underline";
+      link.href = "/companies/" + company.slug;
+      link.appendChild(card);
+
+      companyList.appendChild(link);
+    });
+  }
+</script>

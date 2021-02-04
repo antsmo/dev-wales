@@ -1,0 +1,610 @@
+[
+  {
+    "name": "AI Wales",
+    "logo": "ai-wales.jpg (https://dl.airtable.com/.attachments/2ec561afe1b525f6e731c81bb3d1af43/a6010531/ai-wales.jpg)",
+    "organisers": "Jaymie Thomas, David Pugh and Toby White",
+    "meetupSlug": "AI-Wales",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/AI-Wales/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/ai_wales"
+      }
+    ]
+  },
+  {
+    "name": "AWS South Wales User Group",
+    "logo": "",
+    "organisers": "Matt Lewis and James Carnie",
+    "meetupSlug": "AWS-South-Wales-User-Group",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/AWS-South-Wales-User-Group/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/AWSSWalesUG"
+      }
+    ]
+  },
+  {
+    "name": "Bitcoin SV Wales",
+    "logo": "",
+    "organisers": "Jack Davies, Freddie Dewey, Jamie Hitchen, James Parker and Gabe Ackerman",
+    "meetupSlug": "",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/Bitcoin-SV-Wales"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/Bitcoinsv_Wales"
+      }
+    ]
+  },
+  {
+    "name": "Bitcoin Wales",
+    "logo": "",
+    "organisers": "",
+    "meetupSlug": "all-about-bitcoin-meetup-group-wales",
+    "links": [
+      {
+        "name": "Website",
+        "link": "http://bitcoinwales.org/"
+      },
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/all-about-bitcoin-meetup-group-wales/"
+      },
+      {
+        "name": "Twitter",
+        "link": "http://www.twitter.com/BitcoinWales"
+      }
+    ]
+  },
+  {
+    "name": "BridgendCodeCamp",
+    "logo": "",
+    "organisers": "",
+    "meetupSlug": "",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://bridgend.cc/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/bridgendcoders"
+      }
+    ]
+  },
+  {
+    "name": "CaRdiff - the Cardiff R User Group",
+    "logo": "cardiff.png (https://dl.airtable.com/.attachments/2611fc166421f037c9238067300a4a2b/ee69bb62/cardiff.png)",
+    "organisers": "Steph Locke, Dave Parr and Paul Brennan",
+    "meetupSlug": "Cardiff-R-User-Group",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/Cardiff-R-User-Group/"
+      },
+      {
+        "name": "Twitter",
+        "link": "http://www.twitter.com/CardiffRUG"
+      }
+    ]
+  },
+  {
+    "name": "Cardiff Dev",
+    "logo": "630129344436_4841e703d1a8491de19d_132.png (https://dl.airtable.com/.attachments/2e23d7f7df1a6afd3acd435eae282fa0/cd63f5f4/630129344436_4841e703d1a8491de19d_132.png)",
+    "organisers": "",
+    "meetupSlug": "",
+    "links": [
+      {
+        "name": "Slack",
+        "link": "https://cardiffdev.herokuapp.com/"
+      }
+    ]
+  },
+  {
+    "name": "Cardiff Go Meetup",
+    "logo": "cardiff-go.jpeg (https://dl.airtable.com/.attachments/c45bc455e895f1c141a0c431d6812cb6/f2094fb6/cardiff-go.jpeg)",
+    "organisers": "Eleanor Deal, Jay G, David Carboni and Ian Kent",
+    "meetupSlug": "Cardiff-Go-Meetup",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/Cardiff-Go-Meetup/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/cdfgolang"
+      }
+    ]
+  },
+  {
+    "name": "Cardiff Scala Meetup Group",
+    "logo": "",
+    "organisers": "Adam Bolton and Cosimo Ranieri",
+    "meetupSlug": "Cardiff-Scala-Meetup-Group",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/Cardiff-Scala-Meetup-Group/"
+      }
+    ]
+  },
+  {
+    "name": "Cardiff SEO Meet",
+    "logo": "",
+    "organisers": "Steve Morgan",
+    "meetupSlug": "Cardiff-SEO-Meet",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/Cardiff-SEO-Meet/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/CardiffSEOMeet"
+      }
+    ]
+  },
+  {
+    "name": "Cardiff Tech Talk",
+    "logo": "",
+    "organisers": "Steve S, Dan Frost, Joel Marshall and Victoria Gunstone",
+    "meetupSlug": "Cardiff-Tech-Talk",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/Cardiff-Tech-Talk/"
+      }
+    ]
+  },
+  {
+    "name": "Cardiff WordPress Meetup",
+    "logo": "",
+    "organisers": "Scott Jones, Leo Mindel and Sarah Pantry",
+    "meetupSlug": "Cardiff-WordPress-Meetup",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/Cardiff-WordPress-Meetup/"
+      },
+      {
+        "name": "Twitter",
+        "link": "http://www.twitter.com/cardiff_wp"
+      }
+    ]
+  },
+  {
+    "name": "Cardiff-JS",
+    "logo": "2019-06-10 14.33.03.jpg (https://dl.airtable.com/.attachments/118a8743fe8a10e621c2f0c73e0fdc23/bd577e98/2019-06-1014.33.03.jpg)",
+    "organisers": "Jack Rimell, David Lewis, Jack Cox and Luke Brown",
+    "meetupSlug": "Cardiff-JS",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/Cardiff-JS/"
+      },
+      {
+        "name": "Slack",
+        "link": "https://join.slack.com/t/cardiff-js/shared_invite/enQtODk4NDIyNjg2MDY2LWQ0OWYxZGM0NzdkNjZiNTM2Mjk0ODJkN2MwMzg1NjY3YWE2YmFkNzI1YzMwMjk2OWNiZDAzZjg4ZDFmNDZhNDA"
+      }
+    ]
+  },
+  {
+    "name": "cardiffrb",
+    "logo": "cardiffrb.png (https://dl.airtable.com/.attachments/a523f28a62795da480b266a86e683528/20a8d208/cardiffrb.png)",
+    "organisers": "",
+    "meetupSlug": "",
+    "links": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/cardiffrb"
+      }
+    ]
+  },
+  {
+    "name": "Cloud Native Wales",
+    "logo": "cloud-native.jpeg (https://dl.airtable.com/.attachments/8e77bd0e61bbfb4726c4aba48bbdac44/f1b35932/cloud-native.jpeg)",
+    "organisers": "Lewis Denham-Parry, Salman Iqbal and Aled James",
+    "meetupSlug": "Cloud-Native-Wales",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/Cloud-Native-Wales/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/CloudNativeWal"
+      }
+    ]
+  },
+  {
+    "name": "Code Club Wales",
+    "logo": "code-club.png (https://dl.airtable.com/.attachments/c145565afeaa7b2e2067ed5dfba4b52c/099e52c2/code-club.png)",
+    "organisers": "",
+    "meetupSlug": "",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://codeclub.org"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/codeclubwales"
+      }
+    ]
+  },
+  {
+    "name": "Design Swansea",
+    "logo": "2020-02-22 05.35.32 (https://dl.airtable.com/.attachments/7be1770dc29d3943b17edf7debdea498/e99e7a23/2020-02-2205.35.32)",
+    "organisers": "",
+    "meetupSlug": "",
+    "links": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/DesignSwansea"
+      },
+      {
+        "name": "Eventbrite",
+        "link": "https://www.eventbrite.co.uk/o/design-swansea-11479341815"
+      }
+    ]
+  },
+  {
+    "name": "DevOps and Dine",
+    "logo": "",
+    "organisers": "Leigh Smith",
+    "meetupSlug": "DevOps-And-Dine",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/DevOps-And-Dine/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/DevopsDine"
+      }
+    ]
+  },
+  {
+    "name": "Games Wales",
+    "logo": "z_skW4d5_400x400.jpg (https://dl.airtable.com/.attachments/c55ce213a7b8050a9a6ecfef3f5bb351/3531b463/z_skW4d5_400x400.jpg)",
+    "organisers": "",
+    "meetupSlug": "",
+    "links": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/gameswales"
+      },
+      {
+        "name": "Discord",
+        "link": "https://discordapp.com/invite/FgCQTu7"
+      }
+    ]
+  },
+  {
+    "name": "GDG Cardiff",
+    "logo": "gdg-cardiff.jpeg (https://dl.airtable.com/.attachments/f8984fd9360b2de61a990b29973d762a/26849b37/gdg-cardiff.jpeg)",
+    "organisers": "Rob Sadler, Huw Angle, Patrick Uzuwe, Yasar Majib, \"DJ\" and James Gorwill",
+    "meetupSlug": "GDGCardiff",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/GDGCardiff/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/GDGCardiff"
+      }
+    ]
+  },
+  {
+    "name": "Gray Rhinos Tech Meetup",
+    "logo": "",
+    "organisers": "Mohammed Alamgir, Anna S and Tegen Quinn",
+    "meetupSlug": "Gray-Rhinos-Tech-Meet-Up",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/Gray-Rhinos-Tech-Meet-Up/"
+      }
+    ]
+  },
+  {
+    "name": "MSFT Stack",
+    "logo": "",
+    "organisers": "Steph Locke, Richard Griffiths, Chris Jackson, Amit Patel, Katy, Michael Hole, John Humpston and \"Oz",
+    "meetupSlug": "MSFT-Stack",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/MSFT-Stack/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/msft_stack"
+      }
+    ]
+  },
+  {
+    "name": "North Wales Tech",
+    "logo": "north-wales-tech.png (https://dl.airtable.com/.attachments/2185b040e281e0e166f7ebb78fd0f396/a108032b/north-wales-tech.png)",
+    "organisers": "Carwyn Edwards, Joseph Mearman, Rob Shepherd, Luke Farrar and David Hunnisett",
+    "meetupSlug": "NorthWalesTech",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/NorthWalesTech/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/northwalestech"
+      }
+    ]
+  },
+  {
+    "name": "PHP South Wales",
+    "logo": "php-sw.jpeg (https://dl.airtable.com/.attachments/f5a17af4b2d90125a4966fd9ae7cf43a/56a460bd/php-sw.jpeg)",
+    "organisers": "Gary Hockin, Steve McDougall, Oliver Davies and Amy McDougall",
+    "meetupSlug": "PHP-South-Wales",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/PHP-South-Wales/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/phpSouthWales"
+      },
+      {
+        "name": "Youtube",
+        "link": "https://www.youtube.com/channel/UCzQRSSaIV2Ajvl81BxPQDZA"
+      }
+    ]
+  },
+  {
+    "name": "PHP Wales",
+    "logo": "",
+    "organisers": "",
+    "meetupSlug": "",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://www.phpwales.co.uk/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://www.twitter.com/PhpWales"
+      },
+      {
+        "name": "Discord",
+        "link": "https://discord.gg/kjw448"
+      }
+    ]
+  },
+  {
+    "name": "PowerShell Cardiff UK",
+    "logo": "",
+    "organisers": "Daniel Krebs, Mark Nash, Mike Pannazzo and Ryan Yates",
+    "meetupSlug": "PowerShell-Cardiff-UK",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/PowerShell-Cardiff-UK/"
+      }
+    ]
+  },
+  {
+    "name": "Product Tank Cardiff",
+    "logo": "product-tank.jpg (https://dl.airtable.com/.attachments/fa656dd502a57951b12238439066be9a/33a7a295/product-tank.jpg)",
+    "organisers": "Baf Kurtulaj, Alex Kavel, Jon Watts and Marc Abraham",
+    "meetupSlug": "ProductTank-Cardiff",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/ProductTank-Cardiff/"
+      },
+      {
+        "name": "Twitter",
+        "link": "http://meetu.ps/c/45GtL/1NzQS/d"
+      }
+    ]
+  },
+  {
+    "name": "PyData Cardiff",
+    "logo": "py-data.jpg (https://dl.airtable.com/.attachments/dccbe13acb50ab72d040e253a709b65e/ec1550d5/py-data.jpg)",
+    "organisers": "Ryan Emerson, Kenneth Hansen, Kacper Wieczorek and Tim Vivian-Griffiths",
+    "meetupSlug": "PyData-Cardiff-Meetup",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/PyData-Cardiff-Meetup/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/pydatacardiff"
+      }
+    ]
+  },
+  {
+    "name": "PyDiff",
+    "logo": "",
+    "organisers": "Steph Locke, Vince, Martin Chorley, Daniele Procida and Geriant Palmer",
+    "meetupSlug": "PyDiff",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/PyDiff/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/PyDiff"
+      }
+    ]
+  },
+  {
+    "name": "Rust and C++ Cardiff",
+    "logo": "",
+    "organisers": "Ciara, CJ and David Martinez",
+    "meetupSlug": "rust-and-c-plus-plus-in-cardiff",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/rust-and-c-plus-plus-in-cardiff/"
+      }
+    ]
+  },
+  {
+    "name": "South Wales Agile Group",
+    "logo": "agile-sw.jpg (https://dl.airtable.com/.attachments/f359e73a8773a936741609b785ebeb85/19cde246/agile-sw.jpg)",
+    "organisers": "Ashley Stockton, Amit Patel, Dave Grant, James Harvey and Sean Robinson",
+    "meetupSlug": "South-Wales-Agile-Group",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/South-Wales-Agile-Group/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/SWAgileGroup"
+      }
+    ]
+  },
+  {
+    "name": "South Wales Linux User Group",
+    "logo": "2020-03-02 17.56.22 (https://dl.airtable.com/.attachments/afd09a836494136001cdb85419f99776/c8e5df76/2020-03-0217.56.22)",
+    "organisers": "",
+    "meetupSlug": "",
+    "links": [
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/SWLUG"
+      }
+    ]
+  },
+  {
+    "name": "Subject Data: Cardiff",
+    "logo": "",
+    "organisers": "Adam Williams, Vanessa and Justin Bird",
+    "meetupSlug": "DataCardiff",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/DataCardiff/"
+      }
+    ]
+  },
+  {
+    "name": "Swansea Digital Marketing & SEO Meetup",
+    "logo": "",
+    "organisers": "",
+    "meetupSlug": "Swansea-SEO",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/Swansea-SEO/"
+      }
+    ]
+  },
+  {
+    "name": "Swansea Software Development Meet-up",
+    "logo": "",
+    "organisers": "Viv Richards, Jordan Collier, Adam Bolton, Thomas Guest, Chris Cundill and Neil Toms",
+    "meetupSlug": "Swansea-Software-Development-Meetup",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/Swansea-Software-Development-Meetup/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/SwanseaSDC"
+      }
+    ]
+  },
+  {
+    "name": "Test Talks Wales",
+    "logo": "",
+    "organisers": "Samantha Miller and Simon Stratton",
+    "meetupSlug": "test-talks-wales",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/Cardiff-Software-Testers-Meetup/"
+      }
+    ]
+  },
+  {
+    "name": "The HealthTech Meetup",
+    "logo": "healthtech.png (https://dl.airtable.com/.attachments/f0d417ce3217f6d8cdf7391ecd7b397f/6f314646/healthtech.png)",
+    "organisers": "Tramshed Tech",
+    "meetupSlug": "The-HealthTech-Meetup",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/The-HealthTech-Meetup/"
+      }
+    ]
+  },
+  {
+    "name": "unified.diff",
+    "logo": "unified-diff.png (https://dl.airtable.com/.attachments/5ce982e19862cc967e02773273e6c515/6ce04775/unified-diff.png)",
+    "organisers": "Charlotte White, Crag Marvelley, Warren Seymour, Ian Jenkins, Rod Pugh and Carey Hiles",
+    "meetupSlug": "unified-diff",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/unified-diff/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/UnifiedDiff"
+      }
+    ]
+  },
+  {
+    "name": "UX Wales",
+    "logo": "2020-02-22 05.37.03 (https://dl.airtable.com/.attachments/ef753252597ccccc85101671bc9ccb31/dccc741d/2020-02-2205.37.03)",
+    "organisers": "",
+    "meetupSlug": "uxwales",
+    "links": [
+      {
+        "name": "Meetup",
+        "link": "https://www.meetup.com/uxwales"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/uxwales"
+      }
+    ]
+  },
+  {
+    "name": "Women Tech Cymru",
+    "logo": "women-in-tech.jpg (https://dl.airtable.com/.attachments/95aaea4cdd084838778cf30880fbe612/85a54648/women-in-tech.jpg)",
+    "organisers": "Catrin Atkins, Clare Lutwyche-Loveday, Tracey Stanley and Keyleigh Churchill",
+    "meetupSlug": "",
+    "links": [
+      {
+        "name": "Website",
+        "link": "https://womenintech.cymru"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/CymruTech"
+      },
+      {
+        "name": "Eventbrite",
+        "link": "https://www.eventbrite.com/o/women-in-tech-cymru-merched-mewn-technoleg-cymru-14004193922"
+      }
+    ]
+  }
+]

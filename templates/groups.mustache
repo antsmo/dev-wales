@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dev Wales</title>
+  </head>
+  <body>
+    <nav>
+      <h1>
+        <a href="./index.html">Dev Wales</a>
+      </h1>
+      <ul>
+        <li>
+          <a href="./groups.html">Groups</a>
+        </li>
+        <li>
+          <a href="./companies.html">Companies</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>Groups</h1>
+    {{#groups}}
+    <h2>{{{name}}}</h2>
+    <dl>
+      <dt>Organisers</dt>
+      <dd>{{organisers}}</dd>
+
+      <dt>Links</dt>
+      {{#links}}
+      <dd>
+        <a href="{{link}}">{{name}}</a>
+      </dd>
+      {{/links}}
+    </dl>
+    {{/groups}}
+  </body>
+</html>
